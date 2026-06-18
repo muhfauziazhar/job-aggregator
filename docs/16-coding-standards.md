@@ -14,7 +14,7 @@
 |---|---|
 | App language | TypeScript, `strict: true`, no implicit `any` |
 | Scraper language | Python 3.12, type-hinted, `ruff` + `mypy` |
-| Framework | Next.js 15 App Router, `src/` layout |
+| Framework | Next.js 16 App Router, `src/` layout |
 | Routing | File-based App Router; Route Handlers for API under `src/app/api/` |
 | Server state | React Server Components + direct Prisma reads; no client data-fetching lib in MVP |
 | Client state | Zustand for filter/UI state; URL query is the source of truth for shareable filters |

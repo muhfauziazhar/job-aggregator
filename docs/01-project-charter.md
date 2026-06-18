@@ -25,7 +25,7 @@ Differentiation vs LinkedIn / Indeed / Glassdoor: no login, no tracking, no upse
 - Scrape 6 sources: **Greenhouse, Lever, Ashby, RemoteOK, LinkedIn, Threads** (hiring posts)
 - Normalize into unified schema, dedupe cross-source
 - Tag: source ATS, remote type, seniority tier (entry/mid/senior), tech stack (regex extract)
-- Next.js 15 frontend: search, filter, sort, table/card view
+- Next.js 16 frontend: search, filter, sort, table/card view
 - Postgres storage, 6h incremental cron (first-run full crawl)
 - Public open-source repo, self-hostable
 

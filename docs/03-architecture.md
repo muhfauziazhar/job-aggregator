@@ -10,7 +10,7 @@
 
 ## 1. Overview
 
-Job Aggregator is a **two-tier system**: a Python scraper layer that writes to Postgres, and a Next.js 15 frontend that reads from it. No real-time stream, no message queue, no microservices — a single Postgres + a single Next.js app + a handful of cron jobs is enough for MVP.
+Job Aggregator is a **two-tier system**: a Python scraper layer that writes to Postgres, and a Next.js 16 frontend that reads from it. No real-time stream, no message queue, no microservices — a single Postgres + a single Next.js app + a handful of cron jobs is enough for MVP.
 
 Core principles:
 
@@ -33,7 +33,7 @@ graph LR
 
   SCR[Scrapers<br/>Python, cron 6h]
   DB[(Postgres<br/>jobs table)]
-  APP[Next.js 15<br/>App Router]
+  APP[Next.js 16<br/>App Router]
   USR[Visitor<br/>public, no auth]
 
   ATS -->|public API| SCR
@@ -62,7 +62,7 @@ job-aggregator/
 │   │   └── threads.py
 │   ├── runner.py              # entrypoint, picks source via CLI arg
 │   └── requirements.txt
-├── src/                       # Next.js 15
+├── src/                       # Next.js 16
 │   ├── app/
 │   │   ├── page.tsx           # landing
 │   │   ├── jobs/page.tsx      # list + filter

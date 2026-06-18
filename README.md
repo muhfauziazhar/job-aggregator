@@ -2,7 +2,7 @@
 
 > Multi-source software engineering job board — Greenhouse, Lever, Ashby, RemoteOK, LinkedIn, Threads. No login, no upsell, no auto-apply. Just fresh listings, taggable by tech stack and seniority.
 
-**Live:** _coming soon_ · **Stack:** Next.js 15 · TypeScript strict · Tailwind v4 · Postgres · Prisma · Zustand · Zod · Python scrapers
+**Live:** _coming soon_ · **Stack:** Next.js 16 · TypeScript strict · Tailwind v4 · Postgres · Prisma · Zustand · Zod · Python scrapers
 
 ---
 
@@ -34,7 +34,7 @@ LinkedIn buries fresh roles behind login walls and "promoted" noise. Indeed thro
             ↓ upsert (source, external_id)
        [Postgres]
             ↓
-[Next.js 15 App Router]
+[Next.js 16 App Router]
   /jobs · /jobs/[id] · /sources · /api/*
 ```
 
@@ -46,7 +46,7 @@ See [`docs/03-architecture.md`](./docs/03-architecture.md) for full diagram and 
 
 | Layer | Tools |
 |---|---|
-| Frontend | Next.js 15 (App Router), TS strict, Tailwind v4, Zustand, shadcn/ui |
+| Frontend | Next.js 16 (App Router), TS strict, Tailwind v4, Zustand, shadcn/ui |
 | Backend | Next.js Route Handlers + Zod validation |
 | Database | Postgres 16, Prisma ORM |
 | Scraper | Python 3.12, `requests`, `concurrent.futures`, Selenium (LinkedIn) |
