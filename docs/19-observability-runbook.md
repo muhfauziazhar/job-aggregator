@@ -8,6 +8,41 @@
 
 ---
 
+## 0. Deployment
+
+Hosting is **Vercel**, project `job-aggregator` (team `muhfauziazhars-projects`), connected to the GitHub repo for automatic deploys.
+
+| Trigger | Result |
+|---|---|
+| Push to `main` | Production deploy |
+| Open / update a PR | Preview deploy with its own URL (commented on the PR) |
+
+**Production URL:** https://job-aggregator-gold.vercel.app
+
+**Environment variables** (set in Vercel project settings, all three targets):
+
+| Key | Production | Preview | Development |
+|---|---|---|---|
+| `DATABASE_URL` | ✓ | ✓ | ✓ |
+
+Points at the dedicated `jobagg` database on the shared Postgres host. Prisma 7 reads it via `prisma.config.ts` + dotenv locally; on Vercel it comes from the project env.
+
+**Adding a new env var** (preview target needs the REST API because the CLI prompts interactively for a branch):
+
+```bash
+curl -s -X POST \
+  "https://api.vercel.com/v10/projects/$PROJECT_ID/env?teamId=$TEAM_ID&upsert=true" \
+  -H "Authorization: Bearer $VERCEL_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"key":"KEY","value":"VALUE","type":"encrypted","target":["preview"]}'
+```
+
+Production / development targets work fine with `vercel env add KEY production`.
+
+**Migrations** are not run automatically on deploy. Apply schema changes manually before merging the PR that needs them: `pnpm exec prisma migrate deploy` against the target database.
+
+---
+
 ## 1. Signals We Watch
 
 | Signal | Source | Why |

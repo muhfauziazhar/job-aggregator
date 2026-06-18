@@ -43,3 +43,4 @@ docs/diagrams/*.png
 docs/diagrams/*.svg
 !docs/diagrams/*.committed.png
 !docs/diagrams/*.committed.svg
+.vercel
