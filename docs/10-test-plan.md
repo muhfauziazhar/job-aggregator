@@ -2,23 +2,22 @@
 
 | Field | Value |
 |---|---|
-| Version | 0.1 |
-| Owner | QA Lead |
-| Status | Draft |
+| Version | 0.2 |
+| Owner | Muhammad Fauzi Azhar |
+| Status | Approved |
 
 ---
 
 ## 1. Strategy
 
-Bias toward critical journeys, security boundaries, and data-correctness:
+Bias toward **data correctness** (the product is only as good as its data) and **scraper resilience** (sources break often). Auth/RLS testing is N/A — there's no auth.
 
-- **Unit tests** — pure utilities, formatters, validators, API client adapters.
-- **Component tests** — UI components in isolation (loading/empty/error/success).
-- **Integration tests** — API endpoints, database functions, RLS / authz policies (positive AND negative cases).
-- **E2E tests** — full user journeys on the real client against a staging-like backend.
-- **Manual QA** — anything that requires a real device, real video/audio, or store review interactions.
-- **Load tests** — for endpoints expected under burst load (live events, checkout, search).
-- **Chaos / fault injection** — for resilience-critical paths (post-MVP unless required by domain).
+- **Unit tests** — normalizers, tier classifier, tech tagger, filter parsing (URL ↔ query), salary extraction.
+- **Component tests** — UI components in isolation (loading / empty / error / populated).
+- **Integration tests** — API endpoints against a test Postgres; scraper adapters against recorded fixtures.
+- **E2E tests** — critical browsing journeys via Playwright on a seeded DB.
+- **Scraper contract tests** — each source adapter parses a saved real-response fixture into the normalized shape.
+- **Manual QA** — LinkedIn/Threads scrapers (live, fragile, rate-limited — can't run in CI).
 
 ---
 
@@ -26,77 +25,89 @@ Bias toward critical journeys, security boundaries, and data-correctness:
 
 | Layer | Tool |
 |---|---|
-| Frontend unit / component | `<Jest + RTL / Vitest>` |
-| Mobile E2E | `<Maestro / Detox>` |
-| Web E2E | `<Playwright / Cypress>` |
-| Backend / Edge functions | `<Deno test / Vitest / pytest>` |
-| Database / authz | `<pgTAP / SQL test harness>` |
-| Load | `<k6 / Artillery>` |
-| Monitoring smoke | Sentry test release + synthetic checks |
+| App unit / component | Vitest + React Testing Library |
+| Web E2E | Playwright |
+| API integration | Vitest + test Postgres (Docker / Neon branch) |
+| Scraper unit / contract | pytest + recorded JSON fixtures |
+| Scraper live (manual) | pytest marked `@pytest.mark.live`, run locally only |
 
 ---
 
-## 3. Critical Journeys
-
-> One CJ per row. Each maps to one or more user stories. Promoted to E2E test cases.
+## 3. Critical Journeys (→ E2E)
 
 | ID | Journey | Source story |
 |---|---|---|
-| CJ-01 | | STORY-01 |
-| CJ-02 | | |
-| CJ-03 | | |
+| CJ-01 | Land on `/`, see jobs, paginate to page 2 | US-01 |
+| CJ-02 | Filter by source + remote + tier, URL updates, results match | US-02/03/04 |
+| CJ-03 | Search a keyword, open a result detail, click Apply (new tab) | US-06/07 |
+| CJ-04 | Filter by tech tag, share URL, reopen → same filtered state | US-05/08 |
 
-### CJ-01 — `<title>`
+### CJ-01 — Browse and paginate
 
-1.
-2.
-3.
+1. Visit `/`.
+2. Assert ≥ 20 job rows render, newest first.
+3. Click "next page".
+4. Assert a new set of rows, cursor in URL.
 
-**Acceptance:** all steps complete without errors; required side effects verified.
-
----
-
-## 4. Authz / RLS Test Matrix
-
-> Every authz boundary needs at least one allow-test and one deny-test.
-
-| Resource | Role: anonymous | Role: authenticated user | Role: admin |
-|---|---|---|---|
-| `<resource>` read | allow / deny | own only | allow all |
-| `<resource>` write | deny | own only | allow all |
-
-Negative cases that must explicitly fail:
-
--
--
+**Acceptance:** no console errors; rows have title/company/location/source badge.
 
 ---
 
-## 5. Coverage Targets
+## 4. Scraper Contract Tests (the important bit)
+
+Every source adapter must have a test that feeds a **recorded real response** and asserts the normalized output:
+
+| Source | Fixture | Asserts |
+|---|---|---|
+| Greenhouse | `fixtures/greenhouse_board.json` | title, company, apply_url, posted_at mapped |
+| Lever | `fixtures/lever_postings.json` | pagination cursor handled; fields mapped |
+| Ashby | `fixtures/ashby_board.json` | compensation → salary_min/max/currency |
+| RemoteOK | `fixtures/remoteok_api.json` | all marked remote; tags → tech_stack |
+| LinkedIn | `fixtures/linkedin_search.json` | title/company/location mapped; tier+tech applied |
+| Threads | `fixtures/threads_posts.json` | keyword filter; company extracted; apply_url = post |
+
+Plus pure-logic unit tests:
+- Tier classifier: table of `(title → expected tier)` covering intern…principal + ambiguous → `unknown`.
+- Tech tagger: `(description → expected tags)`, word-boundary correctness (e.g. "Java" ≠ "JavaScript"), 10-tag cap.
+- Dedupe key normalization: case/whitespace/punctuation collapse.
+
+---
+
+## 5. Data-Integrity Tests
+
+- Upsert is idempotent: run same fixture twice → row count unchanged, `last_seen_at` updated.
+- Expire job: set `last_seen_at` 31 days ago → expire job → excluded from `/api/jobs`.
+- Unique constraint: two records same `(source, external_id)` → one row.
+
+---
+
+## 6. Coverage Targets
 
 | Layer | Target |
 |---|---|
-| Unit tests | `>= 70%` line coverage |
-| Critical paths | 100% covered by integration or E2E tests |
-| Authz policies | 100% with positive and negative tests |
+| Normalizer / classifier / tagger | `>= 90%` (core logic) |
+| API route handlers | `>= 80%` |
+| Critical journeys | 100% via E2E |
+| UI components | `>= 60%` |
 
 ---
 
-## 6. Test Data
+## 7. Test Data
 
-- Seeded factories for each domain entity.
-- Anonymized snapshot of staging data for performance-sensitive testing.
-- Real PII never in fixtures.
+- Recorded source-response fixtures committed under `scrapers/tests/fixtures/` and `src/__tests__/fixtures/`.
+- Seed script populates a test DB with ~200 synthetic jobs across all sources/tiers for E2E.
+- No real third-party PII in fixtures — scrub recruiter names from saved descriptions.
 
 ---
 
-## 7. Release Gates
+## 8. Release Gates
 
 A release cannot ship if:
 
-- Any critical journey E2E test is red.
-- Any authz / RLS test is red.
-- Any P0 or P1 bug is open.
-- Coverage dropped > 5% in this release.
+- Any critical-journey E2E test is red.
+- Any scraper contract test is red.
+- Any data-integrity test is red.
+- Any P0 bug is open.
+- Coverage on core logic dropped below 90%.
 
-See full Release DoD: `15-definition-of-done.md`.
+See Release DoD: `15-definition-of-done.md`.

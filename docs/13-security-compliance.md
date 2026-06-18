@@ -1,139 +1,109 @@
-# 13 — Security & Compliance
+# 13 — Security, Privacy & Legal
 
 | Field | Value |
 |---|---|
-| Version | 0.1 |
-| Owner | Tech Lead + Legal |
-| Status | Draft |
+| Version | 0.2 |
+| Owner | Muhammad Fauzi Azhar |
+| Status | Approved |
+
+---
+
+> **Threat model note:** This is a **public, no-auth, read-only** web app. There are no user accounts, no user-submitted PII, no payments, no app-store distribution. The security surface is therefore small and unusual: the main concerns are (1) protecting infrastructure secrets, (2) abuse of the public API, (3) the legal/ethical posture of scraping, and (4) not accidentally storing third-party PII. Classic auth/RLS/account-PII concerns do **not** apply in MVP.
 
 ---
 
 ## 1. Security Principles
 
-- Authz on every public table / endpoint.
-- Service-role / privileged credentials only inside server-side code, never in clients.
-- Secrets never ship in client bundles (mobile or web).
-- Admin mutations are audited.
-- Private data is readable only by the data subject and explicitly authorized roles.
+- No auth surface in MVP → no session, cookie, or credential handling on the client.
+- All infrastructure secrets (`DATABASE_URL`, LinkedIn creds, proxy URL) live in GH Actions secrets / Vercel env, never in the repo or client bundle.
+- Public API is read-only. No endpoint mutates data from client input.
+- Scrapers run server-side / in CI only — credentials never reach the browser.
 - All transport TLS 1.2+.
-- Dependencies scanned weekly; high/critical findings block release.
+- Dependencies scanned (Dependabot); high/critical findings block release.
 
 ---
 
-## 2. Authentication
+## 2. Secrets Inventory
 
-- Provider: `<e.g. Supabase Auth, Auth0, Cognito>`.
-- Methods: `<Google / Apple / Email magic-link / etc.>`.
-- Session storage: secure platform storage (Keychain / Keystore / httpOnly cookie).
-- New users default to the lowest-privilege role.
-- Admin role is bootstrapped manually, then managed through admin tools with audit logging.
+| Secret | Used by | Stored in | Rotation |
+|---|---|---|---|
+| `DATABASE_URL` | App + scrapers | Vercel env + GH Actions secret | On suspected leak |
+| `LINKEDIN_EMAIL` / `LINKEDIN_PASSWORD` | LinkedIn scraper | GH Actions secret | If account banned |
+| `RESIDENTIAL_PROXY_URL` (optional) | LinkedIn scraper | GH Actions secret | Per provider |
+| `SENTRY_DSN` | App | Vercel env | Rarely |
 
-If iOS app uses Google Sign-In, Apple Sign In is required by App Store policy.
-
----
-
-## 3. Authorization
-
-- Define roles in `02-technical-requirements.md`.
-- Enforce at the data layer (RLS) AND the API layer (defense in depth).
-- All authz policies have positive AND negative tests (`10-test-plan.md`).
+**Rules:**
+- Never echo secret values in logs or CI output.
+- `.env.local` is gitignored; `.env.example` ships with key names only, no values.
+- Scraper logs must redact credentials before upload as artifacts.
 
 ---
 
-## 4. PII Inventory
+## 3. Data We Store (and the PII boundary)
 
-| Field | Source | Storage | Retention | Subject access? |
-|---|---|---|---|---|
-| Email | OAuth | DB (auth schema) | While account active | Yes |
-| Display name | User-provided | DB | While account active | Yes |
-| Avatar | User-provided | Object storage | While account active | Yes |
-| `<sensitive field>` | | | | |
+We store **job listings**, which are public business postings — not personal data. However, some fields can incidentally contain PII:
 
-PII fields must never appear in:
-- Logs
-- Error breadcrumbs (Sentry)
-- URLs (use IDs, not emails)
-- Analytics events (use anonymous IDs)
+| Field | PII risk | Handling |
+|---|---|---|
+| `company`, `title`, `location` | None | Stored as-is |
+| `apply_url` | None | Stored as-is |
+| `description` | **Low** — may name a hiring manager / recruiter | Stored; not indexed for people-search; no enrichment |
+| Threads `raw` payload | **Low–Medium** — post author handle | Store handle only as attribution; never scrape author profile/contact |
 
----
-
-## 5. Privacy Posture
-
-- No third-party advertising SDK.
-- No cross-app tracking.
-- Operator may access private user content only for moderation; documented in privacy policy.
-- Privacy Policy and Terms of Service live before public launch and are linked in store metadata + in-app.
-
-### Data Retention
-
-| Asset | Retention |
-|---|---|
-| User content (active account) | Indefinite |
-| User content (deleted account) | 30 days then permanent delete or anonymize |
-| Audit logs | 1 year minimum |
-| Analytics | Aggregated indefinitely; raw events 90 days |
-| Backups | 30 days |
-
-### Subject Rights
-
-- Access / export: response within 30 days.
-- Erasure: response within 30 days; legal-hold exceptions documented.
+**Hard rules:**
+- We do **not** scrape, store, or enrich LinkedIn/Threads **user profiles**, connections, or contact info — only job listings / hiring posts. (ADR-0001, ADR-0002.)
+- We do **not** build people-search or contact-extraction features.
+- If a takedown is requested for a specific listing/post, we remove it within 7 days.
 
 ---
 
-## 6. Store / Platform Risk
+## 4. Legal & Ethical Posture (scraping)
 
-> Adapt to your distribution channel. iOS and Android stores have different policy hot zones.
+| Source | Basis | Risk | Posture |
+|---|---|---|---|
+| Greenhouse / Lever / Ashby | Public job-board APIs intended for consumption | Low | Primary, fully supported |
+| RemoteOK | Public API (`/api`), attribution-friendly | Low | Primary; honor their attribution ask |
+| LinkedIn | Public listings; TOS forbids automation | Medium-High | Disposable account, rate-capped, listings-only (ADR-0001) |
+| Threads | Public posts; no API | Medium | Seed-list, keyword-filtered, signal-only (ADR-0002) |
 
-Common policy traps:
-
-- **Off-platform commerce / digital goods** → handle through store IAP if subject to platform fee, or document why exempt.
-- **External messenger CTAs** (WhatsApp / Instagram / phone) → high rejection risk for marketplace apps.
-- **Undisclosed data collection** → privacy manifest must match actual behavior.
-- **User-generated content without moderation** → must offer block/report + admin removal.
-- **Sensitive content categories** (health, finance, kids) → extra review.
-
-Mitigation goes here:
-
--
--
+- US precedent (*hiQ v. LinkedIn*) supports scraping public data, but contractual TOS still applies — hence disposable account + low volume + listings-only.
+- Prominent disclaimer in README + ADR-0001.
+- We never republish scraped content as our own; we link back to the source `apply_url`.
 
 ---
 
-## 7. Audit Logging
+## 5. Public API Abuse Mitigation
 
-- Every admin mutation creates an audit log row: actor, action, target, before/after, timestamp, request_id.
-- Audit log is append-only.
-- Read access to audit log restricted; documented in this doc.
-
----
-
-## 8. Vulnerability Response
-
-- Security disclosure via private GitHub Security Advisory (`.github/ISSUE_TEMPLATE/config.yml`).
-- Triage SLA: acknowledge within 24h, severity within 72h.
-- Critical vulnerabilities patched within 7 days; ship release out-of-band if needed.
+- IP rate-limit: 60 req/min, burst 100 (NFR-SEC-04).
+- No bulk-export endpoint; pagination capped at 100/page.
+- Cache hot queries at the edge to absorb spikes.
+- 429 with `Retry-After` on breach.
 
 ---
 
-## 9. Compliance
+## 6. Compliance
 
 | Regulation | Applies? | Notes |
 |---|---|---|
-| GDPR | | If serving EU users |
-| CCPA | | If serving California residents |
-| HIPAA | | If health data |
-| PCI-DSS | | If touching card data directly |
-| Local data residency | | |
+| GDPR | Marginal | No EU user accounts; job data is public business data. Honor erasure requests for incidental PII in descriptions. |
+| CCPA | Marginal | Same — no sale of personal data, no user accounts. |
+| HIPAA / PCI-DSS | No | No health or card data. |
 
 ---
 
-## 10. Release Security Checklist
+## 7. Vulnerability Response
 
-- [ ] No service-role key or vendor secret in client bundle (verified via build inspection)
-- [ ] Authz tests green (positive + negative)
-- [ ] Dependency scan clean (no high/critical)
-- [ ] Secret scan on repo clean
-- [ ] PII inventory matches code reality
-- [ ] Privacy policy + ToS updated if behavior changed
-- [ ] Penetration test findings addressed (if performed this cycle)
+- Disclosure via private GitHub Security Advisory.
+- Acknowledge within 48h; patch critical within 7 days.
+
+---
+
+## 8. Release Security Checklist
+
+- [ ] No secret value committed to repo or present in client bundle (verified via build inspection + secret scan)
+- [ ] `.env.example` has key names only, no values
+- [ ] Scraper logs redact credentials before artifact upload
+- [ ] Public API rate-limit active and tested
+- [ ] No new feature scrapes or stores user profiles / contact info
+- [ ] Dependency + secret scan clean
+- [ ] Disclaimer + attribution intact in README

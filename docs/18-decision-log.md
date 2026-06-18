@@ -28,8 +28,9 @@ When NOT to write an ADR:
 
 | ID | Title | Date | Status |
 |---|---|---|---|
-| [0001](./adr/0001-record-architecture-decisions.md) | Record architecture decisions | YYYY-MM-DD | Accepted |
-| 0002 | _(your next ADR)_ | | |
+| [0001](./adr/0001-linkedin-scraping-strategy.md) | LinkedIn scraping strategy (disposable account, listings-only) | 2026-06-18 | Accepted |
+| [0002](./adr/0002-threads-inclusion.md) | Threads inclusion scope (signal-only, seed list) | 2026-06-18 | Accepted |
+| [0003](./adr/0003-storage-format.md) | Storage format (single normalized table + JSONB raw) | 2026-06-18 | Accepted |
 
 **Status values:** `Proposed` → `Accepted` → `Deprecated` (replaced by another ADR) → `Superseded`.
 

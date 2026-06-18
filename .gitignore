@@ -11,6 +11,33 @@ Thumbs.db
 # Logs
 *.log
 
+# Node / Next.js
+node_modules/
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+.vercel/
+
+# Env (never commit real secrets; .env.example is the template)
+.env
+.env.local
+.env.*.local
+
+# Python (scrapers)
+scrapers/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Test / coverage
+coverage/
+playwright-report/
+test-results/
+
 # Diagram exports (keep .mmd source, ignore renders unless explicitly committed)
 docs/diagrams/*.png
 docs/diagrams/*.svg

@@ -2,27 +2,28 @@
 
 | Field | Value |
 |---|---|
-| Version | 0.1 |
-| Owner | Tech Lead |
-| Status | Draft |
+| Version | 0.2 |
+| Owner | Muhammad Fauzi Azhar |
+| Status | Approved |
 
 ---
 
 ## 1. Stack Standards
 
-> Adapt to actual stack. The point is to make these explicit so onboarding is fast.
-
 | Area | Standard |
 |---|---|
-| Language | `<TypeScript strict / Python type-hinted / etc.>` |
-| Framework | Next.js 15 + TS strict + Tailwind v4 + Postgres + Prisma + Zustand + Zod |
-| Routing | |
-| Server state | |
-| Client state | |
-| Forms / validation | |
-| Styling | |
-| Tests | |
-| Lint / format | |
+| App language | TypeScript, `strict: true`, no implicit `any` |
+| Scraper language | Python 3.12, type-hinted, `ruff` + `mypy` |
+| Framework | Next.js 15 App Router, `src/` layout |
+| Routing | File-based App Router; Route Handlers for API under `src/app/api/` |
+| Server state | React Server Components + direct Prisma reads; no client data-fetching lib in MVP |
+| Client state | Zustand for filter/UI state; URL query is the source of truth for shareable filters |
+| Forms / validation | Zod schemas at every API boundary; shared types inferred from Zod |
+| Styling | Tailwind v4; shadcn/ui primitives; no CSS-in-JS |
+| ORM | Prisma; raw SQL only for FTS / GIN-backed queries |
+| App tests | Vitest + React Testing Library + Playwright |
+| Scraper tests | pytest + recorded fixtures |
+| Lint / format | ESLint + Prettier (app), ruff (scrapers) |
 
 ---
 
@@ -50,12 +51,12 @@
 
 ---
 
-## 5. Privacy & Logging
+## 5. Logging
 
-- Never log PII (see `13-security-compliance.md`).
+- Never log secret values (DB URL, scraper credentials, proxy URL).
 - Use structured logging with stable field names.
-- Logs go through one redaction layer before leaving the process.
-- For LLM / AI calls: never log full prompts that may contain user content; log hashes / IDs. When the AI add-on is enabled, prompt versioning, agent loop conventions, and PII handling for LLM payloads are documented in `23-prompts.md`, `24-agent-architecture.md`, and `27-data-governance.md` respectively.
+- Scraper logs go through a redaction step before being uploaded as CI artifacts.
+- Job descriptions may contain incidental third-party names — don't log full descriptions at info level; log job `id` + `source`.
 
 ---
 

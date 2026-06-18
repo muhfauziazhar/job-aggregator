@@ -1,43 +1,31 @@
-# ADR NNNN: <short title>
+# ADR-NNNN: <short title>
 
 | Field | Value |
 |---|---|
 | Date | YYYY-MM-DD |
-| Status | Proposed / Accepted / Deprecated / Superseded |
-| Deciders | |
-| Supersedes | — / ADR-NNNN |
+| Status | Proposed |
+| Deciders | Muhammad Fauzi Azhar |
+| Supersedes | — |
 
 ---
 
 ## Context
 
-<!-- What's the situation, the constraints, the forces at play? Why does a decision need to be made now? -->
-
----
+<!-- What's the situation? What forces are at play? Why does a decision need to be made now? -->
 
 ## Decision
 
-<!-- The choice. Be concrete. Refer to the chosen tech / pattern / approach by name. -->
-
----
+<!-- What did we decide? State it plainly. -->
 
 ## Consequences
 
 **Positive:**
-
 -
 
 **Negative:**
-
 -
-
-**Neutral:**
-
--
-
----
 
 ## Alternatives Considered
 
-- **`<alternative 1>`** — `<why rejected>`
-- **`<alternative 2>`** — `<why rejected>`
+<!-- What else was on the table, and why was it rejected? -->
+-
