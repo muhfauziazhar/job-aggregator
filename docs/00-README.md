@@ -1,8 +1,8 @@
-# {{PRODUCT_NAME}} — Project Documentation
+# Job Aggregator — Project Documentation
 
 | Field | Value |
 |---|---|
-| Project | {{PRODUCT_NAME}} |
+| Project | Job Aggregator |
 | Documentation Version | 0.1 |
 | Last Updated | YYYY-MM-DD |
 | Status | Draft |
@@ -11,9 +11,9 @@
 
 ## Purpose
 
-This folder is the canonical home for product, technical, and operational documentation for **{{PRODUCT_NAME}}**.
+This folder is the canonical home for product, technical, and operational documentation for **Job Aggregator**.
 
-It is built from the [`app-blueprint`](https://github.com/{{ORG_NAME}}/app-blueprint) template and follows the convention:
+It is built from the [`app-blueprint`](https://github.com/muhfauziazhar/app-blueprint) template and follows the convention:
 
 > **Docs = source of truth for *intent*. GitHub Issues + Milestones = source of truth for *progress*.**
 

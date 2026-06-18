@@ -3,21 +3,22 @@
 | Field | Value |
 |---|---|
 | Version | 0.1 |
-| Owner | Tech Lead |
-| Status | Draft |
+| Owner | Muhammad Fauzi Azhar |
+| Status | Approved |
 
 ---
 
 ## 1. Overview
 
-<!-- Two paragraphs max. What's the shape of the system, and what core principles drive the design?
-Reference relevant ADRs in docs/adr/ for any decision that needed deliberation. -->
+Job Aggregator is a **two-tier system**: a Python scraper layer that writes to Postgres, and a Next.js 15 frontend that reads from it. No real-time stream, no message queue, no microservices — a single Postgres + a single Next.js app + a handful of cron jobs is enough for MVP.
 
 Core principles:
 
-1.
-2.
-3.
+1. **Legal-first sources, risky sources last.** ATS public APIs first (Greenhouse/Lever/Ashby); LinkedIn with dummy account, accepts ban risk; Threads as bonus.
+2. **Incremental > full.** Each cron tick only fetches jobs updated since last successful run. First run = full crawl, stored separately so retry is safe.
+3. **One schema, many sources.** All sources normalized into a single `jobs` table; source attribution preserved via `source` column.
+4. **Idempotent writes.** Upserts keyed by `(source, external_id)` — re-running a scraper is safe.
+5. **No login, no cookies.** Frontend is fully public, scrapers do not need user state.
 
 ---
 
@@ -25,118 +26,99 @@ Core principles:
 
 ```mermaid
 graph LR
-  User1[End User]
-  Admin[Admin]
+  ATS[ATS APIs<br/>Greenhouse, Lever, Ashby]
+  RO[RemoteOK API]
+  LI[LinkedIn<br/>dummy account]
+  TH[Threads<br/>public web]
 
-  subgraph App[{{PRODUCT_NAME}} Client]
-    UI[UI / Screens]
-    State[State Management]
-  end
+  SCR[Scrapers<br/>Python, cron 6h]
+  DB[(Postgres<br/>jobs table)]
+  APP[Next.js 15<br/>App Router]
+  USR[Visitor<br/>public, no auth]
 
-  Backend[(Backend / API)]
-  DB[(Database)]
-  Storage[(Object Storage)]
-  Ext[(External Service A)]
-
-  User1 --> UI
-  Admin --> UI
-  UI <--> Backend
-  Backend <--> DB
-  App <--> Storage
-  Backend --> Ext
+  ATS -->|public API| SCR
+  RO -->|public JSON| SCR
+  LI -->|Selenium| SCR
+  TH -->|HTTP scrape| SCR
+  SCR -->|upsert| DB
+  DB -->|Route Handler| APP
+  APP -->|SSR/SSG| USR
 ```
-
-> Distinguish **data-plane** (carries user content) from **control-plane** (signs URLs, mints tokens) connections in the prose under the diagram.
 
 ---
 
-## 3. Client Structure
+## 3. Module Boundaries
 
-```text
-{{REPO_NAME}}/
-├── app/                    # Routes / screens
-├── src/
-│   ├── components/
-│   ├── hooks/
+```
+job-aggregator/
+├── scrapers/                  # Python 3.12
+│   ├── common/                # shared: http client, normalizer, dedupe
+│   ├── sources/
+│   │   ├── greenhouse.py
+│   │   ├── lever.py
+│   │   ├── ashby.py
+│   │   ├── remoteok.py
+│   │   ├── linkedin.py        # uses py-linkedin-jobs-scraper
+│   │   └── threads.py
+│   ├── runner.py              # entrypoint, picks source via CLI arg
+│   └── requirements.txt
+├── src/                       # Next.js 15
+│   ├── app/
+│   │   ├── page.tsx           # landing
+│   │   ├── jobs/page.tsx      # list + filter
+│   │   ├── jobs/[id]/page.tsx # detail
+│   │   └── api/
+│   │       ├── jobs/route.ts
+│   │       ├── sources/route.ts
+│   │       └── stats/route.ts
+│   ├── components/            # UI primitives + filters
 │   ├── lib/
-│   ├── services/           # API & external integrations
-│   ├── stores/
-│   ├── types/
-│   └── tests/
-├── assets/
-└── docs/                   # ← this folder
-```
-
-Domain folders inside `src/services/` and `src/components/` mirror the domains in `02-technical-requirements.md` (e.g. `auth`, `<domain1>`, `<domain2>`, `admin`).
-
----
-
-## 4. Backend Structure
-
-<!-- Adapt for your stack: Supabase Edge Functions, Next API routes, FastAPI, NestJS, etc. -->
-
-```text
-{{PRIMARY_BACKEND}}/
-├── migrations/             # SQL or framework migrations
-├── functions/              # Server-side handlers
-│   ├── <function-1>/
-│   └── <function-2>/
-├── tests/
-└── seed/
+│   │   ├── db.ts              # Prisma client
+│   │   ├── filters.ts         # filter parsing (URL <-> query)
+│   │   └── normalize.ts       # shared normalizer (mirror scrapers/common)
+│   └── types/
+├── prisma/
+│   └── schema.prisma
+├── .github/workflows/
+│   ├── scraper-cron.yml       # 6h cron, GH Actions
+│   └── ci.yml                 # lint + typecheck + test + build
+└── docs/
 ```
 
 ---
 
-## 5. Key Sequences
+## 4. Data Flow
 
-### 5.1 `<Critical journey 1 — e.g. user signs up + creates first record>`
-
-```mermaid
-sequenceDiagram
-  participant U as User
-  participant App as Client
-  participant API as Backend
-  participant DB as Database
-
-  U->>App: action
-  App->>API: request
-  API->>DB: query / mutation
-  DB-->>API: result
-  API-->>App: response
-  App-->>U: feedback
 ```
-
-### 5.2 `<Critical journey 2>`
+Cron tick (every 6h)
+  ↓
+[Per source] Check last_successful_run_at
+  ↓
+Fetch list (delta or full on first run)
+  ↓
+For each job: fetch detail if needed → normalize → upsert
+  ↓
+Mark jobs older than N days without update as expired (soft delete)
+  ↓
+Update scraper_runs table (status, counts, duration)
+```
 
 ---
 
-## 6. Cross-Cutting Concerns
+## 5. Key Decisions (see ADRs)
+
+- [ADR-0001](./adr/0001-linkedin-scraping-strategy.md): LinkedIn scraping via dummy account, accept IP/session ban risk
+- [ADR-0002](./adr/0002-threads-inclusion.md): Threads is signal-only (parse for "we're hiring" posts), not a primary source
+- [ADR-0003](./adr/0003-storage-format.md): Postgres JSONB for raw payload, not separate per-source tables
+
+---
+
+## 6. Non-Functional
 
 | Concern | Approach |
 |---|---|
-| Auth | |
-| Authz | |
-| Caching | |
-| Realtime | |
-| File upload | |
-| Background jobs | |
-| Email / notifications | |
-| AI / LLM calls | When the AI add-on is enabled, LLM routing, agent loop guardrails, prompt versioning, and per-query cost caps live in dedicated docs. See `22-eval-methodology.md`, `23-prompts.md`, `24-agent-architecture.md`, `25-llm-cost-budget.md`, `26-validation-process.md`, `27-data-governance.md`. |
-
----
-
-## 7. Environments
-
-| Env | Purpose | Notes |
-|---|---|---|
-| local | Dev | Seeded data, mocked external services where reasonable |
-| staging | QA, pilot users | Real external services, separate billing |
-| production | Live | |
-
-Detailed deploy: `11-devops-deployment.md`.
-
----
-
-## 8. Decisions
-
-Material architecture decisions are recorded as ADRs in `docs/adr/` and indexed in `18-decision-log.md`. When in doubt, write an ADR before merging.
+| Performance | Server-side pagination (cursor), Postgres indexes on `(source, posted_at)`, `(source, external_id)` unique |
+| Cost | Postgres + Vercel free tier + GH Actions free tier fits MVP; budget $5-20/mo |
+| Observability | Scraper runs logged to `scraper_runs` table; GH Actions artifacts on failure |
+| Security | No auth = small attack surface; rate-limit public API at edge; no PII stored |
+| Backups | Postgres managed backups (Vercel Postgres or Neon); daily snapshot |

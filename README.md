@@ -23,22 +23,22 @@ gh repo create <your-org>/<your-app> \
 ```bash
 cd <your-app>
 find . -type f \( -name "*.md" -o -name "*.yml" -o -name "CODEOWNERS" \) -not -path './.git/*' -exec sed -i \
-  -e 's/{{PRODUCT_NAME}}/<Real Name>/g' \
-  -e 's/{{REPO_NAME}}/<repo-slug>/g' \
-  -e 's/{{ORG_NAME}}/<your-org>/g' \
-  -e 's/{{TECH_STACK}}/<Next.js 15 + Postgres + Prisma>/g' \
-  -e 's/{{PRIMARY_BACKEND}}/<Postgres>/g' \
-  -e 's/{{TEAM_LEAD}}/<Lead Name>/g' \
+  -e 's/Job Aggregator/<Real Name>/g' \
+  -e 's/job-aggregator/<repo-slug>/g' \
+  -e 's/muhfauziazhar/<your-org>/g' \
+  -e 's/Next.js 15 + TS strict + Tailwind v4 + Postgres + Prisma + Zustand + Zod/<Next.js 15 + Postgres + Prisma>/g' \
+  -e 's/Postgres + Python scraper workers/<Postgres>/g' \
+  -e 's/Muhammad Fauzi Azhar/<Lead Name>/g' \
   {} +
 ```
 
 Placeholders to fill:
-- `{{PRODUCT_NAME}}` — full product name (e.g. *CV ATS Generator*, *ForYourPurse*)
-- `{{REPO_NAME}}` — repo slug (e.g. `cv-ats-generator`)
-- `{{ORG_NAME}}` — GitHub org / user (e.g. `muhfauziazhar`)
-- `{{TECH_STACK}}` — short stack description
-- `{{PRIMARY_BACKEND}}` — main DB / backend choice
-- `{{TEAM_LEAD}}` — accountable lead
+- `Job Aggregator` — full product name (e.g. *CV ATS Generator*, *ForYourPurse*)
+- `job-aggregator` — repo slug (e.g. `cv-ats-generator`)
+- `muhfauziazhar` — GitHub org / user (e.g. `muhfauziazhar`)
+- `Next.js 15 + TS strict + Tailwind v4 + Postgres + Prisma + Zustand + Zod` — short stack description
+- `Postgres + Python scraper workers` — main DB / backend choice
+- `Muhammad Fauzi Azhar` — accountable lead
 
 ### 3. Pick project type (standard or AI)
 

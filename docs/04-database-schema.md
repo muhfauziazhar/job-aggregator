@@ -1,122 +1,84 @@
 # 04 — Database Schema
 
-| Field | Value |
-|---|---|
-| Version | 0.1 |
-| Owner | Backend Engineer |
-| Status | Draft |
+Postgres (Prisma). Single primary table `jobs` with normalized fields. Raw payloads kept as JSONB for debugging and future re-normalization without re-crawling.
 
 ---
 
-## 1. Conventions
+## 1. Tables
 
-- Primary keys: `uuid` with `gen_random_uuid()` default unless otherwise stated.
-- All tables include `created_at` and `updated_at timestamptz NOT NULL DEFAULT now()`.
-- Soft delete = `deleted_at timestamptz` column. Hard delete only for ephemeral / cache tables.
-- Names: `snake_case`, plural table names, singular column names.
-- Foreign keys explicitly declared with `ON DELETE` / `ON UPDATE` behavior.
-- Every public table has Row-Level Security enabled. Service-role bypass only inside server-side functions.
+### `jobs`
 
----
+Primary table. One row per unique (source, external_id).
 
-## 2. Enum Types
-
-```sql
--- Example
--- CREATE TYPE user_role AS ENUM ('admin', 'member', 'guest');
-```
-
----
-
-## 3. Core Tables
-
-### `<table_1>`
-
-```sql
-CREATE TABLE public.<table_1> (
-  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  -- ...
-  created_at timestamptz NOT NULL DEFAULT now(),
-  updated_at timestamptz NOT NULL DEFAULT now()
-);
-```
-
-**Notes:**
-
--
-
-### `<table_2>`
-
-```sql
-```
-
----
-
-## 4. Relationship Diagram
-
-```mermaid
-erDiagram
-  USERS ||--o{ POSTS : authors
-  POSTS }o--|| CATEGORIES : in
-  USERS {
-    uuid id
-    text email
-    timestamptz created_at
-  }
-  POSTS {
-    uuid id
-    uuid author_id
-    text title
-  }
-```
-
----
-
-## 5. Row-Level Security Policies
-
-> Each policy must have positive AND negative tests in the RLS test suite. See `10-test-plan.md`.
-
-```sql
--- Example pattern
--- ALTER TABLE public.<table> ENABLE ROW LEVEL SECURITY;
---
--- CREATE POLICY "Users read their own rows"
---   ON public.<table>
---   FOR SELECT
---   USING (auth.uid() = user_id);
-```
-
-| Table | Policy | Allows |
+| Column | Type | Notes |
 |---|---|---|
-| | | |
+| `id` | `uuid` PK | Internal id, public-facing in URLs |
+| `source` | `text` | `greenhouse` \| `lever` \| `ashby` \| `remoteok` \| `linkedin` \| `threads` |
+| `external_id` | `text` | Id from source platform |
+| `title` | `text` | Normalized title |
+| `company` | `text` | Company name |
+| `company_domain` | `text?` | For ATS we know; for LinkedIn, derive |
+| `location` | `text` | Free-text location |
+| `remote_type` | `enum` | `remote` \| `hybrid` \| `onsite` \| `unknown` |
+| `department` | `text?` | From ATS `departments` field |
+| `description` | `text` | Plain text, may include HTML stripped |
+| `apply_url` | `text` | Direct apply URL |
+| `posted_at` | `timestamptz` | From source |
+| `expires_at` | `timestamptz?` | When we mark expired |
+| `first_seen_at` | `timestamptz` | When we first ingested |
+| `last_seen_at` | `timestamptz` | Last successful crawl that saw this job |
+| `updated_source_at` | `timestamptz?` | Source's own updated_at |
+| `salary_min` | `int?` | Annualized, in `salary_currency` |
+| `salary_max` | `int?` | Annualized |
+| `salary_currency` | `text?` | ISO 4217 |
+| `tier` | `enum` | `intern` \| `entry` \| `mid` \| `senior` \| `staff` \| `principal` \| `unknown` |
+| `tech_stack` | `text[]` | Extracted tags: `["go", "postgres", "kubernetes"]` |
+| `raw` | `jsonb` | Original source payload for debug |
+| `is_expired` | `bool` | Soft-delete marker |
+
+**Indexes:**
+
+- `UNIQUE (source, external_id)` — dedupe key
+- `(source, posted_at DESC)` — per-source recent listings
+- `(is_expired, posted_at DESC)` WHERE `is_expired = false` — active jobs only
+- `gin (tech_stack)` — tech-stack filter
+- `gin (to_tsvector('english', title || ' ' || company || ' ' || description))` — full-text search
 
 ---
 
-## 6. Indexes
+### `scraper_runs`
 
-> Index decisions justified by access patterns in `05-api-specification.md` and known query plans.
+Operational log of cron executions.
 
-```sql
--- CREATE INDEX <table>_<col>_idx ON public.<table> (<col>);
-```
-
----
-
-## 7. Migration Strategy
-
-- Migrations are reviewed via PR; never edited after merge.
-- Backfills that touch > 100k rows ship in a separate migration with batching + progress logging.
-- Destructive changes (drop column, drop table) follow the **expand → migrate → contract** pattern across releases.
-- Seed data lives in `seed/` and is environment-aware.
-
----
-
-## 8. Backup & Retention
-
-| Asset | Backup frequency | Retention |
+| Column | Type | Notes |
 |---|---|---|
-| Database | | |
-| Object storage | | |
-| Audit logs | | |
+| `id` | `uuid` PK | |
+| `source` | `text` | Which scraper |
+| `started_at` | `timestamptz` | |
+| `finished_at` | `timestamptz?` | |
+| `status` | `enum` | `running` \| `success` \| `partial` \| `failed` |
+| `mode` | `enum` | `full` \| `incremental` |
+| `jobs_seen` | `int` | Count of records encountered |
+| `jobs_inserted` | `int` | |
+| `jobs_updated` | `int` | |
+| `jobs_expired` | `int` | |
+| `error_message` | `text?` | |
+| `metadata` | `jsonb` | Source-specific stats (e.g. pages crawled) |
 
-Detailed DR plan: `19-observability-runbook.md`.
+**Indexes:** `(source, started_at DESC)`.
+
+---
+
+## 2. Migration Strategy
+
+- Prisma migrate; version-controlled migrations in `prisma/migrations/`.
+- First deploy seeds schema only — no backfill (scrapers populate `jobs` on first run).
+- Adding columns (e.g. `salary_currency` later) = additive migrations, no rewrite needed.
+
+---
+
+## 3. Row Estimates (MVP)
+
+- 6 sources × ~50K active jobs average × 1.5 (post/dedup) ≈ 450K rows active.
+- Soft-deleted (expired) grow ~30K/day, GC after 90d = ~2.7M rows max.
+- `jobs` table with JSONB ~ 500KB/row → ~1.4 GB at steady state. Comfortable on a small Postgres.

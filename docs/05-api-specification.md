@@ -1,165 +1,134 @@
-# 05 — API & Integration Specification
+# 05 — API Specification
 
-| Field | Value |
-|---|---|
-| Version | 0.1 |
-| Owner | Backend Engineer |
-| Status | Draft |
+Public read-only API. No auth, no writes from client. All responses JSON.
 
 ---
 
-## 1. Overview
+## 1. Conventions
 
-API surface for {{PRODUCT_NAME}}.
-
-| Surface | Used by | Auth |
-|---|---|---|
-| Direct DB / ORM (RLS-protected reads & writes) | Client | User JWT |
-| Server functions / API endpoints | Client | User JWT |
-| Webhooks (inbound) | External services | Signing secret |
-| Internal admin endpoints | Admin UI / scripts | Service role |
+- Base URL: `https://jobagg.muhfauziazhar.com/api` (placeholder, set at deploy)
+- Content-Type: `application/json`
+- All times ISO 8601 UTC
+- Pagination: cursor-based
+- Errors: `{ "error": { "code": "string", "message": "string", "details"?: {} } }`
 
 ---
 
-## 2. Conventions
+## 2. Endpoints
 
-### 2.1 Base URL
+### `GET /api/jobs`
 
-| Env | URL |
-|---|---|
-| local | `http://localhost:<port>` |
-| staging | `https://staging.api.{{PRODUCT_NAME_LOWER}}.<tld>` |
-| production | `https://api.{{PRODUCT_NAME_LOWER}}.<tld>` |
+List jobs with filter + sort + paginate.
 
-### 2.2 Auth header
+**Query parameters:**
 
-```
-Authorization: Bearer <jwt>
-```
-
-### 2.3 Request ID
-
-Every request must include or be assigned `X-Request-Id` (UUID v4). The server echoes it in responses and logs.
-
-### 2.4 Error Envelope (standard)
-
-All non-2xx responses use this shape:
-
-```json
-{
-  "error": {
-    "code": "string.snake_case",
-    "message": "Human-readable summary",
-    "details": { "field": "optional structured detail" },
-    "request_id": "uuid"
-  }
-}
-```
-
-| HTTP | When |
-|---|---|
-| 400 | Validation failure (`code: "validation_failed"`) |
-| 401 | Missing / invalid auth |
-| 403 | Authn'd but not authorized |
-| 404 | Resource not found OR hidden by RLS (don't leak existence) |
-| 409 | Conflict (uniqueness, state mismatch) |
-| 422 | Semantic validation failure |
-| 429 | Rate-limited (`Retry-After` header set) |
-| 500 | Unexpected server error (logged; client shows generic copy) |
-| 503 | Dependency down (degraded mode) |
-
-### 2.5 Pagination
-
-Cursor-based by default:
-
-```
-GET /resources?limit=50&cursor=<opaque>
-```
-
-Response:
-
-```json
-{
-  "data": [ ... ],
-  "next_cursor": "opaque-or-null"
-}
-```
-
-### 2.6 Idempotency
-
-Mutating endpoints accept `Idempotency-Key` header. Server stores result for 24h and replays on retry.
-
----
-
-## 3. Endpoints
-
-> Group by domain. Each entry: method, path, auth required, request, response, error cases.
-
-### 3.1 `<Domain — e.g. Auth>`
-
-#### `POST /<endpoint>`
-
-**Purpose:**
-
-**Auth:** required / optional / service role
-
-**Request:**
-
-```json
-{
-}
-```
+| Param | Type | Default | Notes |
+|---|---|---|---|
+| `q` | string | — | Full-text search across title/company/description |
+| `source` | string[] | — | Filter by source. Repeat param or comma-separate |
+| `tier` | string[] | — | `entry`, `mid`, `senior`, etc. |
+| `remote` | string[] | — | `remote`, `hybrid`, `onsite` |
+| `tech` | string[] | — | Tech-stack tags. Repeat/comma |
+| `company` | string | — | Exact match (case-insensitive) |
+| `posted_after` | ISO date | — | `posted_at >= posted_after` |
+| `sort` | enum | `recent` | `recent` \| `relevance` (only with `q`) |
+| `cursor` | string | — | Opaque cursor from prior response |
+| `limit` | int | `20` | Max `100` |
 
 **Response 200:**
 
 ```json
 {
+  "data": [
+    {
+      "id": "uuid",
+      "source": "greenhouse",
+      "title": "Senior Backend Engineer",
+      "company": "Acme Inc",
+      "location": "Remote (US)",
+      "remote_type": "remote",
+      "tier": "senior",
+      "tech_stack": ["go", "postgres"],
+      "salary_min": 150000,
+      "salary_max": 200000,
+      "salary_currency": "USD",
+      "apply_url": "https://...",
+      "posted_at": "2026-06-15T10:00:00Z",
+      "first_seen_at": "2026-06-15T10:05:23Z"
+    }
+  ],
+  "next_cursor": "string|null",
+  "total_estimate": 12345
 }
 ```
 
-**Errors:**
+---
 
-| Code | Trigger |
-|---|---|
-| `validation_failed` | |
-| `not_found` | |
+### `GET /api/jobs/:id`
+
+Single job detail.
+
+**Response 200:** Full job object including `description`, `raw` (truncated to 50KB).
+
+**Response 404:** `{ "error": { "code": "not_found" } }`
 
 ---
 
-### 3.2 `<Domain 2>`
+### `GET /api/sources`
+
+List sources with aggregate counts.
+
+**Response 200:**
+
+```json
+{
+  "data": [
+    { "source": "greenhouse", "active_count": 82341, "last_run_at": "...", "last_run_status": "success" },
+    ...
+  ]
+}
+```
 
 ---
 
-## 4. Webhooks (Inbound)
+### `GET /api/stats`
 
-| Source | Endpoint | Verification |
+High-level system stats.
+
+**Response 200:**
+
+```json
+{
+  "total_active": 234567,
+  "by_source": { "greenhouse": 82341, ... },
+  "by_tier": { "mid": 120000, ... },
+  "freshness_p50_hours": 4.2,
+  "freshness_p90_hours": 11.8
+}
+```
+
+---
+
+## 3. Errors
+
+| HTTP | Code | When |
 |---|---|---|
-| | | HMAC-SHA256 over body, header `X-Signature`, secret in vault |
+| 400 | `invalid_query` | Bad filter, e.g. unknown source |
+| 404 | `not_found` | Job id not in DB |
+| 429 | `rate_limited` | IP exceeded quota (e.g. 60 req/min) |
+| 500 | `internal_error` | Unhandled exception (logged server-side) |
 
 ---
 
-## 5. External Integrations (Outbound)
+## 4. Rate Limiting
 
-| Service | Purpose | Auth | Rate limit |
-|---|---|---|---|
-| | | | |
-
----
-
-## 6. Realtime / Streaming
-
-| Channel | Payload | Subscribers |
-|---|---|---|
+- Anonymous IP: 60 req/min, burst 100.
+- Strategy: Vercel Edge Middleware + Upstash Redis (or simple in-memory if self-hosting single region).
+- 429 includes `Retry-After` header.
 
 ---
 
-## 7. Versioning
+## 5. Versioning
 
-API uses URL path versioning when needed: `/v1/...`. Breaking changes require a new version + 90-day deprecation window.
-
----
-
-## 8. Open Questions
-
-| ID | Question | Owner | Due |
-|---|---|---|---|
+- Path-based: `/api/v1/...` once we ship breaking changes.
+- For MVP, no `/v1` prefix; add when needed.

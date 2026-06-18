@@ -21,7 +21,7 @@ Add a term when:
 
 ## Domain Terms
 
-> Replace examples below with terms relevant to {{PRODUCT_NAME}}.
+> Replace examples below with terms relevant to Job Aggregator.
 
 | Term | Definition | First used in |
 |---|---|---|

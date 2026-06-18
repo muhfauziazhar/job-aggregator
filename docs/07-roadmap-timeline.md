@@ -1,115 +1,92 @@
 # 07 — Roadmap & Timeline
 
-| Field | Value |
-|---|---|
-| Version | 0.1 |
-| Owner | PM |
-| Status | Draft |
+Milestones. Each has explicit exit criteria.
 
 ---
 
-## 1. Phasing Approach
+## M0 — Project Setup
 
-Each milestone has:
-- A **theme** (one sentence).
-- An **exit criteria** list — concrete, demonstrable.
-- A set of stories (from `06-user-stories.md`) it delivers.
+**Goal:** Repo scaffolded, docs filled, CI green, scraper cron live, schema migrated.
 
-When a milestone is approved here, the PM creates a matching **GitHub Milestone** with a due date and assigns its stories.
+**Scope:**
+- Repo from `app-blueprint` template ✓
+- Bucket A docs (charter, architecture) marked Approved
+- Bucket B docs (schema, API, user stories, roadmap, devops) drafted
+- Labels, milestones, M1 issues seeded
+- Prisma schema migrated to staging Postgres
+- CI green (lint + typecheck + test + build on PR)
 
----
-
-## 2. Milestones
-
-### M0 — Project Setup & Spike
-
-**Theme:** Validate critical technical assumptions before writing product code.
-
-**Duration:** ~1–2 weeks
-
-**Includes:**
-
-- Repo / CI / environments bootstrapped
-- Auth provider configured
-- Risky integration spikes (`docs/spikes/`) for any vendor that hasn't been used by the team before
-- Initial schema + seed data
-
-**Exit Criteria:**
-
-- [ ] App builds and runs locally for every engineer
-- [ ] Staging deploy works end-to-end (even if app shows "Hello world")
-- [ ] All P0 spikes have documented findings (pass/fail/conditional)
-- [ ] All vendor accounts and API keys provisioned
+**Exit criteria:**
+- [ ] All placeholders replaced
+- [ ] 4 milestones visible on GitHub
+- [ ] 20 user-story issues seeded under M1
+- [ ] Vercel preview deploy renders `/`
+- [ ] CI green on main
 
 ---
 
-### M1 — `<Theme>`
+## M1 — Core MVP
 
-**Theme:**
+**Goal:** End-to-end job browsing experience with 4 ATS sources live.
 
-**Duration:**
+**Scope:**
+- US-01 to US-08 (frontend + API)
+- US-09 to US-12 (Greenhouse, Lever, Ashby, RemoteOK scrapers)
+- US-13, US-14 (tier + tech classifiers)
+- US-17 (cron workflow)
+- US-18 (first-run full crawl)
+- US-19 (expire stale)
+- US-20 (Vercel deploy)
 
-**Includes:**
-
--
-
-**Exit Criteria:**
-
-- [ ]
-
----
-
-### M2 — `<Theme>`
-
----
-
-### M3 — `<Theme>`
+**Exit criteria:**
+- [ ] 4 ATS scrapers running on 6h cron, success rate ≥ 90% over 7 days
+- [ ] Frontend at `/jobs` returns ≥ 50K listings, searchable + filterable
+- [ ] Lighthouse Performance (mobile) ≥ 85
+- [ ] Public API responds < 500ms p95
+- [ ] `docs/15-definition-of-done.md` checklist green
 
 ---
 
-### MN — `<MVP Release>`
+## M2 — Polish & Launch
 
-**Theme:** Ready for first real users.
+**Goal:** Production-grade launch with LinkedIn + Threads + analytics.
 
-**Exit Criteria:**
+**Scope:**
+- US-15 (LinkedIn scraper)
+- US-16 (Threads scraper)
+- URL state sync for filters (shareable searches)
+- Source stats page (US-08 polish)
+- OG meta tags for share previews
+- Error monitoring (Sentry or similar)
+- Public launch post (HackerNews Show, Reddit r/cscareerquestions, dev.to)
 
-- [ ] All Must stories complete (`06-user-stories.md`)
-- [ ] All P0/P1 bugs closed
-- [ ] Release DoD passed (`15-definition-of-done.md`)
-- [ ] Privacy policy + ToS live
-- [ ] Rollback plan documented in `19-observability-runbook.md`
-- [ ] Sponsor sign-off
-
----
-
-## 3. Timeline (Gantt)
-
-```mermaid
-gantt
-  title {{PRODUCT_NAME}} Roadmap
-  dateFormat YYYY-MM-DD
-  section Foundation
-    M0 Setup & Spike       :m0, 2026-MM-DD, 14d
-    M1 <Theme>             :m1, after m0, 21d
-  section Build
-    M2 <Theme>             :m2, after m1, 28d
-    M3 <Theme>             :m3, after m2, 21d
-  section Release
-    MN Release Candidate   :mn, after m3, 14d
-```
+**Exit criteria:**
+- [ ] 6 sources live, ≥ 100K active listings
+- [ ] Median freshness < 12h
+- [ ] Public launch post published
+- [ ] 1000 unique visitors in first week
 
 ---
 
-## 4. Capacity Assumption
+## M3 — Post-MVP
 
-Roadmap assumes the team described in `08-team-raci.md`. Slippage on a milestone triggers a re-plan, not silent overflow into the next.
+Candidates (re-prioritize after M2 feedback):
+
+- Indonesian sources (Glints, Tech in Asia, Dealls)
+- Email digest opt-in
+- Saved searches with webhook alerts
+- Salary distribution charts
+- Company pages (aggregate jobs per company)
+- Application tracker (requires auth)
+- Auto-apply (against charter — likely declined)
+- RSS feeds per source/tag combo
+- Slack/Discord bot integration
+- Sponsor slots / job highlight (ethical only — labeled)
 
 ---
 
-## 5. Decision Triggers
+## Open Questions (carry into M1+)
 
-| Trigger | Action |
-|---|---|
-| Spike fails during M0 | Re-evaluate architecture (`03`) and stack choice; may delay M1 |
-| Pilot < target sellers/users by end of M`<n>` | Pause feature work, focus on acquisition |
-| Critical security/privacy issue | Halt next release, fix-and-verify before resuming |
+- LinkedIn account rotation: 1 dummy vs pool? (ADR-0001)
+- Self-host vs Vercel-only? Cost-vs-simplicity trade-off.
+- Add `company` as a separate table for analytics, or denormalize? See ADR-0003.

@@ -15,7 +15,7 @@
 | Area | Standard |
 |---|---|
 | Language | `<TypeScript strict / Python type-hinted / etc.>` |
-| Framework | {{TECH_STACK}} |
+| Framework | Next.js 15 + TS strict + Tailwind v4 + Postgres + Prisma + Zustand + Zod |
 | Routing | |
 | Server state | |
 | Client state | |

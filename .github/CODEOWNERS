@@ -1,14 +1,14 @@
 # Default — at least one approval from anyone in this list.
-# *       @{{ORG_NAME}}/engineering
+# *       @muhfauziazhar/engineering
 
 # Critical docs need tech lead review
-/docs/03-architecture.md          @{{TEAM_LEAD}}
-/docs/04-database-schema.md       @{{TEAM_LEAD}}
-/docs/05-api-specification.md     @{{TEAM_LEAD}}
-/docs/13-security-compliance.md   @{{TEAM_LEAD}}
-/docs/16-coding-standards.md      @{{TEAM_LEAD}}
-/docs/18-decision-log.md          @{{TEAM_LEAD}}
-/docs/adr/                        @{{TEAM_LEAD}}
+/docs/03-architecture.md          @Muhammad Fauzi Azhar
+/docs/04-database-schema.md       @Muhammad Fauzi Azhar
+/docs/05-api-specification.md     @Muhammad Fauzi Azhar
+/docs/13-security-compliance.md   @Muhammad Fauzi Azhar
+/docs/16-coding-standards.md      @Muhammad Fauzi Azhar
+/docs/18-decision-log.md          @Muhammad Fauzi Azhar
+/docs/adr/                        @Muhammad Fauzi Azhar
 
 # CI / infra
-/.github/                          @{{TEAM_LEAD}}
+/.github/                          @Muhammad Fauzi Azhar

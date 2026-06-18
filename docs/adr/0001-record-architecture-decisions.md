@@ -4,7 +4,7 @@
 |---|---|
 | Date | YYYY-MM-DD |
 | Status | Accepted |
-| Deciders | {{TEAM_LEAD}}, PM |
+| Deciders | Muhammad Fauzi Azhar, PM |
 | Supersedes | — |
 
 ---

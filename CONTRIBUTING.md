@@ -1,4 +1,4 @@
-# Contributing to {{PRODUCT_NAME}}
+# Contributing to Job Aggregator
 
 This project follows a **docs-first, PR-driven** development flow. Read this once before your first contribution.
 

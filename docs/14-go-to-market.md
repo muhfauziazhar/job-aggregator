@@ -12,7 +12,7 @@
 
 <!-- One sentence that a customer can repeat back. -->
 
-{{PRODUCT_NAME}} is `<one-line positioning>`.
+Job Aggregator is `<one-line positioning>`.
 
 **Core promise:**
 
