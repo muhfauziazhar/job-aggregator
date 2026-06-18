@@ -1,0 +1,51 @@
+name: PR Conventions
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+
+permissions:
+  pull-requests: read
+
+jobs:
+  conventional-title:
+    name: Conventional commit title
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate PR title
+        uses: amannn/action-semantic-pull-request@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          types: |
+            feat
+            fix
+            chore
+            docs
+            refactor
+            test
+            perf
+            ci
+            build
+            revert
+          requireScope: false
+          subjectPattern: ^(?![A-Z]).+$
+          subjectPatternError: |
+            The subject "{subject}" found in the PR title "{title}" must start lowercase
+            (e.g. "feat: add JD matcher", not "feat: Add JD matcher").
+
+  closes-issue:
+    name: Body must reference an issue
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for issue reference
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+        run: |
+          if echo "$PR_BODY" | grep -qiE '(closes|fixes|resolves|refs?)[ \t]+#[0-9]+'; then
+            echo "✓ PR body references an issue."
+            exit 0
+          fi
+          echo "✗ PR body must contain 'Closes #N', 'Fixes #N', 'Resolves #N', or 'Refs #N'."
+          echo "Add it so merge auto-links the work to the tracking issue."
+          exit 1

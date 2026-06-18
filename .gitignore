@@ -1,0 +1,18 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Diagram exports (keep .mmd source, ignore renders unless explicitly committed)
+docs/diagrams/*.png
+docs/diagrams/*.svg
+!docs/diagrams/*.committed.png
+!docs/diagrams/*.committed.svg
