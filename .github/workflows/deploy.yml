@@ -4,6 +4,12 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # The scraper cron commits data with GITHUB_TOKEN, which by design does NOT
+  # trigger other workflows. Redeploy when "Scrape jobs" finishes so a fresh
+  # jobs.json actually reaches the site.
+  workflow_run:
+    workflows: ["Scrape jobs"]
+    types: [completed]
 
 # Allow GITHUB_TOKEN to deploy to Pages.
 permissions:
@@ -21,9 +27,15 @@ jobs:
   build:
     name: Build static export
     runs-on: ubuntu-latest
+    # On a workflow_run trigger, only deploy if the scrape actually succeeded.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Always build the latest main (includes the cron's data commit),
+          # regardless of which event triggered this run.
+          ref: main
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
