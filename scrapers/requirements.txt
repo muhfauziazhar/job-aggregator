@@ -1,6 +1,6 @@
 # Core scraper deps
 requests>=2.32,<3
+beautifulsoup4>=4.12,<5
 
-# LinkedIn scraper (US-15) — uncomment when implementing the Selenium path:
-# linkedin-jobs-scraper>=4.0
-# selenium>=4.20
+# LinkedIn uses the public guest jobs endpoint (no login) parsed with
+# BeautifulSoup. A Selenium/account path is not required.
