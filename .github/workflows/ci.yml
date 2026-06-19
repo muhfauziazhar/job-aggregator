@@ -13,12 +13,6 @@ concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
 
-env:
-  # Prisma's postinstall runs `prisma generate`, which loads prisma.config.ts.
-  # No real DB is contacted during generate / lint / typecheck / test / build,
-  # but the env var must be present so dotenv/config doesn't choke.
-  DATABASE_URL: "postgresql://ci:ci@localhost:5432/ci?schema=public"
-
 jobs:
   verify:
     name: lint · typecheck · test · build
