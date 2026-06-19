@@ -1,5 +1,14 @@
 # 11 — DevOps & Deployment
 
+> **v0.2 pivot:** deploy target is **GitHub Pages** (static), not Vercel; there
+> is no Postgres. CI = `ci.yml` (lint/typecheck/test/build). CD = `deploy.yml`
+> (build static export → Pages on push to `main`). Data = `scraper-cron.yml`
+> (6h scrape → commit `public/data/jobs.json` → triggers a redeploy).
+> One-time manual step: **Settings → Pages → Source: GitHub Actions**.
+> Secrets (optional, for LinkedIn): `LINKEDIN_EMAIL`, `LINKEDIN_PASSWORD`,
+> `RESIDENTIAL_PROXY_URL`. The sections below describe the original Vercel/Neon
+> plan and are retained for reference.
+
 ---
 
 ## 1. Environments

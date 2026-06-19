@@ -1,5 +1,11 @@
 # 04 — Database Schema
 
+> **⚠️ Superseded by the v0.2 static pivot.** There is no longer a database.
+> The job data contract is now the Zod schema in **`src/types/job.ts`**, published
+> as `public/data/jobs.json`. This document is kept for historical reference and
+> as the field reference the JSON shape still mirrors (storage-only fields — raw
+> payload, first/last seen, is_expired — were dropped from the published JSON).
+
 Postgres (Prisma). Single primary table `jobs` with normalized fields. Raw payloads kept as JSONB for debugging and future re-normalization without re-crawling.
 
 ---
