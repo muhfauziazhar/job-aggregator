@@ -2,6 +2,12 @@
 
 Milestones. Each has explicit exit criteria.
 
+> **v0.2 pivot:** the project is now a static site (GitHub Pages) with a JSON
+> data file, and sources are RemoteOK + LinkedIn + Threads (the ATS scrapers
+> US-09..US-11 are dropped — covered by Feashliaa). RemoteOK, the cron, the
+> tier/tech classifiers, expiry, and the frontend filters/search are done; what
+> remains in M1 is wiring up the live Pages deploy and the source-stats page.
+
 ---
 
 ## M0 — Project Setup
@@ -27,22 +33,25 @@ Milestones. Each has explicit exit criteria.
 
 ## M1 — Core MVP
 
-**Goal:** End-to-end job browsing experience with 4 ATS sources live.
+**Goal:** End-to-end static job board with the RemoteOK source live.
 
 **Scope:**
-- US-01 to US-08 (frontend + API)
-- US-09 to US-12 (Greenhouse, Lever, Ashby, RemoteOK scrapers)
-- US-13, US-14 (tier + tech classifiers)
-- US-17 (cron workflow)
-- US-18 (first-run full crawl)
-- US-19 (expire stale)
-- US-20 (Vercel deploy)
+- US-01 to US-06 (browse + filters + search, client-side) — **done**
+- US-07 (job detail) — **done** as inline expand (no dedicated page on a static site)
+- US-08 (source stats page) — open
+- US-12 (RemoteOK scraper) — **done**
+- US-13, US-14 (tier + tech classifiers) — **done**
+- US-17 (cron workflow) — **done**
+- US-18 (first-run full crawl) — **done** (runner crawls from an empty file)
+- US-19 (expire stale, >30d) — **done**
+- US-20 (deploy) — **repurposed** from Vercel to GitHub Pages; workflow in place, pending Pages enablement + first live deploy
+
+**Dropped:** US-09 (Greenhouse), US-10 (Lever), US-11 (Ashby) — ATS sources covered by Feashliaa.
 
 **Exit criteria:**
-- [ ] 4 ATS scrapers running on 6h cron, success rate ≥ 90% over 7 days
-- [ ] Frontend at `/jobs` returns ≥ 50K listings, searchable + filterable
+- [ ] RemoteOK scraper running on 6h cron, refreshing jobs.json
+- [ ] Static site deployed on GitHub Pages, loads and filters/searches the data
 - [ ] Lighthouse Performance (mobile) ≥ 85
-- [ ] Public API responds < 500ms p95
 - [ ] `docs/15-definition-of-done.md` checklist green
 
 ---
@@ -52,16 +61,15 @@ Milestones. Each has explicit exit criteria.
 **Goal:** Production-grade launch with LinkedIn + Threads + analytics.
 
 **Scope:**
-- US-15 (LinkedIn scraper)
-- US-16 (Threads scraper)
-- URL state sync for filters (shareable searches)
-- Source stats page (US-08 polish)
+- US-15 (LinkedIn scraper — implement the scaffold)
+- US-16 (Threads scraper — implement the scaffold)
+- ~~URL state sync for filters~~ — **done early** in M1
 - OG meta tags for share previews
-- Error monitoring (Sentry or similar)
+- Error monitoring (optional)
 - Public launch post (HackerNews Show, Reddit r/cscareerquestions, dev.to)
 
 **Exit criteria:**
-- [ ] 6 sources live, ≥ 100K active listings
+- [ ] 3 sources live (RemoteOK + LinkedIn + Threads)
 - [ ] Median freshness < 12h
 - [ ] Public launch post published
 - [ ] 1000 unique visitors in first week

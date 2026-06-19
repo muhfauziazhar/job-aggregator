@@ -1,8 +1,8 @@
 # Job Aggregator
 
-> Multi-source software engineering job board — Greenhouse, Lever, Ashby, RemoteOK, LinkedIn, Threads. No login, no upsell, no auto-apply. Just fresh listings, taggable by tech stack and seniority.
+> Software engineering job board — fresh listings from RemoteOK, with LinkedIn and Threads hiring posts as bonus sources. No login, no upsell, no auto-apply. Just a searchable table, filterable by tech stack and seniority.
 
-**Live:** _coming soon_ · **Stack:** Next.js 16 · TypeScript strict · Tailwind v4 · Postgres · Prisma · Zustand · Zod · Python scrapers
+**Live:** _coming soon (GitHub Pages)_ · **Stack:** Next.js 16 (static export) · TypeScript strict · Tailwind v4 · Zustand · Zod · Python scrapers
 
 ---
 
@@ -10,35 +10,39 @@
 
 LinkedIn buries fresh roles behind login walls and "promoted" noise. Indeed throws aggregator spam at you. Glassdoor needs an account. Most job boards optimize for engagement, not signal.
 
-**Job Aggregator** does one thing: collect fresh software engineering listings from multiple sources into a single searchable table, with strong filters (source, remote type, tech stack, seniority tier). No login. No tracking. No emails. Open source — self-host if you want.
+**Job Aggregator** does one thing: collect fresh software engineering listings into a single searchable table, with strong filters (source, remote type, tech stack, seniority tier). No login. No tracking. No emails. No database to run — the whole thing is a static site plus a scraper. Open source — fork it and self-host for free.
+
+This project deliberately **does not** re-scrape the ATS platforms (Greenhouse, Lever, Ashby, BambooHR, iCIMS, Workday, …) already covered well by [`Feashliaa/job-board-aggregator`](https://github.com/Feashliaa/job-board-aggregator). It focuses on sources that project doesn't: RemoteOK now, LinkedIn and Threads next.
 
 ---
 
 ## Features
 
-- **6 sources:** Greenhouse, Lever, Ashby, RemoteOK, LinkedIn, Threads (hiring posts)
-- **Filter by:** source ATS, remote/hybrid/onsite, seniority tier (entry/mid/senior/staff/principal), tech stack tags, company, posted date
-- **Full-text search** across title / company / description (Postgres FTS)
-- **6h incremental crawl** — new and updated jobs land within hours
-- **Salary extraction** when source exposes it (Ashby, Lever, some Greenhouse)
-- **Public API** — every page is also an API endpoint, no auth required
-- **Self-hostable** — single Postgres + single Next.js + cron workers
+- **Sources:** RemoteOK (live), LinkedIn + Threads hiring posts (scaffolded, see roadmap)
+- **Filter by:** source, remote/hybrid/onsite, seniority tier (intern/entry/mid/senior/staff/principal), tech stack tags
+- **Full-text search** across title / company / description — runs client-side, instantly
+- **Shareable searches** — every filter lives in the URL
+- **6h refresh** — a cron scraper republishes the data
+- **Salary extraction** when the source exposes it
+- **Zero backend** — static export, no server, no database
+- **Self-hostable for free** — fork → enable GitHub Pages → done
 
 ---
 
 ## Architecture
 
 ```
-[Scrapers (Python, cron 6h)]
-  Greenhouse · Lever · Ashby · RemoteOK · LinkedIn · Threads
-            ↓ upsert (source, external_id)
-       [Postgres]
+[Scraper (Python, GitHub Actions cron 6h)]
+  RemoteOK · LinkedIn* · Threads*          (*scaffolded)
+            ↓ scrape → normalize → tag → merge → prune (>30d)
+   public/data/jobs.json   (committed to the repo)
+            ↓ git push to main
+[GitHub Actions: build Next.js static export → deploy to GitHub Pages]
             ↓
-[Next.js 16 App Router]
-  /jobs · /jobs/[id] · /sources · /api/*
+[Static site] loads jobs.json client-side → filter / search / paginate
 ```
 
-See [`docs/03-architecture.md`](./docs/03-architecture.md) for full diagram and decision rationale.
+No database. The scraper produces a JSON file; the frontend reads it in the browser. See [`docs/03-architecture.md`](./docs/03-architecture.md).
 
 ---
 
@@ -46,12 +50,11 @@ See [`docs/03-architecture.md`](./docs/03-architecture.md) for full diagram and 
 
 | Layer | Tools |
 |---|---|
-| Frontend | Next.js 16 (App Router), TS strict, Tailwind v4, Zustand, shadcn/ui |
-| Backend | Next.js Route Handlers + Zod validation |
-| Database | Postgres 16, Prisma ORM |
-| Scraper | Python 3.12, `requests`, `concurrent.futures`, Selenium (LinkedIn) |
+| Frontend | Next.js 16 App Router (`output: 'export'`), TS strict, Tailwind v4, Zustand, Zod |
+| Data | `public/data/jobs.json` (validated with Zod against `src/types/job.ts`) |
+| Scraper | Python 3.12, `requests` (Selenium for LinkedIn when implemented) |
 | Cron | GitHub Actions every 6h |
-| Deploy | Vercel (app) + Neon (Postgres) + GH Actions (cron) |
+| Deploy | GitHub Pages (static) |
 
 ---
 
@@ -59,61 +62,72 @@ See [`docs/03-architecture.md`](./docs/03-architecture.md) for full diagram and 
 
 ### Prerequisites
 
-- Node.js 20+
-- Python 3.12+
-- Docker (for local Postgres)
-- `gh` CLI authenticated
+- Node.js 22+ and [pnpm](https://pnpm.io)
+- Python 3.12+ (only if running the scrapers)
 
-### Setup
+### App
 
 ```bash
-# 1. Clone
-git clone https://github.com/muhfauziazhar/job-aggregator.git
-cd job-aggregator
-
-# 2. Postgres
-docker run -d --name jobagg-pg -p 54321:5432 \
-  -e POSTGRES_PASSWORD=dev \
-  -e POSTGRES_DB=jobagg \
-  postgres:16
-
-# 3. App
-npm install
-cp .env.example .env.local   # fill DATABASE_URL
-npx prisma migrate dev
-npm run dev                  # → http://localhost:3000
-
-# 4. Scraper (in another terminal)
-cd scrapers
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-python runner.py --source greenhouse --mode full
+pnpm install
+pnpm dev            # → http://localhost:3000
 ```
+
+The app reads `public/data/jobs.json`, which is committed, so it runs with real data out of the box.
+
+### Scrapers
+
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -r scrapers/requirements.txt
+
+# Refresh jobs.json from all sources (run from the repo root):
+python -m scrapers.runner --source all
+
+# Or a single source, capped, without writing:
+python -m scrapers.runner --source remoteok --limit 20 --dry-run
+```
+
+### Quality gate
+
+```bash
+pnpm lint && pnpm typecheck && pnpm test && pnpm build
+```
+
+---
+
+## Deployment (GitHub Pages)
+
+One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+
+After that it's automatic:
+
+- Push to `main` → `.github/workflows/deploy.yml` builds the static export and deploys it.
+- The scraper cron (`.github/workflows/scraper-cron.yml`) commits a fresh `jobs.json` every 6h, which triggers a redeploy.
+
+The site is served under `/job-aggregator` (configured via `basePath` in `next.config.ts`).
 
 ---
 
 ## Project Status
 
-Public open source, in active MVP build. Track progress on the [Issues](../../issues) page.
+In active MVP build. Track progress on the [Issues](../../issues) page.
 
-| Milestone | Status |
-|---|---|
-| M0 — Project Setup | Open |
-| M1 — Core MVP (4 ATS + frontend) | Open |
-| M2 — Polish & Launch (LinkedIn + Threads) | Open |
-| M3 — Post-MVP | Planned |
+| Milestone | Focus | Status |
+|---|---|---|
+| M0 — Project Setup | Scaffolding, CI, deploy | Done |
+| M1 — Core MVP | Static site + filters/search + RemoteOK scraper + cron | In progress |
+| M2 — Polish & Launch | LinkedIn + Threads scrapers, OG tags, launch | Planned |
+| M3 — Post-MVP | Improvements from feedback | Planned |
 
 ---
 
 ## ⚠️ LinkedIn Scraping Disclaimer
 
-This project includes a LinkedIn scraper ([ADR-0001](./docs/adr/0001-linkedin-scraping-strategy.md)). It uses a **disposable account** and caps requests at 50–100/hour to minimize abuse. LinkedIn's TOS forbids automated scraping; we accept the ban risk for personal/aggregator use. **If you're self-hosting**, use your own account and don't republish profile data — only public job listings.
+This project includes a LinkedIn scraper scaffold ([ADR-0001](./docs/adr/0001-linkedin-scraping-strategy.md)). When implemented it uses a **disposable account** and caps request volume to minimize abuse. LinkedIn's TOS forbids automated scraping, and datacenter IPs (like GitHub Actions runners) are aggressively blocked — so this source is best-effort. **If you self-host**, use your own account and don't republish profile data — only public job listings.
 
 ---
 
 ## Contributing
-
-Contributions welcome. The flow:
 
 1. Pick an [open issue](../../issues) (P0 first, lowest unblocked)
 2. Branch: `feat/<issue-num>-<slug>`
@@ -127,7 +141,7 @@ Full spec in [`CONTRIBUTING.md`](./CONTRIBUTING.md). Docs are living — update 
 
 ## Acknowledgements
 
-- [`Feashliaa/job-board-aggregator`](https://github.com/Feashliaa/job-board-aggregator) — multi-ATS scraper inspiration + tier classifier pattern
+- [`Feashliaa/job-board-aggregator`](https://github.com/Feashliaa/job-board-aggregator) — static GitHub Pages aggregator + tier/tech classifier inspiration
 - [`spinlud/py-linkedin-jobs-scraper`](https://github.com/spinlud/py-linkedin-jobs-scraper) — MIT-licensed LinkedIn scraper
 - [`muhfauziazhar/app-blueprint`](https://github.com/muhfauziazhar/app-blueprint) — docs / milestone / issue scaffolding
 
