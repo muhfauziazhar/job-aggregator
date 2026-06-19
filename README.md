@@ -2,7 +2,7 @@
 
 > Software engineering job board — fresh listings from RemoteOK, with LinkedIn and Threads hiring posts as bonus sources. No login, no upsell, no auto-apply. Just a searchable table, filterable by tech stack and seniority.
 
-**Live:** _coming soon (GitHub Pages)_ · **Stack:** Next.js 16 (static export) · TypeScript strict · Tailwind v4 · Zustand · Zod · Python scrapers
+**Live:** https://muhfauziazhar.github.io/job-aggregator/ _(enable GitHub Pages to activate — Settings → Pages → Source: GitHub Actions)_ · **Stack:** Next.js 16 (static export) · TypeScript strict · Tailwind v4 · Zustand · Zod · Python scrapers
 
 ---
 
