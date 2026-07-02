@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-02T14:13:08.000Z",
-  "count": 370,
+  "generatedAt": "2026-07-02T19:39:25.000Z",
+  "count": 371,
   "jobs": [
     {
       "source": "linkedin",
@@ -51,6 +51,56 @@
       "salaryMax": null,
       "salaryCurrency": null,
       "id": "linkedin-4432788492"
+    },
+    {
+      "source": "linkedin",
+      "externalId": "4408233978",
+      "title": "Software Engineer",
+      "company": "Blackhawk Network India",
+      "location": "Kozhikode, Kerala, India",
+      "description": "About Blackhawk Network: Today, through BHN’s single global platform, businesses of all kinds can tap into the world’s largest network of branded payment solutions. BHN helps businesses grow revenue, increase loyalty, motivate and reward their teams, disburse funds and engage consumers. Branded payment solutions include the issuance and distribution of gift cards, egifts, corporate payouts and rewards, along with the technology to deliver these products in seamless, integrated ways. BHN’s network spans the globe with more than 400,000 consumer touchpoints. Learn more at BHN.com. Overview: Black Hawk businesses cover Reward, Recognition and Sales Incentives platforms for both customers and employees with the purpose of connecting people and motivating them to achieve their goals. An exciting part of the enterprise is managed services which delivers custom built, fully integrated solutions for the Telco, Banking, Automotive, Retail and Leisure sectors within the UK. Responsibilities: As a Software Engineer, you will join the team responsible for delivering the next generation high- volume, fault-tolerant, and scalable transaction processing system for Blackhawk. The candidate will possess a demonstrated proficiency in a wide range of skills and experience utilizing Java, NodeJS, Vue JS, Application service Interfaces, SQL, Postgres and database technologies. The desired candidate will have excellent understanding and hands-on experience designing and building software components that can handle high volume traffic. Apply now for a chance to lead our products and platforms to new heights of functionality and adoption.Key Responsibilities Perform all phases of software engineering including design, development, testing, and deployment in an Agile software development environment Owns end to end development on the component/feature Design and develop new features using various languages, we primarily use Java, NodeJS, JavaScript and SQL along with back-end systems (API/SOA/Middleware) Collaborate with other teams and conduct new technology research for product development and recommend product enhancements Actively participate in code reviews, analyse results and choose the best solution Manage deadlines and prioritize tasks Continuously focus on improving the software quality and performance Works closely with the Quality Assurance team to ensure high-quality deliverables Participate in Information Security analysis and remediation Troubleshoot customer issues and communicate effectively to internal and external stakeholders Qualifications: Bachelor's degree in computer science or similar field of study 2-3 years of hands‑on professional experience with object-oriented and functional software engineering using SSIS, SSRS, NodeJS and related technologies Experience in creating, maintaining and integrating APIs Experience working on back-end services (Rest Web services, middleware) Experience working with Relational Database – SQL Experience working in a cloud environment, preferably Amazon Web Services Experience in designing and building REST services and familiarity with Microservice architectures Comfortable with relational database design and SQL Knowledge of data structures and algorithms Experience working with web user interface technologies Understanding of Scrum framework We seek candidates who not only demonstrate curiosity and adaptability in emerging technologies but have also successfully implemented and utilized AI tools to enhance their work, improve processes, or deliver measurable results. Our teams embrace continuous learning and the thoughtful integration of AI to create meaningful impact – for our employees and the future of work.",
+      "applyUrl": "https://in.linkedin.com/jobs/view/software-engineer-at-blackhawk-network-india-4408233978",
+      "postedAt": "2026-07-02T00:00:00.000Z",
+      "remoteType": "remote",
+      "tier": "mid",
+      "techStack": [
+        "javascript",
+        "vue",
+        "node",
+        "java",
+        "postgresql",
+        "aws",
+        "sql"
+      ],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "linkedin-4408233978"
+    },
+    {
+      "source": "remoteok",
+      "externalId": "1134357",
+      "title": "Data Scientist",
+      "company": "New Flyer",
+      "location": "Winnipeg, Winnipeg, Manitoba, Canada",
+      "description": "New Flyer is North America's heavy-duty transit bus leader and offers the most advanced product line under the XcelsiorÂ® and Xcelsior CHARGEÂ® brands. It also offers infrastructure development through NFI Infrastructure Solutionsâ¢, a service dedicated to providing safe, sustainable, and reliable charging and mobility solutions. Further information is available at www.newflyer.com.POSITION SUMMARY:The position is coordination of business value added projects including the design, testing, documentation, training and implementation of customized business solutions to meet the requirements of processes associated with our ERP and related business systems.WHAT YOU WILL DO:Work with various ERP and IOT data sources to Build interactive and dynamic Power BI dashboards for data storytelling and stakeholder decision supportDesign and develop machine learning models and predictive analytics solutions using data sourced from SnowflakePerform data exploration, statistical analysis, and feature engineering to support AI initiativesCollaborate with data engineering teams to ensure robust data pipelinesContribute to the development of AI-driven tools and frameworks within the organizationEvaluate model performance and retrain as needed to adapt to evolving dataParticipate in cross-functional projects involving manufacturing, quality, supply chain and engineeringUpdate training, and documentationDeliver user training to operating groups as requiredOther duties as assignedWHAT YOU NEED TO BE SUCCESSFUL:Post-secondary education in a Business or STEM field, or an equivalent combination of education and relevant work experienceAny combination of training and/or certifications in Data Science, Statistics, and Artificial Intelligence (AI)2+ years of experience in a data science, AI, or advanced analytics roleStrong proficiency with SQL (preferably in Snowflake), Python, and PowerBiSolid understanding of machine learning algorithms, model evaluation, and AI workflowsExperience building end to end models and integrating them into business processesDeep knowledge of data warehousing concepts and cloud-based data platforms (Snowflake and Fabric preferred)Wage Range: $80,000 - $95,000WHY JOIN OUR TEAM:Competitive WagesExtended Health BenefitsPaid HolidaysPension PlanA continuous learning environmentAbility to advance your career with a growing companyOngoing employee development through a variety of in-house training initiatives along with tuition subsidies for courses at outside institutionsOUR WHY: We exist to move people. Our mission is to design and deliver exceptional transportation solutions that are safe, accessible, eÂ­fficient and reliable.NFI Group is a leading independent global bus manufacturer providing a comprehensive suite of mass transportation solutions. News and information are available at www.nfigroup.com, www.newflyer.com, www.mcicoach.com, www.arbocsv.com, www.alexander-dennis.com, www.carfaircomposites.com and www.nfi.parts.comPlease mention the word **GUTSY** and tag RMTcyLjE4My4xMzMuMjQ3 when applying to show you read the job post completely (#RMTcyLjE4My4xMzMuMjQ3). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+      "applyUrl": "https://remoteOK.com/remote-jobs/remote-data-scientist-new-flyer-1134357",
+      "postedAt": "2026-07-01T18:47:01.000Z",
+      "remoteType": "remote",
+      "tier": "unknown",
+      "techStack": [
+        "python"
+      ],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "remoteok-1134357"
     },
     {
       "source": "linkedin",
@@ -1766,16 +1816,12 @@
       "title": "Frontend Web Engineer",
       "company": "Guestlist",
       "location": "Web, Papua, Indonesia",
-      "description": "We are building a platform to power a better future for running events. We aim to empower anyone from individuals to large event agencies to succeed in event management. We are primarily a technology company, founded by experienced entrepreneurs and funded by top-tier venture investors.We are currently recruiting developers to join our small engineering team. Ideal candidates are fearless problem solvers excited to contribute to a small company in a wide variety of ways. This is a rare opportunity to be an early contributor at an ambitious startup looking to make a massive impact on the world.We Are Looking For An Engineer WithA background in architecting complex applications using JavaScript MVC frameworksExperience with or enthusiasm to learn React (and related tools like Relay and Redux)Ability to rapidly prototype and create new web applications from scratchAn interest in designing web products (defining user flows, UI components, and style)HTML and CSS know-how, with an affinity for UI/UX nitpixelingProficiency with a server-side web framework (e.g. Spring Boot)A desire to contribute towards open source projects",
+      "description": "",
       "applyUrl": "https://id.linkedin.com/jobs/view/frontend-web-engineer-at-guestlist-4433615699",
       "postedAt": "2026-06-28T00:00:00.000Z",
       "remoteType": "unknown",
       "tier": "mid",
-      "techStack": [
-        "javascript",
-        "react",
-        "spring"
-      ],
+      "techStack": [],
       "companyDomain": null,
       "department": null,
       "expiresAt": null,
@@ -8624,34 +8670,6 @@
     },
     {
       "source": "linkedin",
-      "externalId": "4408233978",
-      "title": "Software Engineer",
-      "company": "Blackhawk Network India",
-      "location": "Kozhikode, Kerala, India",
-      "description": "About Blackhawk Network: Today, through BHN’s single global platform, businesses of all kinds can tap into the world’s largest network of branded payment solutions. BHN helps businesses grow revenue, increase loyalty, motivate and reward their teams, disburse funds and engage consumers. Branded payment solutions include the issuance and distribution of gift cards, egifts, corporate payouts and rewards, along with the technology to deliver these products in seamless, integrated ways. BHN’s network spans the globe with more than 400,000 consumer touchpoints. Learn more at BHN.com. Overview: Black Hawk businesses cover Reward, Recognition and Sales Incentives platforms for both customers and employees with the purpose of connecting people and motivating them to achieve their goals. An exciting part of the enterprise is managed services which delivers custom built, fully integrated solutions for the Telco, Banking, Automotive, Retail and Leisure sectors within the UK. Responsibilities: As a Software Engineer, you will join the team responsible for delivering the next generation high- volume, fault-tolerant, and scalable transaction processing system for Blackhawk. The candidate will possess a demonstrated proficiency in a wide range of skills and experience utilizing Java, NodeJS, Vue JS, Application service Interfaces, SQL, Postgres and database technologies. The desired candidate will have excellent understanding and hands-on experience designing and building software components that can handle high volume traffic. Apply now for a chance to lead our products and platforms to new heights of functionality and adoption.Key Responsibilities Perform all phases of software engineering including design, development, testing, and deployment in an Agile software development environment Owns end to end development on the component/feature Design and develop new features using various languages, we primarily use Java, NodeJS, JavaScript and SQL along with back-end systems (API/SOA/Middleware) Collaborate with other teams and conduct new technology research for product development and recommend product enhancements Actively participate in code reviews, analyse results and choose the best solution Manage deadlines and prioritize tasks Continuously focus on improving the software quality and performance Works closely with the Quality Assurance team to ensure high-quality deliverables Participate in Information Security analysis and remediation Troubleshoot customer issues and communicate effectively to internal and external stakeholders Qualifications: Bachelor's degree in computer science or similar field of study 2-3 years of hands‑on professional experience with object-oriented and functional software engineering using SSIS, SSRS, NodeJS and related technologies Experience in creating, maintaining and integrating APIs Experience working on back-end services (Rest Web services, middleware) Experience working with Relational Database – SQL Experience working in a cloud environment, preferably Amazon Web Services Experience in designing and building REST services and familiarity with Microservice architectures Comfortable with relational database design and SQL Knowledge of data structures and algorithms Experience working with web user interface technologies Understanding of Scrum framework We seek candidates who not only demonstrate curiosity and adaptability in emerging technologies but have also successfully implemented and utilized AI tools to enhance their work, improve processes, or deliver measurable results. Our teams embrace continuous learning and the thoughtful integration of AI to create meaningful impact – for our employees and the future of work.",
-      "applyUrl": "https://in.linkedin.com/jobs/view/software-engineer-at-blackhawk-network-india-4408233978",
-      "postedAt": "2026-06-10T00:00:00.000Z",
-      "remoteType": "remote",
-      "tier": "mid",
-      "techStack": [
-        "javascript",
-        "vue",
-        "node",
-        "java",
-        "postgresql",
-        "aws",
-        "sql"
-      ],
-      "companyDomain": null,
-      "department": null,
-      "expiresAt": null,
-      "salaryMin": null,
-      "salaryMax": null,
-      "salaryCurrency": null,
-      "id": "linkedin-4408233978"
-    },
-    {
-      "source": "linkedin",
       "externalId": "4426789703",
       "title": "Software Engineer",
       "company": "Made Tech",
@@ -9107,16 +9125,12 @@
       "title": "Computer Vision Engineer",
       "company": "McEasy",
       "location": "Surabaya, East Java, Indonesia",
-      "description": "We are looking for a Senior Computer Vision / ML Engineer to own the AI that turns our dashcam and video feeds into a defensible product — the core of TrackVision and our driver-safety roadmap.This role is about training real computer-vision models.It is about turning raw video from tens of thousands of vehicles into accurate, real-time detection that runs cost-effectively at the edge — and shipping it to production.You will work closely with leadership to:own the video-intelligence roadmap (fatigue, distraction, ADAS-style alerts, cargo & theft detection)train, optimize and deploy CV models that run on-vehicle / at the edgebuild the moat: capabilities a software-only competitor cannot copyWhat will you do?1. Own Video IntelligenceBuild and train CV models for driver fatigue & distraction detection, ADAS-style road & event detection, and cargo, theft, and in-cabin monitoring.Turn messy, real-world video into reliable detections.2. Optimize for the EdgeMake models run cost-effectively at scale using quantization, pruning, distillation, on-device/edge inference, and trigger-based, event-driven processing.Treat inference cost-per-camera as a first-class design constraint.3. Train, Don't Just WrapBuild custom models where they create differentiation.Use pre-trained backbones and transfer learning to move fast.Know when to fine-tune vs. build from scratch.4. Own the Vision Data PipelineDefine annotation specs and quality standards (labeling is outsourced — you own the spec).Build training and evaluation datasets from real fleet video.Monitor model drift and retrain as conditions change.5. Ship to ProductionDeploy models into the product, not notebooks.Build inference services (edge + cloud), monitoring, and versioning.Iterate from real field performance.6. Collaborate Across TeamsWork with Hardware/IoT Engineers on dashcams and edge devices.Partner with Data & AI Product Engineers for shared data and benchmarking.Collaborate with Software Engineers and Product/Leadership to integrate solutions and refine use cases.Qualifications:Must-HaveStrong computer-vision and deep-learning fundamentals (object detection, image/video models)Hands-on with PyTorch or TensorFlow — training, not just inferenceTrack record deploying CV models to production (real users, real data — not just papers or Kaggle)Experience optimizing models for real-time / resource-constrained inferenceSolid engineering (Python; can build and ship services)Comfort with messy, real-world image/video data at scaleNice-to-HaveEdge / embedded deployment (NVIDIA Jetson, mobile, on-device, TensorRT/ONNX)Driver monitoring / ADAS / dashcam / automotive vision experienceData-centric ML and annotation-pipeline designInference cost optimization at fleet scaleMLOps: model versioning, monitoring, automated retrainingReady to embark on a thrilling journey with us? If you're eager to bring your passion, energy, and expertise to our dynamic team, simply click 'Easy Apply' and let the adventure begin! Your next career move is just one click away – let's make it happen together!",
+      "description": "",
       "applyUrl": "https://id.linkedin.com/jobs/view/computer-vision-engineer-at-mceasy-4425081200",
       "postedAt": "2026-06-08T00:00:00.000Z",
       "remoteType": "unknown",
       "tier": "mid",
-      "techStack": [
-        "python",
-        "tensorflow",
-        "pytorch"
-      ],
+      "techStack": [],
       "companyDomain": null,
       "department": null,
       "expiresAt": null,
