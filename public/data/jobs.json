@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T08:25:26.000Z",
+  "generatedAt": "2026-07-12T13:37:57.000Z",
   "count": 485,
   "jobs": [
     {
@@ -8048,12 +8048,14 @@
       "title": "Custom Software Engineer",
       "company": "Accenture in India",
       "location": "Greater Coimbatore Area",
-      "description": "",
+      "description": "Project Role : Custom Software EngineerProject Role Description : Develop custom software solutions to design, code, and enhance components across systems or applications. Use modern frameworks and agile practices to deliver scalable, high-performing solutions tailored to specific business needs.Must have skills : Amazon Web Services (AWS)Good to have skills : NAMinimum 5 Year(s) Of Experience Is RequiredEducational Qualification : 15 years full time educationSummary:As a Custom Software Engineer, a typical day involves designing and developing tailored software solutions that enhance various system components and applications. The role requires working within dynamic project environments, applying modern development frameworks, and following agile methodologies to ensure the delivery of scalable and efficient software. Collaboration with cross-functional teams to understand business requirements and translate them into technical implementations is a key aspect of daily activities, along with continuous improvement of existing software to meet evolving business needs.Roles & Responsibilities: Expected to be an SME, collaborate and manage the team to perform. Responsible for team decisions. Engage with multiple teams and contribute on key decisions. Provide solutions to problems for their immediate team and across multiple teams. Lead the planning and execution of software development tasks to meet project deadlines and quality standards. Mentor junior team members to support their professional growth and skill development. Facilitate effective communication between stakeholders to ensure alignment on project goals and deliverables.Professional & Technical Skills: Must To Have Skills: Proficiency in Amazon Web Services (AWS). Experience with cloud infrastructure management and deployment using Amazon Web Services. Strong knowledge of software development lifecycle and agile methodologies. Ability to design scalable and maintainable software architectures. Familiarity with automation tools and continuous integration/continuous deployment pipelines. Competence in troubleshooting and optimizing cloud-based applications.Additional Information: The candidate should have minimum 5 years of experience in Amazon Web Services (AWS). This position is based at our Coimbatore office. A 15 years full time education is required.",
       "applyUrl": "https://in.linkedin.com/jobs/view/custom-software-engineer-at-accenture-in-india-4409201973",
       "postedAt": "2026-06-25T00:00:00.000Z",
       "remoteType": "remote",
       "tier": "mid",
-      "techStack": [],
+      "techStack": [
+        "aws"
+      ],
       "companyDomain": null,
       "department": null,
       "expiresAt": null,
