@@ -1,7 +1,34 @@
 {
-  "generatedAt": "2026-07-12T19:12:37.000Z",
-  "count": 488,
+  "generatedAt": "2026-07-13T03:28:29.000Z",
+  "count": 490,
   "jobs": [
+    {
+      "source": "linkedin",
+      "externalId": "4439109908",
+      "title": "Software Engineer",
+      "company": "PT. Erajaya Swasembada, Tbk.",
+      "location": "Jakarta, Indonesia",
+      "description": "Job DescriptionLead the design, development, implementation, and maintenance of HRIS applications and related systems.Manage and mentor a team of software engineers, fostering a culture of technical excellence, collaboration, and continuous improvement.Drive technical architecture decisions and establish development standards, best practices, and coding guidelines.Collaborate with HR, business stakeholders, and product teams to translate business requirements into scalable technology solutions.Oversee the full software development lifecycle (SDLC), including planning, development, testing, deployment, and post-production support.Ensure system reliability, performance, security, and scalability.Manage project delivery, resource allocation, and technical priorities to ensure timely execution.Lead system integration initiatives with internal and external platforms through APIs and other integration methods.Identify opportunities to improve HR processes through automation, digitalization, and technology innovation.Monitor production systems, troubleshoot technical issues, and drive continuous improvements to system performance and user experience.Job RequirementsBachelor's Degree in Computer Science, Information System, Information Technology, or a related field.Minimum 4 years of experience in software development.Strong proficiency in full-stack software development, knowledge in backend such as Golang, PHP, and Python, and Frontend such as Node.js and React.jsStrong understanding of software architecture, RESTful APIs, databases, system integration, and modern development practices.Experience working with source control, CI/CD pipelines, and Agile development methodologies.Understanding of end-to-end HR business processes, including manpower planning, recruitment, onboarding, employee administration, performance management, learning and development, etc.Experience developing, implementing, or supporting HRIS, ATS, payroll, or other HR technology solutions is highly preferred.Ability to balance hands-on technical responsibilities with team management and strategic planning.",
+      "applyUrl": "https://id.linkedin.com/jobs/view/software-engineer-at-pt-erajaya-swasembada-tbk-4439109908",
+      "postedAt": "2026-07-13T00:00:00.000Z",
+      "remoteType": "unknown",
+      "tier": "mid",
+      "techStack": [
+        "python",
+        "javascript",
+        "react",
+        "node",
+        "go",
+        "php"
+      ],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "linkedin-4439109908"
+    },
     {
       "source": "linkedin",
       "externalId": "4436681927",
@@ -134,12 +161,34 @@
       "id": "linkedin-4438998038"
     },
     {
+      "source": "linkedin",
+      "externalId": "4439756308",
+      "title": "Software Engineer (Intern)",
+      "company": "Moda Health",
+      "location": "Portland, OR",
+      "description": "Let’s do great things, together!About ModaFounded in Oregon in 1955, Moda is proud to be a company of real people committed to quality. Today, like then, we’re focused on building a better future for healthcare. That starts by offering outstanding coverage to our members, compassionate support to our community and comprehensive benefits to our employees. It keeps going by connecting with neighbors to create healthy spaces and places, together. Moda values diversity and inclusion in our workplace. We aim to demonstrate our commitment to diversity through all our business practices and invite applications from candidates that share our commitment to this diversity. Our diverse experiences and perspectives help us become a stronger organization. Let’s be better together.Position SummaryThe Software Engineering Intern is an entry-level or training role designed for an individual aspiring to become a software engineer, using application development concepts, processes, and tools. This position will be supporting the Application Development Output Team in Moda’s IT department. This is a FT WFH position. Pay Range$23.34 - $26.26 hourly (depending on experience).Actual pay is based on qualifications. Applicants who do not exceed the minimum qualifications will only be eligible for the low end of the pay range.Please fill out an application on our company page, linked below, to be considered for this position.https://j.brt.mv/jb.do?reqGK=27780947&refresh=trueRequired Skills, Experience & EducationSophomore or above pursuing a bachelor’s degree in Computer Science, Software Engineering, or a related field.Entry-level programming skills in scripting and/or object-oriented languages.Familiarity with basic database principles and SQL or similar language.Strong understanding of programming and technical skills.Ability to maintain confidentiality and project a professional business image.Dependable attendance and ability to come into work per an agreed-upon schedule.Primary FunctionsAssist in developing and maintaining SQL stored procedures and related objects.Create or update Power BI reports.Perform development testing.Collaborate with other engineers.Perform other duties as assigned.Working ConditionsOffice environment with extensive close PC and keyboard use, constant sitting, and frequent phone communication. Must be able to navigate multiple computer screens. A reliable, high-speed, hard-wired internet connection required to support remote or hybrid work. Must be comfortable being on camera for virtual training and meetings. Work in excess of standard workweek, including evenings and occasional weekends, to meet business need.Internally with supported departments.Together, we can be more. We can be better.Moda Health seeks to allow equal employment opportunities for all qualified persons without regard to race, religion, color, age, sex, sexual orientation, national origin, marital status, disability, veteran status or any other status protected by law. This is applicable to all terms and conditions of employment, including recruiting, hiring, placement, promotion, termination, layoff, recall, transfer, leaves of absences, compensation, and training.For more information regarding accommodations, please direct your questions to Kristy Nehler & Danielle Baker via our humanresources@modahealth.com email.",
+      "applyUrl": "https://www.linkedin.com/jobs/view/software-engineer-intern-at-moda-health-4439756308",
+      "postedAt": "2026-07-12T00:00:00.000Z",
+      "remoteType": "remote",
+      "tier": "intern",
+      "techStack": [
+        "sql"
+      ],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "linkedin-4439756308"
+    },
+    {
       "source": "remoteok",
       "externalId": "1134707",
       "title": "Graduate Data Scientist",
       "company": "Work Force Nexus",
       "location": "Australia,",
-      "description": "Posted 12:58:07 PM. Job Title: Graduate Data ScientistLocation: Australia (Remote)Employment Type: Full-TimeExperience:â¦See this and similar jobs on LinkedIn.Please mention the word **STATELY** and tag RNTIuMTU5LjE0MS4yNDE= when applying to show you read the job post completely (#RNTIuMTU5LjE0MS4yNDE=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+      "description": "Posted 12:58:07 PM. Job Title: Graduate Data ScientistLocation: Australia (Remote)Employment Type: Full-TimeExperience:â¦See this and similar jobs on LinkedIn.Please mention the word **STATELY** and tag RNjQuMjM2LjE0Ni4xMTU= when applying to show you read the job post completely (#RNjQuMjM2LjE0Ni4xMTU=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
       "applyUrl": "https://remoteOK.com/remote-jobs/remote-graduate-data-scientist-work-force-nexus-1134707",
       "postedAt": "2026-07-11T14:00:47.000Z",
       "remoteType": "remote",
@@ -185,7 +234,7 @@
       "title": "Software Engineer",
       "company": "HiLoker",
       "location": "Jakarta Metropolitan Area",
-      "description": "DESKRIPSI PEKERJAANDesign, develop, test, and maintain web, mobile, and backend applications for banking operations and digital channelsDevelop secure and efficient APIs and integrate systems with core banking, third-party, and internal servicesCollaborate with other teams to deliver functional and user-friendly solutionsWrite clean, efficient, and maintainable code, following industry best practices and coding standardsEnsure software solutions comply with data security, regulatory, and banking governance standardsSupport production systems and provide technical expertise for ongoing system improvementsKUALIFIKASI MINIMUMBachelor’s Degree (S1) in any major, with experience in the IT fieldHave at least 3 years experience as a Programmer or in an equivalent position in a similar industryProficient in one or more of the following: Java, Kotlin, Python, Golang, ASP.NET (C#), HTML, CSS, JavaScript, TypeScript, PHP, Swift, Objective-CExperience in one or more of the following backend and frontend frameworks: Spring Boot, RestEasy, Restful API, ISO8583, React, Angular, NextJS/NuxtJS, Vue.js, Bootstrap, CSS Grid System, FlutterExperience with one or more of the following: MS SQL Server, Oracle, MySQL, PostgreSQL, DB2, NoSQLExperience with Apache Kafka or similar messaging/streaming platforms.Strong understanding of Software Development Life Cycle (SDLC) and agile software development methodologies (Scrum, Kanban, etc.)Understands general banking processes or has experience in banking IT.Familiarity with Android and iOS SDKWilling to work onsite at Central JakartaRINGKASAN PERKERJAAN*SPESIALISASI**: IT and Software*PENDIDIKAN MINIMAL**: S1 (Sarjana)*SISTEM KERJA**: On-site*TIPE PEKERJAAN**: Full time*LOKASI**: Central Jakarta, DKI Jakarta, Indonesia*INDUSTRI**: Information Technology / IT*SITUS PERUSAHAAN**: http://www.akhdani.co.id/*JUMLAH LOWONGAN**: 10 posisiFASILITAS & BENEFITFasilitas: sick_leave, med_ins, mat_pat_leave, paid_holidaysTENTANG PERUSAHAANPT. Akhdani Reka Solusi (ARS), merupakan perusahaan software khususnya pengembangan software, datawarehouse, maintenance, system integration dan konsultan.",
+      "description": "DESKRIPSI PEKERJAANDesign, develop, test, and maintain web, mobile, and backend applications for banking operations and digital channelsDevelop secure and efficient APIs and integrate systems with core banking, third-party, and internal servicesCollaborate with other teams to deliver functional and user-friendly solutionsWrite clean, efficient, and maintainable code, following industry best practices and coding standardsEnsure software solutions comply with data security, regulatory, and banking governance standardsSupport production systems and provide technical expertise for ongoing system improvementsKUALIFIKASI MINIMUMTemukan lebih banyakAlat PengembanganDesain & Pengembangan WebTeknologi InformasiBachelor’s Degree (S1) in any major, with experience in the IT fieldHave at least 3 years experience as a Programmer or in an equivalent position in a similar industryProficient in one or more of the following: Java, Kotlin, Python, Golang, ASP.NET (C#), HTML, CSS, JavaScript, TypeScript, PHP, Swift, Objective-CExperience in one or more of the following backend and frontend frameworks: Spring Boot, RestEasy, Restful API, ISO8583, React, Angular, NextJS/NuxtJS, Vue.js, Bootstrap, CSS Grid System, FlutterExperience with one or more of the following: MS SQL Server, Oracle, MySQL, PostgreSQL, DB2, NoSQLExperience with Apache Kafka or similar messaging/streaming platforms.Strong understanding of Software Development Life Cycle (SDLC) and agile software development methodologies (Scrum, Kanban, etc.)Understands general banking processes or has experience in banking IT.Familiarity with Android and iOS SDKWilling to work onsite at Central JakartaRINGKASAN PERKERJAANTemukan lebih banyakMasalah Ketenagakerjaan & PerburuhanJava (Bahasa Pemrograman)Software Development*SPESIALISASI**: IT and Software*PENDIDIKAN MINIMAL**: S1 (Sarjana)*SISTEM KERJA**: On-site*TIPE PEKERJAAN**: Full time*LOKASI**: Central Jakarta, DKI Jakarta, Indonesia*INDUSTRI**: Information Technology / IT*SITUS PERUSAHAAN**: http://www.akhdani.co.id/*JUMLAH LOWONGAN**: 10 posisiFASILITAS & BENEFITFasilitas: sick_leave, med_ins, mat_pat_leave, paid_holidaysTENTANG PERUSAHAANPT. Akhdani Reka Solusi (ARS), merupakan perusahaan software khususnya pengembangan software, datawarehouse, maintenance, system integration dan konsultan.",
       "applyUrl": "https://id.linkedin.com/jobs/view/software-engineer-at-hiloker-4438906166",
       "postedAt": "2026-07-11T00:00:00.000Z",
       "remoteType": "unknown",
@@ -461,6 +510,30 @@
       "salaryMax": null,
       "salaryCurrency": null,
       "id": "linkedin-4439575119"
+    },
+    {
+      "source": "linkedin",
+      "externalId": "4438920875",
+      "title": "IBM Off Campus Drive 2025: Freshers Software Developer Hiring",
+      "company": "Course Bhai",
+      "location": "Yaur, Papua, Indonesia",
+      "description": "Course Bhai > Blog > Jobs > IBM Off Campus Drive 2025: Freshers Software Developer HiringJobsIBM Off Campus Drive 2025: Freshers Software Developer HiringKickstart your career with IBM's Off Campus Drive 2025. Apply now!Last updated: October 13, 2024 11:20 pmAyaan Bepari - EditorShareIBM Off Campus Drive 2025 Freshers Software Developer HiringSHAREDiscover moreInternshipJobsCareersWhatsAppTelegramHighlightsMass hiring for 2025 batchRoles: Software DeveloperOpen to freshersApplication process openJoin a leading tech giantAre you a recent graduate looking to kickstart your career in software development? Do you dream of working with a global technology leader? If so, the IBM Off Campus Drive 2025 for freshers might be the perfect opportunity for you! This comprehensive guide will provide you with all the details you need to know to apply for this exciting role.ContentsWhat is the IBM Off Campus Drive 2025?Job Role and ResponsibilitiesHow to Apply for IBM Off Campus Drive 2025?Frequently Asked Questions (FAQs)Closing NoteWhat is the IBM Off Campus Drive 2025?The IBM Off Campus Drive 2025 is a recruitment initiative by IBM to hire fresh graduates for the role of Software Developer. This program is designed to attract talented individuals from the 2022, 2023, 2024, and 2025 batches who hold a Bachelor’s or Master’s degree. The drive aims to find enthusiastic candidates ready to innovate and make significant contributions to IBM’s projects.About IBMIBM, or the International Business Machines Corporation, is a renowned multinational technology corporation headquartered in Armonk, New York, with operations in over 175 countries. Known as “Big Blue,” IBM is a leader in technology and innovation, providing software, hardware, and consulting services. At IBM, employees are encouraged to experiment, innovate, and collaborate in a supportive environment.Job Role and ResponsibilitiesRole: Software DeveloperAs a Software Developer at IBM, you will be involved in application maintenance and support. Your primary responsibilities will include:Supporting web applications by handling tickets and support procedures for multiple applications within the Product Lifecycle Management (PLM) suite.Automating procedures to streamline operations.Developing scripts and checks to ensure system reliability.Eligibility CriteriaTo be eligible for the IBM Off Campus Drive 2025, candidates must meet the following criteria:Qualification: Bachelor’s or Master’s Degree in relevant fields.Batch: 2022, 2023, 2024, or 2025 graduates.Experience: Freshers are welcome to apply.Technical Skills RequiredCandidates should possess knowledge in the following areas:Java Web technologiesJava Full StackDB2/SQLJMS/MQ (Integrations)AIXPLM/Supply chain knowledge (added advantage)Preferred Technical And Professional ExpertiseSupply chain knowledgeITIL certificationhere’s a detailed table summarizing the key information about the IBM Off Campus Drive 2025 for freshers:Category Details Company Name IBM Website https://www.ibm.com/ Job Role Software Developer Qualification Bachelor’s/Master’s Degree Eligible Batches 2022, 2023, 2024, 2025 Experience Freshers Salary Best in Industry Job Location Bangalore Last Date to Apply ASAP (as soon as possible) Technical Skills Required – Java Web technologies– Java Full Stack– DB2/SQL– JMS/MQ (Integrations)– AIX– PLM/Supply chain knowledge (added advantage) Preferred Technical Expertise – Supply chain knowledge– ITIL certification Responsibilities – Web Applications Support– Automation of procedures– Development of scripts and checks Application Process Visit the IBM careers website or coursebhai.com to apply Selection Process – Aptitude Test– Technical Interview– HR Interview Application Link Click Here to ApplyHow to Apply for IBM Off Campus Drive 2025?Interested and eligible candidates can apply for the IBM Off Campus Drive 2025 by visiting the official IBM careers website or coursebhai.com. Ensure you submit your application before the last date to increase your chances of being considered.APPLY HEREREAD MORE : Amazon Careers Jobs 2024: Freshers Wanted for QA AnalystMore ReadRubrik is hiring Winter Software Engineer Internship (CPD) – (Pune) Best for Graduates Apply Here 2025October 18, 2025Zebronics Internship 2026 Stipend Apply GuideMarch 3, 2026READ MORE : Aspire Internship 2024: Freshers Apply for Data Engineer RoleFrequently Asked Questions (FAQs)How to apply for IBM Off Campus Drive 2025 Registration?To apply for the IBM Recruitment 2025, visit the official IBM website or coursebhai.com and complete the registration process.Does coursebhai.com provide IBM Off Campus Drive 2025 alerts?Yes, coursebhai.com continuously provides alerts for the IBM Recruitment 2025.What is the IBM Selection Process?The selection process for IBM Off Campus Drive 2025 includes the following stages:Aptitude TestTechnical InterviewHR InterviewWhat is the salary package for the IBM Off Campus Drive 2025?IBM offers a competitive salary package, which is among the best in the industry. The exact figures will be disclosed during the recruitment process.Closing NoteWe hope this comprehensive guide helps you in your application process for the IBM Off Campus Drive 2025. At CourseBhai, we strive to provide you with the latest updates on job opportunities, internships, and educational resources. Join our community on social media, subscribe to our push notifications, and sign up for our newsletter to stay updated with the latest job alerts.Thank you for reading, and good luck with your application.Web StoriesTop 4 TRENDING IT JOBS 2026Top 5 TRENDING INTERNSHIP 2026Top 5 TRENDING AI COURSES 2026Google Office Locations in IndiaTAGGED:2025 batchfreshersIBMmass hiringOff Campus DriveSoftware DeveloperTech jobsShare This ArticleEmail Copy Link PrintByAyaan BepariEditorFollow:Hi, I’m Ayaan! Passionate about helping people find the best resources to upskill, learn, and grow. From online courses to internships and jobs, I curate opportunities to help you succeed in today’s digital world. Let’s make learning and earning accessible for everyone!Previous Article Amazon Careers Jobs 2024: Freshers Wanted for QA AnalystNext Article Join RIL Recruitment Drive 2024 as Team MemberCourse Bhai Insider: Level Up Your Skills with Course Bhai !Exclusive Access to Free Courses, Internships, Jobs, and Career Resources, and More—Delivered to Your Inbox!FacebookLikeXFollowInstagramFollowTelegramFollowLinkedInFollowThreadsFollow- Advertisement -Popular PostsNITI Aayog Internship 2026 Free Certificate StudentsAre you looking for a government internship for students India that adds real value to…By Mubasheer BurburiApply Now: Google Technical Writer Job for Bachelor’s 2024Kickstart your career with Google’s lucrative Technical Writer job. Google Technical Writer JobBy Ayaan BepariGoogle Free ML Course 2026 For College StudentsAre you curious about machine learning but feel it’s too complex or expensive to start?…By Course BhaiAre you a recent graduate looking to kickstart your career in software development? Do you dream of working with a global technology leader? If so, the IBM Off Campus Drive 2025 for freshers might be the perfect opportunity for you! This comprehensive guide will provide you with all the details you need to know to apply for this exciting role.ContentsWhat is the IBM Off Campus Drive 2025?Job Role and ResponsibilitiesHow to Apply for IBM Off Campus Drive 2025?Frequently Asked Questions (FAQs)Closing NoteWhat is the IBM Off Campus Drive 2025?The IBM Off Campus Drive 2025 is a recruitment initiative by IBM to hire fresh graduates for the role of Software Developer. This program is designed to attract talented individuals from the 2022, 2023, 2024, and 2025 batches who hold a Bachelor’s or Master’s degree. The drive aims to find enthusiastic candidates ready to innovate and make significant contributions to IBM’s projects.About IBMIBM, or the International Business Machines Corporation, is a renowned multinational technology corporation headquartered in Armonk, New York, with operations in over 175 countries. Known as “Big Blue,” IBM is a leader in technology and innovation, providing software, hardware, and consulting services. At IBM, employees are encouraged to experiment, innovate, and collaborate in a supportive environment.Job Role and ResponsibilitiesRole: Software DeveloperAs a Software Developer at IBM, you will be involved in application maintenance and support. Your primary responsibilities will include:Supporting web applications by handling tickets and support procedures for multiple applications within the Product Lifecycle Management (PLM) suite.Automating procedures to streamline operations.Developing scripts and checks to ensure system reliability.Eligibility CriteriaTo be eligible for the IBM Off Campus Drive 2025, candidates must meet the following criteria:Qualification: Bachelor’s or Master’s Degree in relevant fields.Batch: 2022, 2023, 2024, or 2025 graduates.Experience: Freshers are welcome to apply.Candidates Should Possess Knowledge In The Following Areas:Java Web technologiesJava Full StackDB2/SQLJMS/MQ (Integrations)AIXPLM/Supply chain knowledge (added advantage)Preferred Technical And Professional ExpertiseSupply chain knowledgeITIL certificationhere’s a detailed table summarizing the key information about the IBM Off Campus Drive 2025 for freshers:Category Details Company Name IBM Website https://www.ibm.com/ Job Role Software Developer Qualification Bachelor’s/Master’s Degree Eligible Batches 2022, 2023, 2024, 2025 Experience Freshers Salary Best in Industry Job Location Bangalore Last Date to Apply ASAP (as soon as possible) Technical Skills Required – Java Web technologies– Java Full Stack– DB2/SQL– JMS/MQ (Integrations)– AIX– PLM/Supply chain knowledge (added advantage) Preferred Technical Expertise – Supply chain knowledge– ITIL certification Responsibilities – Web Applications Support– Automation of procedures– Development of scripts and checks Application Process Visit the IBM careers website or coursebhai.com to apply Selection Process – Aptitude Test– Technical Interview– HR Interview Application Link Click Here to ApplyHow to Apply for IBM Off Campus Drive 2025?Interested and eligible candidates can apply for the IBM Off Campus Drive 2025 by visiting the official IBM careers website or coursebhai.com. Ensure you submit your application before the last date to increase your chances of being considered.APPLY HEREREAD MORE : Amazon Careers Jobs 2024: Freshers Wanted for QA AnalystMore ReadRubrik is hiring Winter Software Engineer Internship (CPD) – (Pune) Best for Graduates Apply Here 2025October 18, 2025Zebronics Internship 2026 Stipend Apply GuideMarch 3, 2026READ MORE : Aspire Internship 2024: Freshers Apply for Data Engineer RoleFrequently Asked Questions (FAQs)How to apply for IBM Off Campus Drive 2025 Registration?To apply for the IBM Recruitment 2025, visit the official IBM website or coursebhai.com and complete the registration process.Does coursebhai.com provide IBM Off Campus Drive 2025 alerts?Yes, coursebhai.com continuously provides alerts for the IBM Recruitment 2025.What is the IBM Selection Process?The selection process for IBM Off Campus Drive 2025 includes the following stages:Aptitude TestTechnical InterviewHR InterviewWhat is the salary package for the IBM Off Campus Drive 2025?IBM offers a competitive salary package, which is among the best in the industry. The exact figures will be disclosed during the recruitment process.Closing NoteWe hope this comprehensive guide helps you in your application process for the IBM Off Campus Drive 2025. At CourseBhai, we strive to provide you with the latest updates on job opportunities, internships, and educational resources. Join our community on social media, subscribe to our push notifications, and sign up for our newsletter to stay updated with the latest job alerts.Thank you for reading, and good luck with your application.",
+      "applyUrl": "https://id.linkedin.com/jobs/view/ibm-off-campus-drive-2025-freshers-software-developer-hiring-at-course-bhai-4438920875",
+      "postedAt": "2026-07-11T00:00:00.000Z",
+      "remoteType": "unknown",
+      "tier": "mid",
+      "techStack": [
+        "java",
+        "redis",
+        "sql"
+      ],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "linkedin-4438920875"
     },
     {
       "source": "linkedin",
@@ -2280,19 +2353,12 @@
       "title": "Software Engineer - RA",
       "company": "Axiata Digital Labs",
       "location": "Jakarta, Jakarta, Indonesia",
-      "description": "Key ResponsibilitiesFollow best coding practices and standards defined by software managementAdhere to secure coding practices aligned with OWASP guidelinesPerform unit testing with preference for Test-Driven Development (TDD)Identify, troubleshoot, and fix software defects efficientlyContinuously improve code quality, performance, and maintainabilityParticipate in System Integration Testing (SIT) to ensure end-to-end functionalityPrepare and maintain accurate technical documentationFollow Agile methodologies throughout the development lifecycleEnsure on-time delivery of assigned development tasksMaintain clear visibility of progress and proactively communicate and escalate roadblocksPerson SpecificationsBachelors degree in Computer Science, Software Engineering, or related field, or equivalent BSc qualification with 3+ years of experienceMinimum 3+ year of experience in Software EngineeringProficiency in one or more programming languages such as Java, C/C++, C#, Python, JavaScript, or especially frameworks like Spring Boot are the main techStrong analytical, problem-solving, teamwork, and communication skillsGood understanding of programming fundamentals, concepts, and algorithmsAbility to code using at least one programming language and willingness to learn othersGood understanding of Database Management Systems (DBMS)Good knowledge of Scrum and Agile practices, including sprint planning, daily stand-ups, backlog grooming, reviews, and retrospectivesVendor submissions - 06 months",
+      "description": "",
       "applyUrl": "https://id.linkedin.com/jobs/view/software-engineer-ra-at-axiata-digital-labs-4433832913",
       "postedAt": "2026-07-07T00:00:00.000Z",
       "remoteType": "unknown",
       "tier": "mid",
-      "techStack": [
-        "python",
-        "javascript",
-        "java",
-        "c++",
-        "c#",
-        "spring"
-      ],
+      "techStack": [],
       "companyDomain": null,
       "department": null,
       "expiresAt": null,
@@ -3330,6 +3396,30 @@
       "id": "linkedin-4437123310"
     },
     {
+      "source": "linkedin",
+      "externalId": "4437224414",
+      "title": "Software Engineer Intern (Next Level Internship)",
+      "company": "Mekari",
+      "location": "Jakarta, Jakarta, Indonesia",
+      "description": "The Next Level Internship program by Mekari is a highway for achievement-oriented young talents to #ElevateThroughImpact in a competitive and encouraging environment, where they get to contribute in raising Indonesia's software standard.If You AreA University student studying in Indonesia, OR;An alumnus with either 1-2 years of working experience or max. 1 year after graduationSend in your application now and start your journey to:Experience working at Indonesia's no. 1 SaaS companyGet a min. 3-month period internship experience with your preferred team and roleBy applying through this opening, you are applying specifically for the role of Software Engineer Intern:Job DescriptionBuild and maintain UI components using Vue.js under the guidance of senior engineersCollaborate with product owners, designers, backend engineers and other stackholders to implement responsive, user-friendly interfacesTranslate Figma designs into pixel-perfect, accessible UI componentsWrite clean, maintainable code following team conventions and coding standardsWrite unit tests, component tests, and integration tests to ensure code reliability and prevent regressionsParticipate in code reviews, sprint ceremonies, and team discussionsDebug and fix frontend issues across different browsers and devicesLearn and apply version control workflows using GitUse AI-assisted tools (e.g., GitHub Copilot, Claude, ChatGPT) to accelerate development, debugging, and learningExplore ways to integrate AI capabilities into frontend features and workflowsRequirementsCurrently pursuing or recently completed a degree in Computer Science, Information Technology, or a related fieldBasic understanding of HTML, CSS, and JavaScript (ES6+)Familiarity with TypeScriptFamiliarity with Vue 2 and Vue 3 (Composition API, Options API, and migration patterns between versions) or willingness to learn it quicklyFamiliarity with REST APIs and how frontend interacts with backend servicesAbility to work with Figma and translate design handoffs into codeBasic understanding of testing concepts (unit, component, and integration testing)Understanding of responsive design principlesComfortable using Git for version controlOpenness to adopting AI tools as part of the development process — including code generation, pair programming, and documentationGood communication skills and eagerness to learnStill got any questions? Shoot us a DM on Instagram at @lifeatmekariGood luck and we hope you make it to the Next Level of your journey with Mekari!Mekari Next Level Internship Program: Pick Your Team, Pave Your Way",
+      "applyUrl": "https://id.linkedin.com/jobs/view/software-engineer-intern-next-level-internship-at-mekari-4437224414",
+      "postedAt": "2026-07-05T00:00:00.000Z",
+      "remoteType": "unknown",
+      "tier": "intern",
+      "techStack": [
+        "javascript",
+        "typescript",
+        "vue"
+      ],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "linkedin-4437224414"
+    },
+    {
       "source": "remoteok",
       "externalId": "1134476",
       "title": "Lead Data Scientist",
@@ -3733,15 +3823,12 @@
       "title": "Software Engineer - Client application Developer",
       "company": "Samsung Southeast Asia & Oceania",
       "location": "Jakarta, Jakarta, Indonesia",
-      "description": "Position SummaryWe're looking for passionate and adaptable software engineers - C++ to join our team. Ideal candidates should have a strong experience in C++.Role And Responsibilities [Designing application] Participate in designing optimal application that meets requirement. [Implementation of application] Implement application based on specification that effectively works on development environment. [Securing application quality] Participate in solving issues coming from verification department or market and improving quality of application. Works on problems of moderate scope where analyzing situations or data requires a review on various factors. Exercises judgment within defined procedures and practices to determine appropriate action.Skills And Qualifications Bachelor's degree in Computer Science, Information System, Information Technology, Software Engineering and Electrical Engineering, Math, Physics, from Reputable Universities with 2 years related experience, or advanced degree without experience. Fresh Graduate are welcome to apply Has skill or experience in C/C++ and C# Good algorithm skills Knowledge about architecture is plus Knowledge about Tizen OS is plus Samsung has a strict policy on trade secrets. In applying to Samsung and progressing through the recruitment process, you must not disclose any trade secrets of a current or previous employer. Please visit Samsung membership to see Privacy Policy, which defaults according to your location. You can change Country/Language at the bottom of the page. If you are European Economic Resident, please click here.",
+      "description": "",
       "applyUrl": "https://id.linkedin.com/jobs/view/software-engineer-client-application-developer-at-samsung-southeast-asia-oceania-4436468806",
       "postedAt": "2026-07-03T00:00:00.000Z",
       "remoteType": "unknown",
       "tier": "mid",
-      "techStack": [
-        "c++",
-        "c#"
-      ],
+      "techStack": [],
       "companyDomain": null,
       "department": null,
       "expiresAt": null,
@@ -6464,17 +6551,12 @@
       "title": "Software Engineer (L5) - Experimentation Platform",
       "company": "Netflix",
       "location": "United States",
-      "description": "At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.At Netflix, our mission is to entertain the world, and experimentation is how we learn, innovate, and continuously improve the product for hundreds of millions of members.The Experience Foundation team in Experimentation Platform builds and operates the core systems that power A/B test allocation, adaptive experimentation, and feature rollouts across Netflix. Our services are on the critical path for product experiences on every device, and must be highly available, low latency, and resilient.We are looking for a Senior Distributed Systems Engineer to design, build, and operate the next generation of experimentation and feature flag infrastructure at Netflix.What You’ll DoBuild and evolve critical experimentation and feature flag servicesDesign and implement high-scale, low-latency services for experiment allocation and feature flag evaluationAdvance core distributed systems for decentralized allocation, rules evaluation, and real-time decisioningOwn reliability and performanceParticipate in on-call, lead incident response, and drive long-term reliability improvementsInstrument services with rich observability (metrics, logs, traces) and continuously tune for resilience, performance, and scalabilityShape data and integration surfacesCollaborate with teams using technologies like Flink, Spark, Elasticsearch, and Druid to ensure experimentation data is correct, timely, and usableDefine clear data and API contracts for consumers and pipelinesPartner with product engineering teamsDeeply understand experimentation and rollout workflows across NetflixSimplify and improve the developer experience for configuring, launching, and monitoring experiments and feature flagsWhat Sets You ApartBackend & distributed systems depth You’ve built and operated scalable, reliable backend services and understand how to apply core algorithms, and systems design to real-world distributed systems.Strong coding & operational rigor You write high-quality code in Java or another JVM language and have owned production services end-to-end: monitoring, on-call, debugging, and systematic performance and reliability improvements.High-impact collaboration & product sense You work effectively with other senior engineers and cross-functional partners, bring clarity to ambiguity, drive decisions, and keep a sharp focus on delivering value to internal users and stakeholders.Why This Role Is UniqueCentral to how Netflix learns: Your work underpins how nearly every product team experiments and rolls out features.High leverage & visibility: You will build foundational services used by engineers, data scientists, and product partners across the company.Challenging engineering problems: From high-throughput rules engines to observability at Netflix scale, you will tackle deep technical problems in production systems.Real ownership: You will influence architecture and roadmap while working with a senior and highly engaged team.Generally, our compensation structure consists solely of an annual salary; we do not have bonuses. You choose each year how much of your compensation you want in salary versus stock options. To determine your personal top of market compensation, we rely on market indicators and consider your specific job family, background, skills, and experience to determine your compensation in the market range. The range for this role is $380,000.00 - $610,000.00. This compensation range will vary based on location.Netflix provides comprehensive benefits including Health Plans, Mental Health support, a 401(k) Retirement Plan with employer match, Stock Option Program, Disability Programs, Health Savings and Flexible Spending Accounts, Family-forming benefits, and Life and Serious Injury Benefits. We also offer paid leave of absence programs. Full-time hourly employees accrue 35 days annually for paid time off to be used for vacation, holidays, and sick paid time off. Full-time salaried employees are immediately entitled to flexible time off. See more details about our Benefits here.Netflix is a unique culture and environment. Learn more here.Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.Job is open for no less than 7 days and will be removed when the position is filled.",
+      "description": "",
       "applyUrl": "https://www.linkedin.com/jobs/view/software-engineer-l5-experimentation-platform-at-netflix-4397581182",
       "postedAt": "2026-06-28T00:00:00.000Z",
       "remoteType": "remote",
       "tier": "mid",
-      "techStack": [
-        "java",
-        "c#",
-        "elasticsearch",
-        "spark"
-      ],
+      "techStack": [],
       "companyDomain": null,
       "department": null,
       "expiresAt": null,
@@ -12507,13 +12589,14 @@
       "title": "Software Engineer - Java",
       "company": "MORO TECH",
       "location": "Portugal",
-      "description": "",
+      "description": "🚀 Ready to Make an Impact? Join MORO TECH!MORO TECH is a tech house with a global team on a mission to empower businesses to succeed through business transformation solutions, data-driven strategies and a deep technical expertise.Imagine being part of a team working alongside one of the world's largest OEMs and shaping the future of the industry.Here, your ideas are not just welcomed, they are essential! We thrive on creativity, value diverse perspectives and foster an environment where everyone's contributions are valued. If you are driven by the sense of doing meaningful work and growing in a dynamic company, let's connect!The impact of the role: The Java Software Engineer will be a critical team member of the Energy Management Division responsible for delivering innovative solutions within the smart mobility ecosystem, with a focus on electric vehicles. Together with your peers you will be defining the future connected services for one of the largest OEMs in the world, being able to see the result of your work driving down the road! Being so close to cutting-edge technologies will allow you to further enhance your skills & thrive within an innovative and people-oriented environment.On a given day, a Software Engineer will:Develop, test and maintain backend applications, ensuring high performance, scalability and reliability. Collaborate with cross functional & feature teams to understand project goals and provide input on the technical direction. Support the Solution Architects with technical architectural decisions, bringing out of the box thinking and best practices to the team. Troubleshoot and resolve complex technical issues within the development lifecycle. Assist in establishing coding standards, reviewing code, and ensuring adherence to best practices. Provide technical guidance to team members, helping foster a collaborative and growth-oriented environment. RequirementsIn order to be successful in this role you will need:BSc in Computer Science, Electrical/Computer Engineering, related technical discipline or related professional experience. 3+ years of hands-on experience within the Java ecosystem, particularly with SpringBoot. Solid experience working with NoSQL databases (eg. Mongo). Experience in designing and implementing REST APIs, with the ability to seamlessly integrate them with multiple 3rd-party services. Familiarity with asynchronous flows and event-driven architecture will be considered a plus Familiarity with geospatial data (eg Google places) and/or EV Charging network interfaces (eg OCPI) will be considered a plus Fluency in English is a must, as we are a multinational company. Active contribution as a team player to collaborative efforts. Curiosity and a willingness to learn new technologies, embracing an out-of-the-box thinking approach. BenefitsAt MORO TECH, we don't just talk about supporting our team, we build it into everything we do. Here's how we invest in you.💰 Your Expertise RewardedA competitive compensation package that grows with your impactAnnual Performance and Salary Reviews to celebrate your progress⚡Supporting Your Daily SuccessMonthly Meal Vouchers to fuel your creativityPremium Private Health Coverage for you and your familyExtra vacation days to recharge and explore🌱 Never Stop GrowingYearly training budget to master new skillsCutting-edge tech setup with optional upgrades to customize your gearStructured growth plans and regular progress check-ins🌍 Work Without BordersLocation-fluid culture with work-from-anywhere flexibilityModern workspaces designed for collaboration, open for visits as often as you like. Flexible working hours to accommodate your productivity peaksPlease note that benefits may vary based on the location.A glimpse at our principles:We move at the speed of culture. We are always evolving, staying relevant through agility and an entrepreneur spirit.We feel comfortable with the unknown. Innovation requires embracing uncertainty, and we do so with confidence and creativity.We act with passion. Whether we're achieving our goals or learning from a failure, we do it passionately.We enjoy being diverse. We are committed to fostering an environment where we can celebrate and embrace our diversity and each person's individuality so that people can bring their whole selves to work.",
       "applyUrl": "https://pt.linkedin.com/jobs/view/software-engineer-java-at-moro-tech-4439072085",
       "postedAt": "2026-06-15T00:00:00.000Z",
       "remoteType": "remote",
       "tier": "mid",
       "techStack": [
-        "java"
+        "java",
+        "mongodb"
       ],
       "companyDomain": null,
       "department": null,
@@ -12550,56 +12633,6 @@
       "salaryMax": null,
       "salaryCurrency": null,
       "id": "linkedin-4438569762"
-    },
-    {
-      "source": "linkedin",
-      "externalId": "4400530797",
-      "title": "Senior Backend Engineer",
-      "company": "ECCO",
-      "location": "Surabaya, East Java, Indonesia",
-      "description": "Location: Surabaya, IndonesiaDo you want to become an ambassador for a globally recognized high quality brand?Are you ready for the new challenges?Join our organization and help us build the best in class global IT function that is technologically sound, future proof and can react quickly to ever-changing demands!Some career choices have more impact than others. When you join ECCO, you become part of a global family where we value people who do things differently. BE DIFFERENT AND FIT IN! Job PurposeAs a Senior Backend Engineer, you will be responsible for developing and operating the backend services that power our innovative globally available frontends () and underlying processing systems. This role requires a strong understanding of software engineering best practices across the entire Software Development Lifecycle, ensuring the stability, scalability, and reliability of our backendResponsibilitiesDesign and develop reliable, scalable, and secure backend services and APIs.Contribute to solution architecture to ensure business alignment, ease of development and maintenance. Continuously improve developer experience through high coding standards and optimized ways of working. Develop and maintain Infrastructure as Code for provisioning and managing cloud resources. Optimize CI/CD pipelines to build, test, and deploy backend services reliably and efficiently. Manage cloud infrastructure to ensure smooth operation of backend systems. Collaborate closely within a cross-functional team to deliver high quality technical solutions. RequirementsBachelor’s degree in computer science or similar, or equivalent relevant work experience. 5+ years of backend development experience with strong focus on .NET in C#. Proven experience with GitHub Actions or similar CI/CD technologies. Proven experience with building ecommerce solutions for either B2B or B2C.Strong understanding of RESTful API design principles and best practices. Solid understanding of Infrastructure as Code and ideally hands on experience with Terraform.Proficiency in managing Azure Cloud infrastructure, deploying, and operating backend services. Experience using observability tools (e.g., Datadog). Familiarity with containerization technologies such as Docker. Experience working within Agile development methodologies. Excellent oral and written communication skills in English. Strong analytical and problem solving abilities, high attention to detail, and strong organizational skills. Proactive, pragmatic and solution oriented mindset; adaptable to diverse business environments. Collaborative team player committed to delivering high quality outcomes and fostering knowledge sharing. CREATE THE FOOTPRINTS OF TOMORROWAt ECCO, you become part of a meaningful, developing and multicultural workplace. You join a global family of more than 25,000 people who are proud to create the footprints of tomorrow.Headquartered in Denmark, we are a family-owned company that offers international opportunities. Our offices and facilities have an informal culture and relaxed dress code – our shoe code is slightly stricter.Join us and we guarantee lifelong learning – the speed of progress is up to you. So, if you’re curious, passionate and ready to make an impact, you’ll fit right in.",
-      "applyUrl": "https://id.linkedin.com/jobs/view/senior-backend-engineer-at-ecco-4400530797",
-      "postedAt": "2026-06-13T00:00:00.000Z",
-      "remoteType": "unknown",
-      "tier": "senior",
-      "techStack": [
-        "react",
-        "c#",
-        "docker",
-        "terraform",
-        "azure"
-      ],
-      "companyDomain": null,
-      "department": null,
-      "expiresAt": null,
-      "salaryMin": null,
-      "salaryMax": null,
-      "salaryCurrency": null,
-      "id": "linkedin-4400530797"
-    },
-    {
-      "source": "linkedin",
-      "externalId": "4407980847",
-      "title": "Senior Software Engineer",
-      "company": "Google",
-      "location": "Cambridge, MA",
-      "description": "Minimum qualifications:Bachelor's degree or equivalent practical experience.5 years of experience in object-oriented programming with Java, C++, or Python.3 years of experience testing, maintaining, or launching software products.1 year of experience with software design and architecture.Preferred qualifications:Master's degree or PhD in Computer Science or related technical field.5 years of experience with data structures and algorithms.1 year of experience in a technical leadership role.Experience developing accessible technologies.About The JobGoogle's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.With your technical expertise, you will manage project priorities, deadlines, and deliverables. You will design, develop, test, deploy, maintain, and enhance software solutions.Individual pay is determined by factors including job-related skills, experience, and relevant education or training.US: $174000 - $253000 (USD) + 15% bonus target + equity + benefitsResponsibilitiesLearn more about benefits at Google .Write and test product or system development code.Participate in, or lead, design reviews with peers and stakeholders to decide amongst available technologies.Review code developed by other developers and provide feedback to ensure best practices (e.g., style guidelines, checking code in, accuracy, testability, and efficiency).Contribute to existing documentation or educational content and adapt content based on product/program updates and user feedback.Triage product or system issues and debug/track/resolve by analyzing the sources of issues and the impact on hardware, network, or service operations and quality.Google is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. See also Google's EEO Policy and EEO is the Law. If you have a disability or special need that requires accommodation, please let us know by completing our Accommodations for Applicants form .",
-      "applyUrl": "https://www.linkedin.com/jobs/view/senior-software-engineer-at-google-4407980847",
-      "postedAt": "2026-06-13T00:00:00.000Z",
-      "remoteType": "remote",
-      "tier": "senior",
-      "techStack": [
-        "python",
-        "java",
-        "c++"
-      ],
-      "companyDomain": null,
-      "department": null,
-      "expiresAt": null,
-      "salaryMin": null,
-      "salaryMax": null,
-      "salaryCurrency": null,
-      "id": "linkedin-4407980847"
     }
   ]
 }
