@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-17T02:58:54.000Z",
-  "count": 521,
+  "generatedAt": "2026-07-17T08:19:00.000Z",
+  "count": 522,
   "jobs": [
     {
       "source": "linkedin",
@@ -27,6 +27,30 @@
       "salaryMax": null,
       "salaryCurrency": null,
       "id": "linkedin-4441135420"
+    },
+    {
+      "source": "linkedin",
+      "externalId": "4441150664",
+      "title": "Software Engineer",
+      "company": "Switcher",
+      "location": "India",
+      "description": "📍 Remote, India · Full-time · 💰 ₹6L to ₹18LSoftware Developer An Accel-backed consumer brand we're working with is hiring software developers. We keep the company confidential until there's a mutual fit.Join a team building a product used by millions. Freshers and early-career developers welcome.What you'll do:- Write and ship code across web or backend- Learn fast alongside senior engineers- Own small features end to endWhat you'll bring:- You can code in any modern language (JavaScript, Python, Java or similar)- A project, internship or degree that shows you can build- Hunger to learn and shipHow Switcher works: no endless forms. You come in once through us, stay anonymous, and we only put you forward if you clear the bar. Your current employer never sees a thing.A note on AI: we may use AI tools to help review applications and resumes and flag inconsistencies. They assist our team, they don't replace it, and final decisions are made by people. Contact us for how your data is handled.",
+      "applyUrl": "https://in.linkedin.com/jobs/view/software-engineer-at-switcher-4441150664",
+      "postedAt": "2026-07-17T00:00:00.000Z",
+      "remoteType": "remote",
+      "tier": "mid",
+      "techStack": [
+        "python",
+        "javascript",
+        "java"
+      ],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "linkedin-4441150664"
     },
     {
       "source": "linkedin",
@@ -1323,7 +1347,7 @@
       "title": "Software development\nFrontend Developer",
       "company": "defdone",
       "location": "PoznaÅ,",
-      "description": "Software developmentBackFrontend DeveloperYouâll work with international team on development and maintenance of the apps. We built most of our stuff using React + Redux and Node.js + Express. We prefer to use TypeScript when possible, but we believe if youâre good JavaScript developer there is nothing better than learn on the real project. We provide you time and materials to learn.Salary and seniorityJunior 1+ years of experience 10-15k PLN NETMiddle 3+ years of experience 15-25k PLN NETSenior 5+ years of experience 25-35k PLN NETConditions Contract (permanent): B2B Client: 100% remote software house Work mode: Flexible working hours Size of the company: > 30Requests (â­ââ­â­â­) frontend development (React.js) (â­â­â­) redux or other state management lib (â­â­) docker (not necessary) (â­) e2e testing (not necessary) (â­)Easy ApplyPlease mention the word **HEAVENLY** and tag RNTIuMTU5LjI0Ny4xNzg= when applying to show you read the job post completely (#RNTIuMTU5LjI0Ny4xNzg=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+      "description": "Software developmentBackFrontend DeveloperYouâll work with international team on development and maintenance of the apps. We built most of our stuff using React + Redux and Node.js + Express. We prefer to use TypeScript when possible, but we believe if youâre good JavaScript developer there is nothing better than learn on the real project. We provide you time and materials to learn.Salary and seniorityJunior 1+ years of experience 10-15k PLN NETMiddle 3+ years of experience 15-25k PLN NETSenior 5+ years of experience 25-35k PLN NETConditions Contract (permanent): B2B Client: 100% remote software house Work mode: Flexible working hours Size of the company: > 30Requests (â­ââ­â­â­) frontend development (React.js) (â­â­â­) redux or other state management lib (â­â­) docker (not necessary) (â­) e2e testing (not necessary) (â­)Easy ApplyPlease mention the word **HEAVENLY** and tag RMTcyLjE4Mi4yMjYuMTM3 when applying to show you read the job post completely (#RMTcyLjE4Mi4yMjYuMTM3). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
       "applyUrl": "https://remoteOK.com/remote-jobs/remote-software-developmentfrontend-developer-defdone-1134928",
       "postedAt": "2026-07-13T16:51:54.000Z",
       "remoteType": "remote",
