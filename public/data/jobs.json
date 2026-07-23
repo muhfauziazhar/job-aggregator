@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-23T14:13:33.000Z",
-  "count": 488,
+  "generatedAt": "2026-07-23T19:24:40.000Z",
+  "count": 489,
   "jobs": [
     {
       "source": "linkedin",
@@ -120,6 +120,26 @@
       "salaryMax": null,
       "salaryCurrency": null,
       "id": "linkedin-4391631798"
+    },
+    {
+      "source": "remoteok",
+      "externalId": "1135217",
+      "title": "Backend Developer",
+      "company": "Bjak",
+      "location": "India",
+      "description": "About BJAKThe original mission of BJAK is we believe people deserve smarter ways to plan, save and grow their money. This is the origin of our name.Started in 2019, we built the first mobile-first, insurance platform, enabling insurance to be accessible online by millions in the region. Today, its the leading insurance platform in Southeast Asia.Today, we are expanding ways to help people in the region â this includes spending, saving, investing, exchanging, travelling, and more. Our mission is help people get more from their money every day.We have teams working around the world, with over 20 nationalities from our offices and remotely, who truly enjoys their work. We are looking for the most talented and driven people we can find. We are looking for people who work for their passion, not counting hours. Who loves building great next-generation products, not status quo. Who cares about redefining how everyone around us can get the best financial applications, not for an exclusive few.If you're this person, we'd love to talk to you.Â The RoleWe are looking for backend engineers to build the core systems behind BJAK's AI Neobank app.This role is for engineers who can build reliable APIs, workflows and financial product infrastructure that can scale across markets, partners and millions of users.Â What You'll OwnBuild backend services and APIs for onboarding, accounts, payments, cards, transfers, rewards, travel, FX, KYC and risk flows.Design reliable systems that can support real customer transactions, operational workflows and future financial products.Integrate with internal systems, financial partners, payment providers, AI services and third-party platforms.Own backend quality across reliability, security, latency, observability, data integrity and incident handling.Work with product, frontend, mobile and AI teams to launch features quickly and safely.Improve existing systems by simplifying flows, removing manual work and automating repeatable processes.Â What We're Looking ForStrong backend engineering experience in production systems.Good understanding of APIs, databases, authentication, authorization, queues, jobs, events and integrations.Experience building services used by real customers or internal operations at meaningful scale.Strong debugging, reliability, security and data quality mindset.Able to make practical trade-offs between speed, correctness, scalability and maintainability.Fintech, payments, banking, wallet, KYC, fraud or risk experience is a strong plus, but not required if fundamentals are strong.Â This Role Is Not ForEngineers who only want isolated backend tasks.People who ignore security, data consistency, monitoring or operational risk.Developers who cannot work with fast-changing product requirements.Candidates who talk about scale but have not handled production systems.People who exaggerate impact without being clear on ownership.The BarWe are looking for engineers with real technology career highlights. A strong highlight is not just working at a famous company. A strong highlight means you personally helped build, ship or scale a serious product, platform or system.Â LocationThis role is remote, but candidates must be based in India. We are hiring specifically for this market, so applicants should already be based in India.Â LanguageEnglish is our main working language across global teams. Strong English communication is required.Â Interview ProcessOur process is designed to move fast:1. Online assessment or practical task2. Technical interview3. CEO / final roundFor strong candidates, we aim to complete the process and make an offer within 1 week from the start of the interview process. Candidates who complete assessments quickly will be prioritized.Please mention the word **PROFOUNDLY** and tag RMTQ1LjEzMi45OS4xOA== when applying to show you read the job post completely (#RMTQ1LjEzMi45OS4xOA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+      "applyUrl": "https://remoteOK.com/remote-jobs/remote-backend-developer-bjak-1135217",
+      "postedAt": "2026-07-22T16:00:20.000Z",
+      "remoteType": "remote",
+      "tier": "mid",
+      "techStack": [],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "remoteok-1135217"
     },
     {
       "source": "linkedin",
@@ -400,12 +420,36 @@
       "id": "linkedin-4367883788"
     },
     {
+      "source": "linkedin",
+      "externalId": "4443783200",
+      "title": "AI Engineer",
+      "company": "Rope Digital",
+      "location": "Ai, Aceh, Indonesia",
+      "description": "What you'll do Design and build RAG pipelines and agent systems Define evals and own model quality Integrate AI into existing client products Ship production-grade observability and guardrailsWhat we're looking for 3+ years engineering experience, 1+ year shipping LLM features Fluent in Python or TypeScript Hands-on with OpenAI, Anthropic, vector DBs, LangChain/LlamaIndex or similar",
+      "applyUrl": "https://id.linkedin.com/jobs/view/ai-engineer-at-rope-digital-4443783200",
+      "postedAt": "2026-07-22T00:00:00.000Z",
+      "remoteType": "unknown",
+      "tier": "mid",
+      "techStack": [
+        "python",
+        "typescript",
+        "rails"
+      ],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "linkedin-4443783200"
+    },
+    {
       "source": "remoteok",
       "externalId": "1135150",
       "title": "Senior Data Analyst",
       "company": "AB InBev",
       "location": "Brazil",
-      "description": "About us AB InBev is the leading global brewer and one of the worldâs top 5 consumer product companies. With over 500 beer brands, weâre number one or two in many of the worldâs top beer markets, including North America, Latin America, Europe, Asia, and Africa. About AB InBev Growth Group Created in 2022, the Growth Group unifies our business-to-business (B2B), direct-to-consumer (DTC), Sales & Distribution, and Marketing teams. By bringing together global tech and commercial functions, the Growth Group allows us to fully leverage data and drive digital transformation and organic growth for AB InBev around the world. In addition to supporting well known global beer brands like Corona, Budweiser and Michelob Ultra, the Growth Group is home to a robust suite of digital products including our B2B digital commerce platform BEES, on-demand delivery services Ze Delivery and TaDa Delivery, and table top beer keg PerfectDraft. We are an exceptional team, focused on understanding and supporting consumer and customer needs, harnessing new technology, and scaling growth opportunities. About the Role: We are looking for a Senior Data Analyst to join the BEES Fintech Data Analytics team. This role sits at the intersection of Business Intelligence, Advanced Analytics, and Analytics Engineering, transforming complex data into actionable insights that drive strategic decisions across Credit, Payments and Product teams. The ideal candidate is not only able to build reports and dashboards but also understands statistical methods, experimental design, data modeling, and modern data platform concepts. This person acts as a trusted business partner, helping stakeholders identify opportunities, validate hypotheses, and make data-driven decisions. What you'll do: Develop scalable analytical solutions using Power BI, Azure Databricks, SQL, and Python. Design and maintain dashboards, KPI frameworks, semantic models, and self-service analytics solutions. Transform data into actionable insights that support strategic business decisions. Apply statistical and analytical techniques to identify trends, opportunities, and business impacts. Perform exploratory analysis, ad hoc studies, and support experimentation initiatives. Partner with Product, CommercPlease mention the word **INNOCUOUS** and tag RNzQuMjM1LjExNy45Nw== when applying to show you read the job post completely (#RNzQuMjM1LjExNy45Nw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+      "description": "About us AB InBev is the leading global brewer and one of the worldâs top 5 consumer product companies. With over 500 beer brands, weâre number one or two in many of the worldâs top beer markets, including North America, Latin America, Europe, Asia, and Africa. About AB InBev Growth Group Created in 2022, the Growth Group unifies our business-to-business (B2B), direct-to-consumer (DTC), Sales & Distribution, and Marketing teams. By bringing together global tech and commercial functions, the Growth Group allows us to fully leverage data and drive digital transformation and organic growth for AB InBev around the world. In addition to supporting well known global beer brands like Corona, Budweiser and Michelob Ultra, the Growth Group is home to a robust suite of digital products including our B2B digital commerce platform BEES, on-demand delivery services Ze Delivery and TaDa Delivery, and table top beer keg PerfectDraft. We are an exceptional team, focused on understanding and supporting consumer and customer needs, harnessing new technology, and scaling growth opportunities. About the Role: We are looking for a Senior Data Analyst to join the BEES Fintech Data Analytics team. This role sits at the intersection of Business Intelligence, Advanced Analytics, and Analytics Engineering, transforming complex data into actionable insights that drive strategic decisions across Credit, Payments and Product teams. The ideal candidate is not only able to build reports and dashboards but also understands statistical methods, experimental design, data modeling, and modern data platform concepts. This person acts as a trusted business partner, helping stakeholders identify opportunities, validate hypotheses, and make data-driven decisions. What you'll do: Develop scalable analytical solutions using Power BI, Azure Databricks, SQL, and Python. Design and maintain dashboards, KPI frameworks, semantic models, and self-service analytics solutions. Transform data into actionable insights that support strategic business decisions. Apply statistical and analytical techniques to identify trends, opportunities, and business impacts. Perform exploratory analysis, ad hoc studies, and support experimentation initiatives. Partner with Product, CommercPlease mention the word **INNOCUOUS** and tag RMTQ1LjEzMi45OS4xOA== when applying to show you read the job post completely (#RMTQ1LjEzMi45OS4xOA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
       "applyUrl": "https://remoteOK.com/remote-jobs/remote-senior-data-analyst-ab-inbev-1135150",
       "postedAt": "2026-07-21T16:01:55.000Z",
       "remoteType": "remote",
@@ -676,12 +720,16 @@
       "title": "Backend Developer",
       "company": "Yatech Studio",
       "location": "Kediri, East Java, Indonesia",
-      "description": "",
+      "description": "HomePortfolioCareerBlogEnglish IndonesiaHomePortfolioCareerBlogAI CV ReviewerBackend DeveloperMidKediri, IndonesiaWFO - Full-timeclosedApply NowJob DescriptionWe are looking for a backend developer to join our team.RequirementsExperience with NodeJSExperience with ExpressJSExperience with MongoDBExperience with TypeScriptMinimum 2 years of experienceGood communication skillsGood problem-solving skillsDark theme loverIf you are interested in this position, please send your resume and portfolio to office@yatech.idHomePortfolioCareerBlog© 2021Yatech Studio. All rights reserved",
       "applyUrl": "https://id.linkedin.com/jobs/view/backend-developer-at-yatech-studio-4440498322",
       "postedAt": "2026-07-21T00:00:00.000Z",
       "remoteType": "unknown",
       "tier": "mid",
-      "techStack": [],
+      "techStack": [
+        "typescript",
+        "node",
+        "mongodb"
+      ],
       "companyDomain": null,
       "department": null,
       "expiresAt": null,
@@ -794,7 +842,7 @@
       "title": "Backend Developer",
       "company": "albo",
       "location": "Ciudad de MÃ©xico, Ciudad de MÃ©xico, MÃ©xico",
-      "description": "alboalbo is a leading fintech company offering financial products to individuals and SMBs with the mission to bring financial freedom to everyone everywhere.About The RoleAs a Senior Backend Engineer you'll design, build, and operate the microservices that power albo's core financial products â from card issuing and authorization to credit lines, payments, and money movement. You'll own services end-to-end across our polyglot, event-driven platform, making pragmatic architectural decisions that keep money-critical flows correct, idempotent, and observable at scale. You'll work close to the domain (SPEI, ledgers, credit, authorization) and close to production, partnering with Product, Infra, and other engineering squads to ship reliable financial infrastructure.What Youâll Be Doing At AlboDesign, build, and maintain backend microservices in Go and Java/Quarkus within our domain-oriented architecture (customer, account, transactional, and shared domains).Own services end-to-end: architecture, implementation, testing, deployment to QA/SBX/PROD, monitoring, and on-call ownership of what you ship.Build event-driven and REST integrations across services (Pub/Sub, service-to-service REST via our private-proxy mesh), with strong guarantees around idempotency, reconciliation, and failure handling (dead-letter/reprocess, no silent data loss).Model and evolve data across MongoDB and SingleStore/MemSQL, keeping dual-write flows consistent between the display source of truth and what card authorization actually validates.Ship through our CI/CD (Jenkins shared pipelines, containerized deploys to GKE/Kubernetes on GCP), managing configuration and secrets via GCP Secret Manager.Write clean, self-documenting, well-tested code; participate in code reviews and raise the engineering bar for correctness and simplicity.Collaborate cross-functionally with Product, Infra/Platform, and other backend squads to break down epics into shippable, incremental deliveries.Instrument observability (structured logging, metrics, tracing) and use it to debug production issues and continuously improve reliability and performance.Contribute to technical design docs, architecture diagrams, and shared conventions/scaffolding that scale the team.About You And What Type Of Skills You'll NeedBachelor's degree in Computer Science, Software Engineering, or related field (or equivalent hands-on experience).+5 years of experience building and operating backend services in production, ideally in the Banking or Fintech industry.Strong proficiency in at least one of Go or Java (Quarkus/Spring or similar), and willingness to work across both in a polyglot environment.Solid experience with microservices and distributed systems: REST APIs, asynchronous/event-driven messaging (Pub/Sub, Kafka, or similar), service boundaries, and versioned contracts.Hands-on experience with cloud infrastructure (GCP preferred), containers and Kubernetes, and CI/CD pipelines.Comfort with both SQL and NoSQL data stores (MongoDB, SingleStore/MySQL/Postgres) and an eye for data consistency in money-critical flows.Deep understanding of reliability patterns â idempotency, retries, reconciliation, graceful degradation â and why they matter when handling real money.Familiarity with fintech/payments concepts (card authorization, ledgers, transfers, credit) is a strong plus.Customer Centricity: You're customer-obsessed, constantly thinking about improving the customer experience.Hands-on: We're looking for a comfortable and willing leader to be a hands-on contributor who is energized by rolling up their sleeves, making things happen, and enabling the team to do the same.Done is better than perfect: As things change and move quickly, you are excited by the fast pace and opportunity to constantly learn and help your team learn.Communication: Excellent ability to communicate internally and externally, quickly build relationships, and work cross-functionally.Extreme ownership: You hold yourself accountable to a high bar. You are supremely organized and see what needs to happen to achieve goals.Results & Data Driven: You understand the business metrics you are responsible for, and you demonstrate these insights to drive constant improvement.Please mention the word **PORTABLE** and tag RNzQuMjM1LjExNy45Nw== when applying to show you read the job post completely (#RNzQuMjM1LjExNy45Nw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+      "description": "alboalbo is a leading fintech company offering financial products to individuals and SMBs with the mission to bring financial freedom to everyone everywhere.About The RoleAs a Senior Backend Engineer you'll design, build, and operate the microservices that power albo's core financial products â from card issuing and authorization to credit lines, payments, and money movement. You'll own services end-to-end across our polyglot, event-driven platform, making pragmatic architectural decisions that keep money-critical flows correct, idempotent, and observable at scale. You'll work close to the domain (SPEI, ledgers, credit, authorization) and close to production, partnering with Product, Infra, and other engineering squads to ship reliable financial infrastructure.What Youâll Be Doing At AlboDesign, build, and maintain backend microservices in Go and Java/Quarkus within our domain-oriented architecture (customer, account, transactional, and shared domains).Own services end-to-end: architecture, implementation, testing, deployment to QA/SBX/PROD, monitoring, and on-call ownership of what you ship.Build event-driven and REST integrations across services (Pub/Sub, service-to-service REST via our private-proxy mesh), with strong guarantees around idempotency, reconciliation, and failure handling (dead-letter/reprocess, no silent data loss).Model and evolve data across MongoDB and SingleStore/MemSQL, keeping dual-write flows consistent between the display source of truth and what card authorization actually validates.Ship through our CI/CD (Jenkins shared pipelines, containerized deploys to GKE/Kubernetes on GCP), managing configuration and secrets via GCP Secret Manager.Write clean, self-documenting, well-tested code; participate in code reviews and raise the engineering bar for correctness and simplicity.Collaborate cross-functionally with Product, Infra/Platform, and other backend squads to break down epics into shippable, incremental deliveries.Instrument observability (structured logging, metrics, tracing) and use it to debug production issues and continuously improve reliability and performance.Contribute to technical design docs, architecture diagrams, and shared conventions/scaffolding that scale the team.About You And What Type Of Skills You'll NeedBachelor's degree in Computer Science, Software Engineering, or related field (or equivalent hands-on experience).+5 years of experience building and operating backend services in production, ideally in the Banking or Fintech industry.Strong proficiency in at least one of Go or Java (Quarkus/Spring or similar), and willingness to work across both in a polyglot environment.Solid experience with microservices and distributed systems: REST APIs, asynchronous/event-driven messaging (Pub/Sub, Kafka, or similar), service boundaries, and versioned contracts.Hands-on experience with cloud infrastructure (GCP preferred), containers and Kubernetes, and CI/CD pipelines.Comfort with both SQL and NoSQL data stores (MongoDB, SingleStore/MySQL/Postgres) and an eye for data consistency in money-critical flows.Deep understanding of reliability patterns â idempotency, retries, reconciliation, graceful degradation â and why they matter when handling real money.Familiarity with fintech/payments concepts (card authorization, ledgers, transfers, credit) is a strong plus.Customer Centricity: You're customer-obsessed, constantly thinking about improving the customer experience.Hands-on: We're looking for a comfortable and willing leader to be a hands-on contributor who is energized by rolling up their sleeves, making things happen, and enabling the team to do the same.Done is better than perfect: As things change and move quickly, you are excited by the fast pace and opportunity to constantly learn and help your team learn.Communication: Excellent ability to communicate internally and externally, quickly build relationships, and work cross-functionally.Extreme ownership: You hold yourself accountable to a high bar. You are supremely organized and see what needs to happen to achieve goals.Results & Data Driven: You understand the business metrics you are responsible for, and you demonstrate these insights to drive constant improvement.Please mention the word **PORTABLE** and tag RMTQ1LjEzMi45OS4xOA== when applying to show you read the job post completely (#RMTQ1LjEzMi45OS4xOA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
       "applyUrl": "https://remoteOK.com/remote-jobs/remote-backend-developer-albo-1135248",
       "postedAt": "2026-07-20T22:49:57.000Z",
       "remoteType": "remote",
@@ -812,6 +860,38 @@
       "salaryMax": null,
       "salaryCurrency": null,
       "id": "remoteok-1135248"
+    },
+    {
+      "source": "remoteok",
+      "externalId": "1135288",
+      "title": "Full Stack Developer",
+      "company": "Elite Worldgroup Inc.",
+      "location": "Mandaluyong, Mandaluyong, National Capital Region, Philippines",
+      "description": "Test software to ensure responsiveness and efficiencyTroubleshoot, debug and upgrade softwareCreate security and data protection settingsBuild features and applications with a mobile responsive designWrite technical documentationWork with data scientists and analysts to improve software work with development teams and product managers to ideate software solutionsDesign client-side and server-side architectureBuild the front-end of applications through appealing visual designDevelop and manage well-functioning databases and applicationsWrite effective APIsQualificationsMinimum Qualifications:BS Graduate of any Computer related courseProven experience as a Software Developer, Software Engineer or similar roleCreativeMeticulous problem solverResearch-orientedPassionate about new technologiesTeam playerAttention to detailSelf-learnerStrong analytical and planning skillsGood communication and presentation skillsExcellent problem-solving skillsObject-oriented programming and common software design patterns Server-side Programming Language (either one of the following: Mobile dev, PHP, Node.js)Strong knowledge in Web API and web services creation using REST API principlesMEAN (MongoDB/MySQL, Express, Angular and Node.js) Stack developmentMySQL and MongoDB ORM tools for Node.js (primarily Sequelize and Mongoose).Familiarity with OOP design principlesAngularUI Bootstrap, jQuery, jQueryUIKnowledge in working with Linux distros (Debian and/or Redhat) using the Command Line Interface through SSHKnowledge in source control primarily GitExtensive experience with mobile development (Android/iOS); and preferably full-Stack development skillsPlease mention the word **OASIS** and tag RMTQ1LjEzMi45OS4xOA== when applying to show you read the job post completely (#RMTQ1LjEzMi45OS4xOA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+      "applyUrl": "https://remoteOK.com/remote-jobs/remote-full-stack-developer-elite-worldgroup-inc-1135288",
+      "postedAt": "2026-07-20T21:44:01.000Z",
+      "remoteType": "remote",
+      "tier": "mid",
+      "techStack": [
+        "python",
+        "javascript",
+        "typescript",
+        "react",
+        "angular",
+        "node",
+        "php",
+        "graphql",
+        "mongodb",
+        "sql",
+        "linux"
+      ],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "remoteok-1135288"
     },
     {
       "source": "linkedin",
@@ -6112,19 +6192,12 @@
       "title": "Software Engineer [Backend]",
       "company": "Dropsuite",
       "location": "Bandung, West Java, Indonesia",
-      "description": "About the RoleWe are looking for a Software Engineer [Backend] to join our Platform team and work on the backbone of Dropsuite's data backup and recovery product. You will be a key contributor in maintaining, evolving, and scaling the backend services that power our backup engine platform. You will be a part of a global team of product engineers delivering a SaaS platform.The role is focused on working with several core backend services in our backup engine platform, including areas such as backup, restore, download, storage optimization and archiving. A key part of this role is helping maintain and improve the scalability, reliability, and performance of our backend platform as we continue to grow.You will work very closely with many of our amazing Software Engineers and Leads to deliver quality product features, provide fixes and support improvements to the in-market product.Location – Hybrid | Bandung, Indonesia (at least 2 days per week in the office)What You’ll be Doing Developing and maintaining backend servicesContributing to solutions that improve the scalability and reliability of our backup engine platformWorking with cloud infrastructure services on AWS to support system performance and resource efficiencyWriting efficient, well-tested, production-ready code that performs reliably at scaleCollaborating with cross-functional teams to ensure platform stabilityUsing monitoring and observability tools (e.g., Datadog) to help ensure platform health and performanceWorking with a scrum team and participating in scrum ceremonies. Sharing status updates with accuracyContinuously learning and growing your technical skills, with support from senior engineers and team leadsAbout You About 2 to 5 years of experience in Software DevelopmentExperience in C# or Golang would be a plusBachelor’s degree or equivalent in Computer Science or a related fieldKnowledge of Operating systems like Linux and WindowsKnowledge of Relational Databases, SQL and CloudGood interpersonal skills, oral and written skills, with the ability to present ideasAble to express and explain new initiatives along with status updatesValues that are aligned with us being a team of experts, problem solvers and collaborators, who are highly customer focused, dependable and trustworthyScripting skills, Python and bash will be a plusWorking experience with Global teams outside Indonesia will be a huge plusAbout Us NinjaOne unifies IT to simplify work for nearly 40,000 customers in 140+ countries.The NinjaOne Unified IT Operations Platform delivers endpoint management, autonomous patching, backup, and remote access in a single console to improve efficiency, increase resilience, and reduce spend. By automating IT and managing all endpoints, organizations give employees a great technology experience at work.NinjaOne is obsessed with customer success and has retained a 98% customer satisfaction score for more than 5 years.What You’ll Love We are a collaborative, kind, and curious communityWe prioritise your work/life balance offering a hybrid work environment and free in-office lunches throughout the weekWe reward your work with opportunity for growth and advancementGrow personally and together with one of the fastest growing companies globallyDevelop your skills through our renowned training platformReceive competitive compensationCollaborate with an amazing international workforceAdditional Information This position is NOT eligible for Visa sponsorship.All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, genetic information, marital status, veteran status, or any other status protected by applicable law. We are committed to providing an inclusive and diverse work environment.",
+      "description": "",
       "applyUrl": "https://id.linkedin.com/jobs/view/software-engineer-backend-at-dropsuite-4437021345",
       "postedAt": "2026-07-08T00:00:00.000Z",
       "remoteType": "unknown",
       "tier": "mid",
-      "techStack": [
-        "python",
-        "go",
-        "c#",
-        "aws",
-        "sql",
-        "linux"
-      ],
+      "techStack": [],
       "companyDomain": null,
       "department": null,
       "expiresAt": null,
@@ -12628,55 +12701,6 @@
       "salaryMax": null,
       "salaryCurrency": null,
       "id": "linkedin-4432548340"
-    },
-    {
-      "source": "remoteok",
-      "externalId": "1133985",
-      "title": "Senior Backend Software Developer",
-      "company": "BitPay",
-      "location": "Remote",
-      "description": "BitPay, Inc., founded in 2011, is the worldâs leading blockchain (cryptocurrency) payments company. We serve top merchants across six continents, providing a seamless and secure cryptocurrency payments experience. BitPay builds powerful tools to accept, store, and spend cryptocurrency safely and efficiently.Weâre looking for a Senior Backend Software Developer to join our remote US-based team and help craft the next generation of innovative products. If you thrive on solving complex problems, building scalable systems, and staying ahead of technology trends, this role is for you.What You'll Do:Develop scalable and maintainable backend systems using Node.js and MongoDBCollaborate with cross-functional teams to build features for customers and internal toolsEnsure high code quality through unit, integration, and functional testing, code reviews, and thorough documentationAddress challenges in scalability, reliability, and logging during developmentMentor and guide other developers, fostering growth and knowledge-sharingStay up-to-date with emerging technologies to keep our team innovative and competitiveWhat We're Looking For:5+ years of professional backend development experienceÂ Expert in Node.js and MongoDBProven experience delivering production-ready APIsStrong desire for continuous learning and process improvementTrack record of delivering high-quality software in professional environmentsPassion for your craft, drive for progress, and commitment to excellencePortfolio showcasing your work (e.g., GitHub)Highly Preferred: blockchain or fintech development experienceBachelorâs degree in Computer Science or equivalent experience with notable projectsWhat We Offer:Collaborate with a team of intelligent, enthusiastic individuals.Thrive in a rapidly expanding crypto company with global reach, where your contributions make a tangible impact.Work remote with a generous vacation policy, including the opportunity to take a sabbatical and select your own holidays.Access to continuous learning and development opportunities, supported by professional development reimbursement.Competitive salary package with comprehensive benefits, including fully covered medical and dental plans. We also offer telemedicine, life insurance, disability insurance, vision coverage, 401k, travel assistance, and more.Option to receive payment in cryptocurrency, along with a crypto match program.Stock option awards available to all employees.Home office allowance, reimbursement for internet/cell expenses, complimentary Amazon Prime and Spotify subscriptions.BitPay is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, genetics, disability, age, or veteran status.IMPORTANT NOTICE: We are committed to a safe and secure hiring process. All roles and communications are shared only through our official channels and with employees of BitPay, and applications are posted via our official careers page. We will not message you via social media direct messages or websites not affiliated with BitPay to recruit or collect personal information. To protect yourself from fraud, please ensure that you are applying to BitPay through our official BitPay Career Page and take the following steps if you notice anything suspicious. BitPay will never ask you to:Install remote-access tools (TeamViewer, AnyDesk, etc.)Share SSN or banking details before a formal, written offer from BitPay People OpsInterview via personal email domains, text, or messaging appsPay fees, purchase equipment, or send money/crypto/gift cards for any reasonHow to verify legitimate BitPay recruiting:Emails will come only from @bitpay.com (e.g., peopleops@bitpay.com or name@bitpay.com)Â Interviews are conducted via Google Meet links ending in meet.google.comOpen roles are listed at bitpay.com/careers/If you receive a suspicious message claiming to be BitPay:Do not click links or provide informationReport as spam/phishing to your email providerVerify the role at www.bitpay.com/careersPlease mention the word **TINGLE** and tag RMjAuMjkuMjkuMTg= when applying to show you read the job post completely (#RMjAuMjkuMjkuMTg=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
-      "applyUrl": "https://remoteOK.com/remote-jobs/remote-senior-backend-software-developer-bitpay-1133985",
-      "postedAt": "2026-06-23T16:52:28.000Z",
-      "remoteType": "remote",
-      "tier": "senior",
-      "techStack": [
-        "javascript",
-        "node",
-        "mongodb"
-      ],
-      "companyDomain": null,
-      "department": null,
-      "expiresAt": null,
-      "salaryMin": 140000,
-      "salaryMax": 150000,
-      "salaryCurrency": "USD",
-      "id": "remoteok-1133985"
-    },
-    {
-      "source": "remoteok",
-      "externalId": "1134008",
-      "title": "Junior Data Analyst",
-      "company": "Caterpillar Inc.",
-      "location": "Houston, Houston, Texas, United States",
-      "description": "Job Title: Junior Data AnalystLocation: Remote / Onsite (as applicable) Employment Type: Full-TimeJob SummaryWe are seeking a detail-oriented and analytical Junior Data Analyst to join our team. The ideal candidate will assist in collecting, analyzing, and interpreting data to help drive business decisions. This role is an excellent opportunity for individuals looking to build a career in data analytics and business intelligence.Key ResponsibilitiesCollect, clean, validate, and organize data from multiple sources.Analyze datasets to identify trends, patterns, and actionable insights.Create and maintain dashboards, reports, and visualizations.Prepare regular and ad-hoc reports for management and stakeholders.Assist in developing KPIs and performance metrics.Perform data quality checks and troubleshoot data discrepancies.Support business teams with data-driven recommendations.Document data processes, methodologies, and findings.Collaborate with cross-functional teams including Operations, Sales, Marketing, and IT.Required QualificationsBachelor's degree in Data Analytics, Statistics, Mathematics, Computer Science, Information Systems, Economics, or a related field.0â2 years of experience in data analysis, reporting, or related roles.Strong analytical and problem-solving skills.Excellent attention to detail and accuracy.Good written and verbal communication skills.Required Technical SkillsMust Have:SQL (Joins, Aggregations, Subqueries, Window Functions)Microsoft Excel (Pivot Tables, VLOOKUP/XLOOKUP, Power Query)Data Cleaning and ValidationData VisualizationPreferred:Power BI or TableauPython (Pandas, NumPy)Basic Statistics and Data InterpretationExperience with databases such as MySQL, PostgreSQL, or SQL ServerPreferred QualificationsKnowledge of ETL concepts and data warehousing.Familiarity with business intelligence tools.Understanding of reporting automation.Exposure to cloud platforms such as AWS, Azure, or Google Cloud is a plus.Key CompetenciesAnalytical ThinkingAttention to DetailTime ManagementCommunication SkillsProblem SolvingTeam CollaborationAdaptabilityWhat You'll GainHands-on experience working with real business data.Exposure to modern analytics and reporting tools.Mentorship from experienced data professionals.Opportunities for career growth into Data Analyst, Business Analyst, or Data Engineer roles.Please mention the word **RECEPTIVE** and tag RNjQuMjM2LjEzMy4xOTU= when applying to show you read the job post completely (#RNjQuMjM2LjEzMy4xOTU=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
-      "applyUrl": "https://remoteOK.com/remote-jobs/remote-junior-data-analyst-caterpillar-inc-1134008",
-      "postedAt": "2026-06-23T14:16:58.000Z",
-      "remoteType": "remote",
-      "tier": "entry",
-      "techStack": [
-        "python",
-        "go",
-        "postgresql",
-        "sql"
-      ],
-      "companyDomain": null,
-      "department": null,
-      "expiresAt": null,
-      "salaryMin": null,
-      "salaryMax": null,
-      "salaryCurrency": null,
-      "id": "remoteok-1134008"
     }
   ]
 }
