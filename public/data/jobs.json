@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-27T03:35:41.000Z",
-  "count": 448,
+  "generatedAt": "2026-07-27T09:59:32.000Z",
+  "count": 450,
   "jobs": [
     {
       "source": "linkedin",
@@ -46,6 +46,48 @@
       "salaryMax": null,
       "salaryCurrency": null,
       "id": "linkedin-4442364895"
+    },
+    {
+      "source": "linkedin",
+      "externalId": "4444878776",
+      "title": "Web Developer",
+      "company": "Harrisvile Solutions",
+      "location": "Web, Papua, Indonesia",
+      "description": "Career RoleWeb DeveloperHomeCareer Web Developer©Copyright 2023 Harrisvile Solutions",
+      "applyUrl": "https://id.linkedin.com/jobs/view/web-developer-at-harrisvile-solutions-4444878776",
+      "postedAt": "2026-07-27T00:00:00.000Z",
+      "remoteType": "unknown",
+      "tier": "mid",
+      "techStack": [],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "linkedin-4444878776"
+    },
+    {
+      "source": "linkedin",
+      "externalId": "4444887331",
+      "title": "3. Backend Engineer (GO)",
+      "company": "upscale.id",
+      "location": "Yogyakarta, Yogyakarta, Indonesia",
+      "description": "",
+      "applyUrl": "https://id.linkedin.com/jobs/view/3-backend-engineer-go-at-upscale-id-4444887331",
+      "postedAt": "2026-07-27T00:00:00.000Z",
+      "remoteType": "unknown",
+      "tier": "mid",
+      "techStack": [
+        "go"
+      ],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "linkedin-4444887331"
     },
     {
       "source": "linkedin",
@@ -136,6 +178,30 @@
       "salaryMax": null,
       "salaryCurrency": null,
       "id": "linkedin-4444834945"
+    },
+    {
+      "source": "linkedin",
+      "externalId": "4425307200",
+      "title": "Developer III - Software Engineering",
+      "company": "UST",
+      "location": "Coimbatore, Tamil Nadu, India",
+      "description": "Role DescriptionRoleSkillRole DescriptionEngineering Tools DevelopmentBachelor's degree or higher in computer science or other technical discipline.Knowledge of Java Script, CSS, HTMLExperience in object oriented programming languages like Java, Python, Go or Perl.Experience with Jenkins CI/CD pipelinesExperience with code repository such as GIT or BitbucketExperience with SQLExcellent analytical and problem-solving skills.Effective verbal and written communication skills that include the ability to describe highly technical concepts in non-technical termsFull Stack Development experienceExperience in scripting languages to create API sExperience in creating data architectureExperience in creating, handling and monitoring orchestration tools.Dashboard creation experience - 3 to 4 years desirableStrong understanding of Splunk Search Language and regular expressionsExperience in advanced search and reporting commandsDemonstrated ability to create complex dashboards and visualizationsSkillsfullstack,cicd pipeline,java,css,jenkins,html,tooling development,perl,oops,computer science,orchestration tools",
+      "applyUrl": "https://in.linkedin.com/jobs/view/developer-iii-software-engineering-at-ust-4425307200",
+      "postedAt": "2026-07-26T00:00:00.000Z",
+      "remoteType": "remote",
+      "tier": "mid",
+      "techStack": [
+        "python",
+        "go",
+        "java"
+      ],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "linkedin-4425307200"
     },
     {
       "source": "linkedin",
@@ -245,12 +311,34 @@
       "id": "linkedin-4445347557"
     },
     {
+      "source": "linkedin",
+      "externalId": "4400362349",
+      "title": "Software Engineer (Surabaya, Indonesia)",
+      "company": "camLine | Elisa Industriq",
+      "location": "Surabaya, East Java, Indonesia",
+      "description": "Job Description :Involve in the entire development cycle from requirements analysis to design, coding, testing, implementation and supportOverseas travel will be required for the purpose of customers meeting or onsite projects supportWorks with customers, applications and product management to capture requirements and translate into software functional specificationsJob Requirements :University degree in the field of Computer Science/ Information Technology/ Software Development or equivalentMinimum has two years of working experience in related fieldProvicient in JAVA programming, knowledge in other programming language will be an advantageCan master any new technologies, programming language or design conceptCan master of mathematical sciences models such as: statistics, linear programming, graphs, and many complicated concepts will be usedHave mathematical score such as algorthm, calculus, basic math, aljabar, statistics (minimum B+)JAVA programming test will be conductedGood teamwork and communication skillIndependent, self-discipline and result orientedContact:Email: jobs@camline.com",
+      "applyUrl": "https://id.linkedin.com/jobs/view/software-engineer-surabaya-indonesia-at-camline-elisa-industriq-4400362349",
+      "postedAt": "2026-07-25T00:00:00.000Z",
+      "remoteType": "unknown",
+      "tier": "mid",
+      "techStack": [
+        "java"
+      ],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "linkedin-4400362349"
+    },
+    {
       "source": "remoteok",
       "externalId": "1135445",
       "title": "Safety Data Analyst",
       "company": "SkyWest Airlines",
       "location": "Salt Lake City Metropolitan Area,",
-      "description": "About SkyWestWith over 16,000 aviation professionals operating thousands of daily flights, SkyWest Airlines connects millions of passengers each month to hundreds of destinations across North America. SkyWest operates in partnership with Delta Air Lines, United Airlines, American Airlines, and Alaska Airlines and has a fleet of nearly 450 aircraft. Headquartered in St. George, Utah, SkyWest's industry-leading workforce and excellent leadership team have consistently generated solid operational and economic performance, setting the standard for excellence in the regional industry.SkyWest employees enjoy a distinctive and unmatched culture of teamwork, respect, quality, and professionalism, along with world-class benefits such as a 401(k) match, Performance Rewards, health care, retirement, and discounted travel worldwide.Primary Job DutiesAnalyze, compile, and report safety data to support all SkyWest safety programs. Collect, analyze, and report safety assurance data from multiple safety data sources. Identify, monitor, and communicate safety performance trends and emerging risks. Track, maintain, and report key performance indicators (KPIs) for the Safety Department, including Flight Severity Index (FSI) events. Present data analysis findings in safety meetings, investigations, and Safety Risk Assessments (SRAs). Provide safety data reports and analysis for: Partner safety metric reporting Internal and external safety meetings Pattern and trend analysis for Department Safety Managers and Safety Committees Ad hoc reporting supporting investigations and proactive risk assessments Maintain process measurement data and performance metrics for Safety Managers. Create, update, and maintain Tableau dashboards and other reporting tools to support safety initiatives. Support data-driven decision-making through proactive analysis of safety risks and operational trends. Recognize and report hazards in the work environment through established safety reporting programs. Ensure the accuracy, integrity, and timely delivery of safety data and reports. Compensation: The salary range for this position is $37,000-$52,000 per year. Initial offers will be based on a combination of relevant work experience, education, certifications, and formal training.Minimum RequirementsQualified through education, training, experience, and expertise to perform data analysis functions. Formal education in data analytics, statistics, quantitative methods, data collection, data interpretation, and analytical techniques; and/or a professional data analyst certification. Two years of experience as a Data Analyst or in a related analytical role. Excellent verbal and written communication, presentation, and interpersonal skills. Ability to communicate complex data findings to leadership and business stakeholders. Ability to work effectively in a collaborative team environment. Ability to manage multiple projects simultaneously and prioritize competing deadlines. Highly proficient in Microsoft Excel and experienced with the Microsoft Office Suite. Demonstrated attention to detail and commitment to data accuracy. Proficiency in Tableau, including dashboard development and maintenance. Preferred QualificationsExperience with aviation safety assurance programs, such as ASAP, FOQA, and LOSA. Experience with Excellence through Quality (EtQ) Reliance software. Experience working within an Aviation Safety Management System (SMS). Knowledge of Federal Aviation Regulations (FARs) and company policies and procedures. Experience analyzing operational, safety, or risk-management data. Experience collecting, analyzing, and interpreting large datasets to identify trends, risks, and performance indicators. Physical And Other RequirementsOpen to remote work or based in SGU or SLC. Ability to sit for extended periods while working at a computer. Ability to travel occasionally as required. This is not a Department of Transportation safety-sensitive position. Please complete the online application. Top candidates will be contacted for an interviewPlease mention the word **FAVORED** and tag RMTcyLjE3OC4xMTkuMzQ= when applying to show you read the job post completely (#RMTcyLjE3OC4xMTkuMzQ=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+      "description": "About SkyWestWith over 16,000 aviation professionals operating thousands of daily flights, SkyWest Airlines connects millions of passengers each month to hundreds of destinations across North America. SkyWest operates in partnership with Delta Air Lines, United Airlines, American Airlines, and Alaska Airlines and has a fleet of nearly 450 aircraft. Headquartered in St. George, Utah, SkyWest's industry-leading workforce and excellent leadership team have consistently generated solid operational and economic performance, setting the standard for excellence in the regional industry.SkyWest employees enjoy a distinctive and unmatched culture of teamwork, respect, quality, and professionalism, along with world-class benefits such as a 401(k) match, Performance Rewards, health care, retirement, and discounted travel worldwide.Primary Job DutiesAnalyze, compile, and report safety data to support all SkyWest safety programs. Collect, analyze, and report safety assurance data from multiple safety data sources. Identify, monitor, and communicate safety performance trends and emerging risks. Track, maintain, and report key performance indicators (KPIs) for the Safety Department, including Flight Severity Index (FSI) events. Present data analysis findings in safety meetings, investigations, and Safety Risk Assessments (SRAs). Provide safety data reports and analysis for: Partner safety metric reporting Internal and external safety meetings Pattern and trend analysis for Department Safety Managers and Safety Committees Ad hoc reporting supporting investigations and proactive risk assessments Maintain process measurement data and performance metrics for Safety Managers. Create, update, and maintain Tableau dashboards and other reporting tools to support safety initiatives. Support data-driven decision-making through proactive analysis of safety risks and operational trends. Recognize and report hazards in the work environment through established safety reporting programs. Ensure the accuracy, integrity, and timely delivery of safety data and reports. Compensation: The salary range for this position is $37,000-$52,000 per year. Initial offers will be based on a combination of relevant work experience, education, certifications, and formal training.Minimum RequirementsQualified through education, training, experience, and expertise to perform data analysis functions. Formal education in data analytics, statistics, quantitative methods, data collection, data interpretation, and analytical techniques; and/or a professional data analyst certification. Two years of experience as a Data Analyst or in a related analytical role. Excellent verbal and written communication, presentation, and interpersonal skills. Ability to communicate complex data findings to leadership and business stakeholders. Ability to work effectively in a collaborative team environment. Ability to manage multiple projects simultaneously and prioritize competing deadlines. Highly proficient in Microsoft Excel and experienced with the Microsoft Office Suite. Demonstrated attention to detail and commitment to data accuracy. Proficiency in Tableau, including dashboard development and maintenance. Preferred QualificationsExperience with aviation safety assurance programs, such as ASAP, FOQA, and LOSA. Experience with Excellence through Quality (EtQ) Reliance software. Experience working within an Aviation Safety Management System (SMS). Knowledge of Federal Aviation Regulations (FARs) and company policies and procedures. Experience analyzing operational, safety, or risk-management data. Experience collecting, analyzing, and interpreting large datasets to identify trends, risks, and performance indicators. Physical And Other RequirementsOpen to remote work or based in SGU or SLC. Ability to sit for extended periods while working at a computer. Ability to travel occasionally as required. This is not a Department of Transportation safety-sensitive position. Please complete the online application. Top candidates will be contacted for an interviewPlease mention the word **FAVORED** and tag RMTcyLjE3Mi44Ny44NQ== when applying to show you read the job post completely (#RMTcyLjE3Mi44Ny44NQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
       "applyUrl": "https://remoteOK.com/remote-jobs/remote-safety-data-analyst-skywest-airlines-1135445",
       "postedAt": "2026-07-24T02:34:49.000Z",
       "remoteType": "remote",
@@ -270,7 +358,7 @@
       "title": "Analista de Infraestrutura Pleno DevOps",
       "company": "Melhor Envio",
       "location": "Brasil,",
-      "description": "Anunciada 00:00:00. Com senso de dono e colaboraÃ§Ã£o, unimos forÃ§as para remover barreiras e impulsionarnegÃ³cios. NÃ£oâ¦ - veja esta vaga e outras semelhantes no LinkedIn.Please mention the word **REFORMING** and tag RMTcyLjE3OC4xMTkuMzQ= when applying to show you read the job post completely (#RMTcyLjE3OC4xMTkuMzQ=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+      "description": "Anunciada 00:00:00. Com senso de dono e colaboraÃ§Ã£o, unimos forÃ§as para remover barreiras e impulsionarnegÃ³cios. NÃ£oâ¦ - veja esta vaga e outras semelhantes no LinkedIn.Please mention the word **REFORMING** and tag RMTcyLjE3Mi44Ny44NQ== when applying to show you read the job post completely (#RMTcyLjE3Mi44Ny44NQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
       "applyUrl": "https://remoteOK.com/remote-jobs/remote-analista-de-infraestrutura-pleno-devops-melhor-envio-1135334",
       "postedAt": "2026-07-24T00:09:16.000Z",
       "remoteType": "remote",
@@ -8558,52 +8646,6 @@
       "salaryMax": null,
       "salaryCurrency": null,
       "id": "linkedin-4436933324"
-    },
-    {
-      "source": "linkedin",
-      "externalId": "4400362349",
-      "title": "Software Engineer (Surabaya, Indonesia)",
-      "company": "camLine | Elisa Industriq",
-      "location": "Surabaya, East Java, Indonesia",
-      "description": "Job Description :Involve in the entire development cycle from requirements analysis to design, coding, testing, implementation and supportOverseas travel will be required for the purpose of customers meeting or onsite projects supportWorks with customers, applications and product management to capture requirements and translate into software functional specificationsJob Requirements :University degree in the field of Computer Science/ Information Technology/ Software Development or equivalentMinimum has two years of working experience in related fieldProvicient in JAVA programming, knowledge in other programming language will be an advantageCan master any new technologies, programming language or design conceptCan master of mathematical sciences models such as: statistics, linear programming, graphs, and many complicated concepts will be usedHave mathematical score such as algorthm, calculus, basic math, aljabar, statistics (minimum B+)JAVA programming test will be conductedGood teamwork and communication skillIndependent, self-discipline and result orientedContact:Email: jobs@camline.com",
-      "applyUrl": "https://id.linkedin.com/jobs/view/software-engineer-surabaya-indonesia-at-camline-elisa-industriq-4400362349",
-      "postedAt": "2026-07-04T00:00:00.000Z",
-      "remoteType": "unknown",
-      "tier": "mid",
-      "techStack": [
-        "java"
-      ],
-      "companyDomain": null,
-      "department": null,
-      "expiresAt": null,
-      "salaryMin": null,
-      "salaryMax": null,
-      "salaryCurrency": null,
-      "id": "linkedin-4400362349"
-    },
-    {
-      "source": "linkedin",
-      "externalId": "4425307200",
-      "title": "Developer III - Software Engineering",
-      "company": "UST",
-      "location": "Coimbatore, Tamil Nadu, India",
-      "description": "Role DescriptionRoleSkillRole DescriptionEngineering Tools DevelopmentBachelor's degree or higher in computer science or other technical discipline.Knowledge of Java Script, CSS, HTMLExperience in object oriented programming languages like Java, Python, Go or Perl.Experience with Jenkins CI/CD pipelinesExperience with code repository such as GIT or BitbucketExperience with SQLExcellent analytical and problem-solving skills.Effective verbal and written communication skills that include the ability to describe highly technical concepts in non-technical termsFull Stack Development experienceExperience in scripting languages to create API sExperience in creating data architectureExperience in creating, handling and monitoring orchestration tools.Dashboard creation experience - 3 to 4 years desirableStrong understanding of Splunk Search Language and regular expressionsExperience in advanced search and reporting commandsDemonstrated ability to create complex dashboards and visualizationsSkillsfullstack,cicd pipeline,java,css,jenkins,html,tooling development,perl,oops,computer science,orchestration tools",
-      "applyUrl": "https://in.linkedin.com/jobs/view/developer-iii-software-engineering-at-ust-4425307200",
-      "postedAt": "2026-07-04T00:00:00.000Z",
-      "remoteType": "remote",
-      "tier": "mid",
-      "techStack": [
-        "python",
-        "go",
-        "java"
-      ],
-      "companyDomain": null,
-      "department": null,
-      "expiresAt": null,
-      "salaryMin": null,
-      "salaryMax": null,
-      "salaryCurrency": null,
-      "id": "linkedin-4425307200"
     },
     {
       "source": "linkedin",
