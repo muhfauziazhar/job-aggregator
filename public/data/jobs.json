@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T08:41:53.000Z",
+  "generatedAt": "2026-07-28T14:20:27.000Z",
   "count": 457,
   "jobs": [
     {
@@ -105,7 +105,7 @@
       "title": "Software Developer Intermediate",
       "company": "Smile Digital Health",
       "location": "Toronto",
-      "description": "Please mention the word **AFFABLE** and tag RNTIuMTkwLjIyMS4xMTg= when applying to show you read the job post completely (#RNTIuMTkwLjIyMS4xMTg=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+      "description": "Please mention the word **AFFABLE** and tag RMTcyLjE4NC4yMDkuMTE2 when applying to show you read the job post completely (#RMTcyLjE4NC4yMDkuMTE2). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
       "applyUrl": "https://remoteOK.com/remote-jobs/remote-software-developer-intermediate-smile-digital-health-1135459",
       "postedAt": "2026-07-27T08:00:17.000Z",
       "remoteType": "remote",
@@ -7343,12 +7343,19 @@
       "title": "Software Engineer [Backend]",
       "company": "Dropsuite",
       "location": "Bandung, West Java, Indonesia",
-      "description": "",
+      "description": "About the RoleWe are looking for a Software Engineer [Backend] to join our Platform team and work on the backbone of Dropsuite's data backup and recovery product. You will be a key contributor in maintaining, evolving, and scaling the backend services that power our backup engine platform. You will be a part of a global team of product engineers delivering a SaaS platform.The role is focused on working with several core backend services in our backup engine platform, including areas such as backup, restore, download, storage optimization and archiving. A key part of this role is helping maintain and improve the scalability, reliability, and performance of our backend platform as we continue to grow.You will work very closely with many of our amazing Software Engineers and Leads to deliver quality product features, provide fixes and support improvements to the in-market product.Location – Hybrid | Bandung, Indonesia (at least 2 days per week in the office)What You’ll be Doing Developing and maintaining backend servicesContributing to solutions that improve the scalability and reliability of our backup engine platformWorking with cloud infrastructure services on AWS to support system performance and resource efficiencyWriting efficient, well-tested, production-ready code that performs reliably at scaleCollaborating with cross-functional teams to ensure platform stabilityUsing monitoring and observability tools (e.g., Datadog) to help ensure platform health and performanceWorking with a scrum team and participating in scrum ceremonies. Sharing status updates with accuracyContinuously learning and growing your technical skills, with support from senior engineers and team leadsAbout You About 2 to 5 years of experience in Software DevelopmentExperience in C# or Golang would be a plusBachelor’s degree or equivalent in Computer Science or a related fieldKnowledge of Operating systems like Linux and WindowsKnowledge of Relational Databases, SQL and CloudGood interpersonal skills, oral and written skills, with the ability to present ideasAble to express and explain new initiatives along with status updatesValues that are aligned with us being a team of experts, problem solvers and collaborators, who are highly customer focused, dependable and trustworthyScripting skills, Python and bash will be a plusWorking experience with Global teams outside Indonesia will be a huge plusAbout Us NinjaOne unifies IT to simplify work for nearly 40,000 customers in 140+ countries.The NinjaOne Unified IT Operations Platform delivers endpoint management, autonomous patching, backup, and remote access in a single console to improve efficiency, increase resilience, and reduce spend. By automating IT and managing all endpoints, organizations give employees a great technology experience at work.NinjaOne is obsessed with customer success and has retained a 98% customer satisfaction score for more than 5 years.What You’ll Love We are a collaborative, kind, and curious communityWe prioritise your work/life balance offering a hybrid work environment and free in-office lunches throughout the weekWe reward your work with opportunity for growth and advancementGrow personally and together with one of the fastest growing companies globallyDevelop your skills through our renowned training platformReceive competitive compensationCollaborate with an amazing international workforceAdditional Information This position is NOT eligible for Visa sponsorship.All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, genetic information, marital status, veteran status, or any other status protected by applicable law. We are committed to providing an inclusive and diverse work environment.",
       "applyUrl": "https://id.linkedin.com/jobs/view/software-engineer-backend-at-dropsuite-4437021345",
       "postedAt": "2026-07-08T00:00:00.000Z",
       "remoteType": "unknown",
       "tier": "mid",
-      "techStack": [],
+      "techStack": [
+        "python",
+        "go",
+        "c#",
+        "aws",
+        "sql",
+        "linux"
+      ],
       "companyDomain": null,
       "department": null,
       "expiresAt": null,
