@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-28T02:52:10.000Z",
-  "count": 453,
+  "generatedAt": "2026-07-28T08:41:53.000Z",
+  "count": 457,
   "jobs": [
     {
       "source": "linkedin",
@@ -56,6 +56,68 @@
       "salaryMax": null,
       "salaryCurrency": null,
       "id": "linkedin-4445440387"
+    },
+    {
+      "source": "linkedin",
+      "externalId": "4446184102",
+      "title": "Asst. Software Developer",
+      "company": "OSI Electronics",
+      "location": "Batam, Riau Islands, Indonesia",
+      "description": "OverviewFor over 35 years, OSI Electronics has provided Manufacturing Solutions of the highest quality,reliability, and customer support. We specialize in customized Manufacturing Solutions with the portfolio of services, capabilities, and factory locations needed to provide ourcustomers with a competitiveadvantage in the global marketplace.OSI Electronics offers turnkey solutions for the full range of assembly complexity. We partner withCustomers on Product Development, New Product Introduction, Mass Production, Sustaining Engineering and Product Lifecycle Management. Our cutting edge technology,manufacturing proficiencyand responsive technical services deliver the Tier One capabilities Customers require.Responsibilities Designing algorithms and flowcharts to create new software programs and systems Producing efficient and elegant code based on requirements Testing and deploying programs and applications Troubleshooting, debugging, maintaining and improving existing software Compiling and assessing user feedback to improve software performance Observing user feedback to recommend improvements to existing software products Developing technical documentation to guide future software development projects Qualifications 2 + Years same field Graduates from informatica Engineering Some experience with .NET, JSON, C# programming Proven work experience in process Excellent technical skills Knowledge of process related standards Experience in process simulations Working knowledge of process engineering software packages Analytical thinker with interpersonal skills Critical thinker and problem-solving skills Team player Good time-management skills Great interpersonal and communication skills OSI Systems, Inc. has three operating divisions: (a) Security, providing security and inspection systems, turnkey security screening solutions and related services; (b) Healthcare, providing patient monitoring, diagnostic cardiology and anesthesia systems; and (c) Optoelectronics and Manufacturing, providing specialized electronic components and electronic manufacturing services for original equipment manufacturers with applications in the defense, aerospace, medical and industrial markets, among others.",
+      "applyUrl": "https://id.linkedin.com/jobs/view/asst-software-developer-at-osi-electronics-4446184102",
+      "postedAt": "2026-07-28T00:00:00.000Z",
+      "remoteType": "unknown",
+      "tier": "mid",
+      "techStack": [
+        "c#"
+      ],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "linkedin-4446184102"
+    },
+    {
+      "source": "linkedin",
+      "externalId": "4445426766",
+      "title": "Full Stack Engineer",
+      "company": "Emtrade | We are hiring!",
+      "location": "Surakarta, Central Java, Indonesia",
+      "description": "",
+      "applyUrl": "https://id.linkedin.com/jobs/view/full-stack-engineer-at-emtrade-we-are-hiring%21-4445426766",
+      "postedAt": "2026-07-28T00:00:00.000Z",
+      "remoteType": "unknown",
+      "tier": "mid",
+      "techStack": [],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "linkedin-4445426766"
+    },
+    {
+      "source": "remoteok",
+      "externalId": "1135459",
+      "title": "Software Developer Intermediate",
+      "company": "Smile Digital Health",
+      "location": "Toronto",
+      "description": "Please mention the word **AFFABLE** and tag RNTIuMTkwLjIyMS4xMTg= when applying to show you read the job post completely (#RNTIuMTkwLjIyMS4xMTg=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+      "applyUrl": "https://remoteOK.com/remote-jobs/remote-software-developer-intermediate-smile-digital-health-1135459",
+      "postedAt": "2026-07-27T08:00:17.000Z",
+      "remoteType": "remote",
+      "tier": "mid",
+      "techStack": [],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "remoteok-1135459"
     },
     {
       "source": "linkedin",
@@ -6674,6 +6736,33 @@
       "salaryMax": null,
       "salaryCurrency": null,
       "id": "linkedin-4402328238"
+    },
+    {
+      "source": "linkedin",
+      "externalId": "4436624772",
+      "title": "Software Engineer (Frontend / Backend / Full Stack)",
+      "company": "Future Applications of Computer Technologies",
+      "location": "Strong, ME",
+      "description": "ResponsibilitiesDesign, develop, and maintain web applicationsWork closely with designers, QA, and project managersWrite clean, maintainable, and testable codeParticipate in code reviews and sprint planningSupport deployments and ongoing improvementsRequirementsStrong fundamentals in programming & web technologiesExperience with frontend (React / Vue) or backend (Node / Java / PHP / Python)Understanding of APIs, databases, and system architectureWillingness to learn and take ownershipGood to HaveHealthcare or SaaS experienceKnowledge of security & performance best practicesResponsibilitiesCreate and execute test casesPerform functional, regression, and usability testingLog, track, and verify defectsCollaborate closely with developers and PMsSupport release validationRequirementsStrong understanding of testing fundamentalsExperience in manual testing (automation is a plus)Attention to detail and structured thinkingGood to HaveAutomation tools (Selenium, Playwright, etc.)Healthcare or compliance-focused testingResponsibilitiesCreate wireframes, UI designs, and prototypesTranslate requirements into intuitive user experiencesWork closely with developers during implementationMaintain consistency with brand and design systemsRequirementsStrong portfolio (web / product design)Proficiency in FigmaUnderstanding of UX principlesGood to HaveHealthcare or SaaS product design experienceKnowledge of accessibility standardsResponsibilitiesPlan project scope, timelines, and milestonesCoordinate between clients and internal teamsTrack progress, risks, and deliverablesEnsure smooth execution and communicationRequirementsStrong organisational and communication skillsExperience managing software or digital projectsAbility to handle multiple stakeholdersGood to HaveHealthcare or enterprise project exposureAgile / Scrum experienceResponsibilitiesWrite website, blog, and marketing contentDevelop content strategies aligned with SEOCollaborate with design and marketing teamsMaintain brand voice and credibilityRequirementsStrong writing and editing skillsUnderstanding of digital content & SEO basicsGood to HaveHealthcare or technical writing experienceResponsibilitiesPlan and execute social media calendarsManage posts, engagement, and reportingCoordinate content creation (graphics/video)Support campaigns and promotionsRequirementsHands-on experience with social platformsUnderstanding of analytics and trendsResponsibilitiesLearn real project workflowsCollaborate with senior team membersApply feedback and grow skills quicklyRequirementsStrong interest in technology or digital fieldsWillingness to learn and take feedback",
+      "applyUrl": "https://www.linkedin.com/jobs/view/software-engineer-frontend-backend-full-stack-at-future-applications-of-computer-technologies-4436624772",
+      "postedAt": "2026-07-10T00:00:00.000Z",
+      "remoteType": "unknown",
+      "tier": "mid",
+      "techStack": [
+        "python",
+        "react",
+        "vue",
+        "node",
+        "java",
+        "php"
+      ],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "linkedin-4436624772"
     },
     {
       "source": "linkedin",
