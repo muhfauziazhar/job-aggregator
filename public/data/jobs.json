@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-02T16:18:26.000Z",
-  "count": 325,
+  "generatedAt": "2026-09-02T20:49:54.000Z",
+  "count": 323,
   "jobs": [
     {
       "source": "linkedin",
@@ -225,6 +225,32 @@
       "salaryMax": null,
       "salaryCurrency": null,
       "id": "linkedin-4459946052"
+    },
+    {
+      "source": "linkedin",
+      "externalId": "4443519515",
+      "title": "Senior Software Engineer (Java & Python)",
+      "company": "Jamf",
+      "location": "London, England, United Kingdom",
+      "description": "At Jamf, we believe in an open, flexible culture based on respect and trust. Our track record and thriving work environment all stem from the freedom we grant ourselves to get the job done right. We take pride in helping tens of thousands of customers around the globe succeed with Apple.The secret to our success lies in our connectivity, while operating with a high degree of flexibility. Work-life balance remains our priority while feeling connected is important to maintain our strong culture, achieve our goals, and thrive as #OneJamf.This role is offered as a hybrid role from London, the United Kingdom. We are only able to accept applications from those based in the UK or who have sponsorship to live and work in the UK. What you’ll do at Jamf: At Jamf, we empower people to be their best selves and do their best work.As a Senior Software Engineer on our team, you'll help lead a technological transition while building your skills at an internationally recognized tech company. You'll work on the web application that powers Jamf Insights for admins and Managed Service Providers (MSPs) - the companies trusted to manage device fleets on behalf of other businesses.Jamf Insights was born from Jamf Pro, taking its powerful but complex configuration and enrolment capabilities and distilling them into something simpler and more focused.With Jamf Insights, admins get:Detailed device inventory paired with the ability to remediate issues directly using MDM commands and management actionsA dashboard with device and usage analytics that gives full visibility across a fleet of devicesDevice enrolment configuration editing and reportingVolume purchasing app usage and scope reportingStreamlined workflows that save time and cut down on complexityOur Tech Stack:JavaSpring BootPythonDjangoREST APIMicroservice architecturePulsarAuth0AWSWhat you can expect to do in this role: Break down customer problems into work you and the team can execute on.Independently complete tasks from start to finish with high quality.Ability to communicate technical concepts to stakeholders.Use your knowledge of Engineering best practices to ask the right questions, solve problems and build great software with a high level of quality.Produce designs for new and existing features.Clearly communicate technical concepts with others in the organization (Technical Communication, Support, Product and Cloud).Performs all job responsibilities in alignment with the core values, mission and purpose of the organization.Adheres to the highest moral, ethical and legal standards to deliver and environment that promotes respect, innovation and creativity.Supports and promotes a positive, inclusive workplace one in which the talents and strengths of our increasingly diverse workforce are welcomed, further developed and manifested in our work.What we are looking for: Required skills and experience:Minimum of 5 years of experience developing enterprise-grade software with understanding of testing and quality assurance processes.Minimum of 5 years of demonstrated experience in current programming language and tools based on position requirements (Java, Spring Boot, Python, Django, AWS).Preferred skills and experience:General experience with performance and load testing applications Hands-on experience with AI-driven coding assistants like GitHub Copilot, Cursor, and others to enhance development productivity.Experience building enterprise-level software.Experience working within an agile organization.Understanding of build systems such as Jenkins or Bamboo.Strong communication skills.Proven analytical and problem-solving skills.Ability to interact effectively with co-workers in a results-driven culture.Ability to engage with and establish trust and rapport with all levels of customers and employees.Solution-focused ability to work collaboratively in a fast-paced environment.Apple platform experience.EDUCATION2 year / Associates (Required).4 year / Bachelors Degree (Preferred).A combination of relevant experience and education may be considered.Why Jamf? Named a 2025 Best Companies to Work For by U.S. NewsNamed a 2024 Best Technology Company to Work For by U.S. NewsNamed one of Forbes Most Trusted Companies in 2024We constantly push the boundaries of technology, our developers support new innovations and OS releases the moment they are made available by Apple.Several Jamf engineers are named in patents and with team names like CatDog, ThunderSnow and Dalek you can expect to have some fun while building cutting-edge software.You will have the opportunity to work with a small and empowered team where the culture is based on trust, ownership, and respect.Visit our Jamf Engineering blog to learn more about the innovative projects our team is working on and what we learn from each challenge we solve. A blog written by engineers, for engineers at https://engineering.jamf.comWhat it means to be a Jamf?We are a team of free-thinkers, can-doers, and problem-crushers. We value humility and the relentless pursuit of knowledge. Our culture flows from a spirit of selflessness and relentless self-improvement - driving both personal growth and collective progress throughout our company. We unite around common goals while respecting personal approaches, believing that fulfilled individuals create a thriving, vibrant workplace.Our aim is simple: hire exceptionally good people who are incredibly good at what they do and let them do it. We provide the support and resources to let everyone be their authentic, best selves at work, at rest, and at play. We are committed to supporting the continual improvement of Apple in the workplace, the organizations that rely on them and the people who keep it all running smoothly.Above it all, waves our banner of #OneJamf – and the knowledge that when we stand together, we accomplish so much more than we could alone. We seek individuals who share this unwavering journey toward growth to join us in our quest for constant improvement.What does Jamf do?Jamf extends the legendary Apple experience people enjoy in their personal lives to the workplace. We believe the experience of using a device at work or school should feel the same, and be as secure as, using a personal device. With Jamf, customers are able to confidently automate Mac, iPad, iPhone and Apple TV deployment, management, and security – anytime, anywhere – to protect the data and applications used by employees in the workplace, students learning in the classroom, and streamline communications in healthcare between patients and providers. More than 2,500 Jamf strong worldwide, we are free-thinkers, can-doers, and problems crushers who are encouraged to bring their whole selves to work each and every day.Get social with us and follow the conversation at #OneJamfJamf is committed to creating an inclusive & supportive work environment for all candidates and employees. Candidates with disabilities or religious beliefs are encouraged to reach out if they need additional support or alternative options to our recruiting processes to accommodate their disability or religious belief. If you need an accommodation, please contact your Recruiter or Recruiting Coordinator directly. Requests for accommodation will be handled confidentially by Recruiting and will not be shared with the hiring manager. Jamf is an equal opportunity employer and does not discriminate against individuals who request reasonable accommodation for disability or religious beliefs. To request accommodations please email us at recruiting@jamf.com",
+      "applyUrl": "https://uk.linkedin.com/jobs/view/senior-software-engineer-java-python-at-jamf-4443519515",
+      "postedAt": "2026-09-02T00:00:00.000Z",
+      "remoteType": "remote",
+      "tier": "senior",
+      "techStack": [
+        "python",
+        "java",
+        "django",
+        "spring",
+        "aws"
+      ],
+      "companyDomain": null,
+      "department": null,
+      "expiresAt": null,
+      "salaryMin": null,
+      "salaryMax": null,
+      "salaryCurrency": null,
+      "id": "linkedin-4443519515"
     },
     {
       "source": "linkedin",
@@ -766,7 +792,7 @@
       "title": "AI Engineer Data APIs",
       "company": "Benzinga",
       "location": "Remote",
-      "description": "Remote - Before you read further: applying to this role requires a Loom video walkthrough under 5 minutes of the best thing you have built, plus a repo or live link. Tell us the hardest problem you hit and how you solved it. Focus on architecture decisions and tradeoffs, not a f...Please mention the word **CHARMINGLY** and tag RNC4xNTUuMjUwLjc0 when applying to show you read the job post completely (#RNC4xNTUuMjUwLjc0). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+      "description": "Remote - Before you read further: applying to this role requires a Loom video walkthrough under 5 minutes of the best thing you have built, plus a repo or live link. Tell us the hardest problem you hit and how you solved it. Focus on architecture decisions and tradeoffs, not a f...Please mention the word **CHARMINGLY** and tag RMTcyLjE3MS42LjEyNA== when applying to show you read the job post completely (#RMTcyLjE3MS42LjEyNA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
       "applyUrl": "https://remoteOK.com/remote-jobs/remote-ai-engineer-data-apis-benzinga-1137224",
       "postedAt": "2026-08-30T21:00:01.000Z",
       "remoteType": "remote",
@@ -1096,7 +1122,7 @@
       "title": "Principal Engineer",
       "company": "The AI Whistleblower Initiative",
       "location": "Remote",
-      "description": "Remote - About AIWIAIWI is an independent non-profit that exists to ensure that insiders at frontier AI companies can speak up safely and effectively when they see something that should be addressed. We do this by integrating the ecosystem of lawyers, AI researchers, AI advoc...Please mention the word **EARNESTNESS** and tag RNC4xNTUuMjUwLjc0 when applying to show you read the job post completely (#RNC4xNTUuMjUwLjc0). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+      "description": "Remote - About AIWIAIWI is an independent non-profit that exists to ensure that insiders at frontier AI companies can speak up safely and effectively when they see something that should be addressed. We do this by integrating the ecosystem of lawyers, AI researchers, AI advoc...Please mention the word **EARNESTNESS** and tag RMTcyLjE3MS42LjEyNA== when applying to show you read the job post completely (#RMTcyLjE3MS42LjEyNA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
       "applyUrl": "https://remoteOK.com/remote-jobs/remote-principal-engineer-the-ai-whistleblower-initiative-1137162",
       "postedAt": "2026-08-27T09:00:02.000Z",
       "remoteType": "remote",
@@ -5303,32 +5329,6 @@
     },
     {
       "source": "linkedin",
-      "externalId": "4443519515",
-      "title": "Senior Software Engineer (Java & Python)",
-      "company": "Jamf",
-      "location": "London, England, United Kingdom",
-      "description": "At Jamf, we believe in an open, flexible culture based on respect and trust. Our track record and thriving work environment all stem from the freedom we grant ourselves to get the job done right. We take pride in helping tens of thousands of customers around the globe succeed with Apple.The secret to our success lies in our connectivity, while operating with a high degree of flexibility. Work-life balance remains our priority while feeling connected is important to maintain our strong culture, achieve our goals, and thrive as #OneJamf.This role is offered as a hybrid role from London, the United Kingdom. We are only able to accept applications from those based in the UK or who have sponsorship to live and work in the UK. What you’ll do at Jamf: At Jamf, we empower people to be their best selves and do their best work.As a Senior Software Engineer on our team, you'll help lead a technological transition while building your skills at an internationally recognized tech company. You'll work on the web application that powers Jamf Insights for admins and Managed Service Providers (MSPs) - the companies trusted to manage device fleets on behalf of other businesses.Jamf Insights was born from Jamf Pro, taking its powerful but complex configuration and enrolment capabilities and distilling them into something simpler and more focused.With Jamf Insights, admins get:Detailed device inventory paired with the ability to remediate issues directly using MDM commands and management actionsA dashboard with device and usage analytics that gives full visibility across a fleet of devicesDevice enrolment configuration editing and reportingVolume purchasing app usage and scope reportingStreamlined workflows that save time and cut down on complexityOur Tech Stack:JavaSpring BootPythonDjangoREST APIMicroservice architecturePulsarAuth0AWSWhat you can expect to do in this role: Break down customer problems into work you and the team can execute on.Independently complete tasks from start to finish with high quality.Ability to communicate technical concepts to stakeholders.Use your knowledge of Engineering best practices to ask the right questions, solve problems and build great software with a high level of quality.Produce designs for new and existing features.Clearly communicate technical concepts with others in the organization (Technical Communication, Support, Product and Cloud).Performs all job responsibilities in alignment with the core values, mission and purpose of the organization.Adheres to the highest moral, ethical and legal standards to deliver and environment that promotes respect, innovation and creativity.Supports and promotes a positive, inclusive workplace one in which the talents and strengths of our increasingly diverse workforce are welcomed, further developed and manifested in our work.What we are looking for: Required skills and experience:Minimum of 5 years of experience developing enterprise-grade software with understanding of testing and quality assurance processes.Minimum of 5 years of demonstrated experience in current programming language and tools based on position requirements (Java, Spring Boot, Python, Django, AWS).Preferred skills and experience:General experience with performance and load testing applications Hands-on experience with AI-driven coding assistants like GitHub Copilot, Cursor, and others to enhance development productivity.Experience building enterprise-level software.Experience working within an agile organization.Understanding of build systems such as Jenkins or Bamboo.Strong communication skills.Proven analytical and problem-solving skills.Ability to interact effectively with co-workers in a results-driven culture.Ability to engage with and establish trust and rapport with all levels of customers and employees.Solution-focused ability to work collaboratively in a fast-paced environment.Apple platform experience.EDUCATION2 year / Associates (Required).4 year / Bachelors Degree (Preferred).A combination of relevant experience and education may be considered.Why Jamf? Named a 2025 Best Companies to Work For by U.S. NewsNamed a 2024 Best Technology Company to Work For by U.S. NewsNamed one of Forbes Most Trusted Companies in 2024We constantly push the boundaries of technology, our developers support new innovations and OS releases the moment they are made available by Apple.Several Jamf engineers are named in patents and with team names like CatDog, ThunderSnow and Dalek you can expect to have some fun while building cutting-edge software.You will have the opportunity to work with a small and empowered team where the culture is based on trust, ownership, and respect.Visit our Jamf Engineering blog to learn more about the innovative projects our team is working on and what we learn from each challenge we solve. A blog written by engineers, for engineers at https://engineering.jamf.comWhat it means to be a Jamf?We are a team of free-thinkers, can-doers, and problem-crushers. We value humility and the relentless pursuit of knowledge. Our culture flows from a spirit of selflessness and relentless self-improvement - driving both personal growth and collective progress throughout our company. We unite around common goals while respecting personal approaches, believing that fulfilled individuals create a thriving, vibrant workplace.Our aim is simple: hire exceptionally good people who are incredibly good at what they do and let them do it. We provide the support and resources to let everyone be their authentic, best selves at work, at rest, and at play. We are committed to supporting the continual improvement of Apple in the workplace, the organizations that rely on them and the people who keep it all running smoothly.Above it all, waves our banner of #OneJamf – and the knowledge that when we stand together, we accomplish so much more than we could alone. We seek individuals who share this unwavering journey toward growth to join us in our quest for constant improvement.What does Jamf do?Jamf extends the legendary Apple experience people enjoy in their personal lives to the workplace. We believe the experience of using a device at work or school should feel the same, and be as secure as, using a personal device. With Jamf, customers are able to confidently automate Mac, iPad, iPhone and Apple TV deployment, management, and security – anytime, anywhere – to protect the data and applications used by employees in the workplace, students learning in the classroom, and streamline communications in healthcare between patients and providers. More than 2,500 Jamf strong worldwide, we are free-thinkers, can-doers, and problems crushers who are encouraged to bring their whole selves to work each and every day.Get social with us and follow the conversation at #OneJamfJamf is committed to creating an inclusive & supportive work environment for all candidates and employees. Candidates with disabilities or religious beliefs are encouraged to reach out if they need additional support or alternative options to our recruiting processes to accommodate their disability or religious belief. If you need an accommodation, please contact your Recruiter or Recruiting Coordinator directly. Requests for accommodation will be handled confidentially by Recruiting and will not be shared with the hiring manager. Jamf is an equal opportunity employer and does not discriminate against individuals who request reasonable accommodation for disability or religious beliefs. To request accommodations please email us at recruiting@jamf.com",
-      "applyUrl": "https://uk.linkedin.com/jobs/view/senior-software-engineer-java-python-at-jamf-4443519515",
-      "postedAt": "2026-08-12T00:00:00.000Z",
-      "remoteType": "remote",
-      "tier": "senior",
-      "techStack": [
-        "python",
-        "java",
-        "django",
-        "spring",
-        "aws"
-      ],
-      "companyDomain": null,
-      "department": null,
-      "expiresAt": null,
-      "salaryMin": null,
-      "salaryMax": null,
-      "salaryCurrency": null,
-      "id": "linkedin-4443519515"
-    },
-    {
-      "source": "linkedin",
       "externalId": "4441000904",
       "title": "Software Engineer",
       "company": "ChampionX",
@@ -6095,12 +6095,22 @@
       "title": "Software Engineer (Backend)",
       "company": "McEasy",
       "location": "Surabaya, East Java, Indonesia",
-      "description": "",
+      "description": "McEasy, a transportation management solution to simplify complex logistics operations is looking for a Software Engineer to join our ever-growing team.If you are a keen learner, self-driven, and looking to be a part of a team that is passionate with helping each other, we want to hear from you.What will you do?Design and develop new features based on requirements from the Product teamContribute to database schema design and API contract designBuild and maintain RESTful APIs and backend services that are scalable, secure, and performantWrite unit tests and integration tests to ensure code quality and reliabilityParticipate in code reviews and help maintain overall code quality and consistencyEnhance and maintain existing features, including fixing bugs and improving performanceQualificationsBachelor's degree in Computer Science, Information Systems, Software Engineering, Information Technology, or a related field1–3 years of relevant work experience in backend developmentStrong experience in backend development using Go and/or TypeScriptSolid understanding of RESTful API designExperience with SQL and NoSQL databases such as PostgreSQL, MySQL, or RedisProficiency with version control tools such as GitStrong problem-solving skills and ability to work in a fast-paced environmentPreferred QualificationsKnowledge/experience with Vue.jsExperience with microservices architecture and distributed systemsHands-on experience with DockerFamiliarity with message queues such as Kafka or RabbitMQKnowledge or experience in the order/logistics domainReady to embark on a thrilling journey with us? If you're eager to bring your passion, energy, and expertise to our dynamic team, simply click 'Easy Apply' and let the adventure begin! Your next career move is just one click away – let's make it happen together!",
       "applyUrl": "https://id.linkedin.com/jobs/view/software-engineer-backend-at-mceasy-4437344593",
       "postedAt": "2026-08-07T00:00:00.000Z",
       "remoteType": "unknown",
       "tier": "mid",
-      "techStack": [],
+      "techStack": [
+        "typescript",
+        "vue",
+        "go",
+        "postgresql",
+        "mysql",
+        "redis",
+        "kafka",
+        "docker",
+        "sql"
+      ],
       "companyDomain": null,
       "department": null,
       "expiresAt": null,
@@ -6425,12 +6435,14 @@
       "title": "Software Engineer",
       "company": "CIMB Niaga",
       "location": "Tangerang, Banten, Indonesia",
-      "description": "",
+      "description": "The ideal candidate will be responsible for developing high-quality applications. They will also be responsible for designing and implementing testable and scalable code.ResponsibilitiesDevelop quality software and web applicationsAnalyze and maintain existing software applicationsDesign highly scalable, testable codeDiscover and fix programming bugsQualificationsBachelor's degree or equivalent experience in Computer Science or related fieldDevelopment experience with GO programming languagesHaving an Experiences Leading team is preferableRequirements:having experiences in Software Engineer / Backend Developer min 4 Years Placement in Bintaro - South Tangerang",
       "applyUrl": "https://id.linkedin.com/jobs/view/software-engineer-at-cimb-niaga-4449376736",
       "postedAt": "2026-08-06T00:00:00.000Z",
       "remoteType": "unknown",
       "tier": "mid",
-      "techStack": [],
+      "techStack": [
+        "go"
+      ],
       "companyDomain": null,
       "department": null,
       "expiresAt": null,
@@ -7991,48 +8003,6 @@
       "salaryMax": null,
       "salaryCurrency": null,
       "id": "linkedin-4449047516"
-    },
-    {
-      "source": "remoteok",
-      "externalId": "1136075",
-      "title": "Application Developer",
-      "company": "Accenture in India",
-      "location": "Bhubaneswar,",
-      "description": "Project Role : Application DeveloperProject Role Description : Design, build and configure applications to meet business process and application requirements.Must have skills : Siemens eMeterGood to have skills : NAMinimum 3 Year(s) Of Experience Is RequiredEducational Qualification : 15 Years Full time EducationKey Responsibilities : 1 - EnergyIP MDMS Utilties niche skill support team member 2 - Monitor EnergyIP Java Application operations and support defect fixing 3 - Investigate analyze defects and apply fix 4 - Debugging issues pertaining to Energy IP applications and components 5 - Experience in Fixing defects for Energy IP desirable not mandatory 6 - Experience with Configuration MDMS and Build release, and its planning 7 - Having experience in creating Configuration documents for Package Development Technical Experience : 1 - Must have: Siemens eMeter 2 - Good to have understanding of AMI and Utility Industry Professional Attributes : 1 - Should possess good analytical and problem-solving skills 2 - Ability to work under pressure and in shifts 3 - Should have good communication and presentation skills 4 - Should be an excellent team player and possess people developer qualities Additional Information: 1 - The candidate should have a minimum of 3 years of experience in Siemens eMeter. 2 - 15 years of full time educationPlease mention the word **STABILITY** and tag RNTIuMTU5LjI0My4xNjI= when applying to show you read the job post completely (#RNTIuMTU5LjI0My4xNjI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
-      "applyUrl": "https://remoteOK.com/remote-jobs/remote-application-developer-accenture-in-india-1136075",
-      "postedAt": "2026-08-03T20:34:35.000Z",
-      "remoteType": "remote",
-      "tier": "mid",
-      "techStack": [
-        "java"
-      ],
-      "companyDomain": null,
-      "department": null,
-      "expiresAt": null,
-      "salaryMin": null,
-      "salaryMax": null,
-      "salaryCurrency": null,
-      "id": "remoteok-1136075"
-    },
-    {
-      "source": "remoteok",
-      "externalId": "1136072",
-      "title": "Custom Software Engineer",
-      "company": "Accenture in India",
-      "location": "Nagpur,",
-      "description": "Project Role : Custom Software EngineerProject Role Description : Develop custom software solutions to design, code, and enhance components across systems or applications. Use modern frameworks and agile practices to deliver scalable, high-performing solutions tailored to specific business needs.Must have skills : Aircraft Maintenance Manual Authoring GuidelinesGood to have skills : NAMinimum 3 Year(s) Of Experience Is RequiredEducational Qualification : 15 years full time educationSummary:As a Custom Software Engineer, a typical day involves creating tailored software solutions by designing, coding, and improving various components within systems or applications. The role requires working closely with teams to apply modern development frameworks and agile methodologies, ensuring that the software delivered is scalable, efficient, and meets the unique requirements of the business. This position demands continuous collaboration and innovation to adapt solutions that support evolving project goals and client needs.Roles & Responsibilities:Author AMM procedures compliant with iSpec 2200 and approved maintenance procedures documentation rules. 5-10 years of mandatory AMM Authoring experience for Airbus A320, A330, A380 and A350 Only. Expected to perform independently and become a proofreader. Interpret client engineering inputs and ensure procedures reflect maintenance philosophy, system redundancy, and failure management logic. Collaborate with cross-functional teams to ensure alignment of engineering solutions with project requirements. Required active participation/contribution in team discussions and solution oriented.Professional & Technical Skills: Must Have Skills: 5-10 years of mandatory AMM Authoring experience for Airbus A320, A330, A380 and A350 Only. At least 3+ years of proofreading experience on AMM for Airbus fleet. Good To Have Skills: Authoring experience of ATA 25-AMM, a distinct advantage.Additional Information: English proficiency at B2+ level. Relevant AME or Aeronautical/Aerospace Engineering (B.E/B. Tech) background. A 15 years full time education is required.Please mention the word **PROUD** and tag RNTIuMTU5LjI0My4xNjI= when applying to show you read the job post completely (#RNTIuMTU5LjI0My4xNjI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
-      "applyUrl": "https://remoteOK.com/remote-jobs/remote-custom-software-engineer-accenture-in-india-1136072",
-      "postedAt": "2026-08-03T18:14:44.000Z",
-      "remoteType": "remote",
-      "tier": "mid",
-      "techStack": [],
-      "companyDomain": null,
-      "department": null,
-      "expiresAt": null,
-      "salaryMin": null,
-      "salaryMax": null,
-      "salaryCurrency": null,
-      "id": "remoteok-1136072"
     }
   ]
 }
